@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Survey View Controller i Pad-->
+        <scene sceneID="6IJ-ng-XUu">
+            <objects>
+                <viewController storyboardIdentifier="SurveyViewController_iPad" automaticallyAdjustsScrollViewInsets="NO" id="SU7-gw-GCF" customClass="SurveyViewController_iPad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GTS-0R-sh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="dA8-IO-B6Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZyC-pW-PSw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSb-TZ-bFe">
+                                <rect key="frame" x="10" y="0.0" width="497" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ms-Rn-Cim">
+                                <rect key="frame" x="517" y="0.0" width="497" height="758"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nội dung khảo sát" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Eq-Nx-YzL">
+                                        <rect key="frame" x="8" y="70" width="481" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="GxB-Cc-Lzi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thực hiện gọi từ hệ thống Survey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeZ-lT-qV0">
+                                        <rect key="frame" x="8" y="368" width="481" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="9pt-sp-Fo0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1w-yl-G1Z">
+                                        <rect key="frame" x="0.0" y="44" width="497" height="714"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </webView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qK-w3-EQ6">
+                                        <rect key="frame" x="427" y="688" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Arl-g5-jMy"/>
+                                            <constraint firstAttribute="width" constant="50" id="MAa-cQ-R4Y"/>
+                                        </constraints>
+                                        <state key="normal" image="reminder_action_icon"/>
+                                        <connections>
+                                            <action selector="reminderAction:" destination="SU7-gw-GCF" eventType="touchUpInside" id="RXg-Pl-og2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="yeZ-lT-qV0" firstAttribute="leading" secondItem="4ms-Rn-Cim" secondAttribute="leading" constant="8" id="ImH-a2-B3i"/>
+                                    <constraint firstItem="u1w-yl-G1Z" firstAttribute="leading" secondItem="4ms-Rn-Cim" secondAttribute="leading" id="Nho-6R-OIJ"/>
+                                    <constraint firstItem="u1w-yl-G1Z" firstAttribute="top" secondItem="4ms-Rn-Cim" secondAttribute="top" constant="44" id="OmC-yl-Ee3"/>
+                                    <constraint firstAttribute="trailing" secondItem="yeZ-lT-qV0" secondAttribute="trailing" constant="8" id="Yyt-Jm-2dj"/>
+                                    <constraint firstAttribute="trailing" secondItem="u1w-yl-G1Z" secondAttribute="trailing" id="cOk-hM-u6V"/>
+                                    <constraint firstAttribute="bottom" secondItem="u1w-yl-G1Z" secondAttribute="bottom" id="eFg-G7-xbR"/>
+                                    <constraint firstAttribute="trailing" secondItem="9qK-w3-EQ6" secondAttribute="trailing" constant="20" id="g1T-eZ-CB5"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Eq-Nx-YzL" secondAttribute="trailing" constant="8" id="pmd-SF-FVr"/>
+                                    <constraint firstItem="yeZ-lT-qV0" firstAttribute="centerY" secondItem="4ms-Rn-Cim" secondAttribute="centerY" id="sXn-Py-8Ym"/>
+                                    <constraint firstItem="9Eq-Nx-YzL" firstAttribute="top" secondItem="4ms-Rn-Cim" secondAttribute="top" constant="70" id="tBk-hq-Brc"/>
+                                    <constraint firstItem="9Eq-Nx-YzL" firstAttribute="leading" secondItem="4ms-Rn-Cim" secondAttribute="leading" constant="8" id="tZZ-s4-Obm"/>
+                                    <constraint firstAttribute="bottom" secondItem="9qK-w3-EQ6" secondAttribute="bottom" constant="20" id="zEY-K1-bHm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ms-Rn-Cim" firstAttribute="width" secondItem="CSb-TZ-bFe" secondAttribute="width" id="Qfk-6Q-Q5m"/>
+                            <constraint firstAttribute="trailing" secondItem="4ms-Rn-Cim" secondAttribute="trailing" constant="10" id="T9d-hc-nRO"/>
+                            <constraint firstItem="CSb-TZ-bFe" firstAttribute="top" secondItem="ZyC-pW-PSw" secondAttribute="top" id="X5A-yS-tmi"/>
+                            <constraint firstItem="dA8-IO-B6Y" firstAttribute="top" secondItem="CSb-TZ-bFe" secondAttribute="bottom" constant="10" id="ean-xk-m2L"/>
+                            <constraint firstItem="CSb-TZ-bFe" firstAttribute="leading" secondItem="ZyC-pW-PSw" secondAttribute="leading" constant="10" id="jP9-jD-sE0"/>
+                            <constraint firstItem="4ms-Rn-Cim" firstAttribute="top" secondItem="ZyC-pW-PSw" secondAttribute="top" id="lZY-dg-Kn1"/>
+                            <constraint firstItem="4ms-Rn-Cim" firstAttribute="leading" secondItem="CSb-TZ-bFe" secondAttribute="trailing" constant="10" id="r2c-TA-HjH"/>
+                            <constraint firstItem="dA8-IO-B6Y" firstAttribute="top" secondItem="4ms-Rn-Cim" secondAttribute="bottom" constant="10" id="ySQ-la-sZh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detail_survey_view" destination="4ms-Rn-Cim" id="eRX-kW-Syd"/>
+                        <outlet property="survey_view" destination="CSb-TZ-bFe" id="nGb-UT-3fh"/>
+                        <outlet property="webView" destination="u1w-yl-G1Z" id="js0-2Y-fqa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x2O-cX-NwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="reminder_action_icon" width="74" height="74"/>
+    </resources>
+</document>

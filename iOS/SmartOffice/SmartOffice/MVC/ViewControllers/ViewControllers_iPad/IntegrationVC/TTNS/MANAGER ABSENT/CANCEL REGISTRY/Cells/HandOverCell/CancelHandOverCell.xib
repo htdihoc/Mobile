@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cancelHandOverCell" rowHeight="123" id="KGk-i7-Jjw" customClass="CancelHandOverCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chỉ huy đơn vị" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG5-7h-bvA">
+                        <rect key="frame" x="16" y="16" width="288" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-04-cwa">
+                        <rect key="frame" x="16" y="42" width="288" height="80.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_avt_default" translatesAutoresizingMaskIntoConstraints="NO" id="AAj-eb-Ntr">
+                                <rect key="frame" x="16" y="8" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cRg-3J-O77"/>
+                                    <constraint firstAttribute="width" constant="44" id="kFP-IP-kZ4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Ngọc Anh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahw-DM-TK2">
+                                <rect key="frame" x="76" y="8" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trung tâm sản phẩm mới" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nv8-cY-zNY">
+                                <rect key="frame" x="76" y="35" width="196" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ahw-DM-TK2" firstAttribute="top" secondItem="W4D-04-cwa" secondAttribute="top" constant="8" id="7bP-1x-ySm"/>
+                            <constraint firstAttribute="trailing" secondItem="ahw-DM-TK2" secondAttribute="trailing" constant="16" id="CJ1-mo-NGo"/>
+                            <constraint firstItem="AAj-eb-Ntr" firstAttribute="leading" secondItem="W4D-04-cwa" secondAttribute="leading" constant="16" id="HBW-yA-2dk"/>
+                            <constraint firstAttribute="trailing" secondItem="Nv8-cY-zNY" secondAttribute="trailing" constant="16" id="IRf-6c-Kg2"/>
+                            <constraint firstItem="ahw-DM-TK2" firstAttribute="leading" secondItem="AAj-eb-Ntr" secondAttribute="trailing" constant="16" id="O2I-RZ-CpA"/>
+                            <constraint firstItem="Nv8-cY-zNY" firstAttribute="top" secondItem="ahw-DM-TK2" secondAttribute="bottom" constant="6" id="ZgD-d4-CIn"/>
+                            <constraint firstItem="AAj-eb-Ntr" firstAttribute="top" secondItem="W4D-04-cwa" secondAttribute="top" constant="8" id="sgF-jh-Dpl"/>
+                            <constraint firstItem="Nv8-cY-zNY" firstAttribute="leading" secondItem="ahw-DM-TK2" secondAttribute="leading" id="uHF-Dh-VNl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W4D-04-cwa" firstAttribute="leading" secondItem="gG5-7h-bvA" secondAttribute="leading" id="AB1-io-bv7"/>
+                    <constraint firstItem="gG5-7h-bvA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="DIM-ys-igz"/>
+                    <constraint firstAttribute="bottom" secondItem="W4D-04-cwa" secondAttribute="bottom" id="G5y-z2-bbt"/>
+                    <constraint firstAttribute="trailing" secondItem="W4D-04-cwa" secondAttribute="trailing" constant="16" id="K7L-xP-Rtx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gG5-7h-bvA" secondAttribute="trailing" constant="8" id="Tce-eH-JZf"/>
+                    <constraint firstItem="gG5-7h-bvA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="eO1-1c-o8A"/>
+                    <constraint firstItem="W4D-04-cwa" firstAttribute="top" secondItem="gG5-7h-bvA" secondAttribute="bottom" constant="8" id="vOJ-s2-qTh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="handOverTypeLB" destination="gG5-7h-bvA" id="fYQ-VT-0E8"/>
+                <outlet property="nameLB" destination="ahw-DM-TK2" id="Kd7-ff-XCT"/>
+                <outlet property="positionLB" destination="Nv8-cY-zNY" id="sZZ-ih-bzW"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="91.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_avt_default" width="254" height="256"/>
+    </resources>
+</document>

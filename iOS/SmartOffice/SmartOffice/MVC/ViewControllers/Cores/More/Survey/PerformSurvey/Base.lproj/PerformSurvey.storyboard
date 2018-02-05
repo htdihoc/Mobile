@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Perform Survey View Controller-->
+        <scene sceneID="OcN-nt-dyk">
+            <objects>
+                <viewController storyboardIdentifier="PerformSurveyViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="WXa-8o-rv1" customClass="PerformSurveyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yP2-Qe-w6d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mq4-Fe-JQU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iuL-rZ-G8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqF-l1-YYb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avg-Ji-qSs">
+                                <rect key="frame" x="0.0" y="323.5" width="375" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8aD-NI-5hA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.13987030089999999" green="0.59442645309999997" blue="0.85301482679999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23w-i5-I01" userLabel="ContentView">
+                                <rect key="frame" x="67.5" y="241" width="240" height="185"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_icon" translatesAutoresizingMaskIntoConstraints="NO" id="MfO-Cp-wHB">
+                                        <rect key="frame" x="65.5" y="15" width="109" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="109" id="phE-1T-tFn"/>
+                                            <constraint firstAttribute="height" constant="42" id="vl3-Ad-2a2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mất kết nối tới hệ thống" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh9-wk-xb0">
+                                        <rect key="frame" x="0.0" y="65" width="240" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="eZu-1y-5LK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNm-oU-Hjg" customClass="SONoteButton">
+                                        <rect key="frame" x="46" y="127" width="149" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="149" id="VUS-j3-HIG"/>
+                                            <constraint firstAttribute="height" constant="30" id="jNq-08-PQn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Thử lại">
+                                            <color key="titleColor" red="0.0078431372550000003" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0078431372550000003" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="refressDataAction:" destination="WXa-8o-rv1" eventType="touchUpInside" id="ciX-ci-OP9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Uh9-wk-xb0" firstAttribute="top" secondItem="MfO-Cp-wHB" secondAttribute="bottom" constant="8" id="3A0-Zj-vJ8"/>
+                                    <constraint firstAttribute="width" constant="240" id="89J-ik-Tzv"/>
+                                    <constraint firstItem="MfO-Cp-wHB" firstAttribute="top" secondItem="23w-i5-I01" secondAttribute="top" constant="15" id="Wd7-Dw-h7i"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uh9-wk-xb0" secondAttribute="trailing" id="mZr-FJ-EWG"/>
+                                    <constraint firstAttribute="height" constant="185" id="tBi-ac-foM"/>
+                                    <constraint firstItem="sNm-oU-Hjg" firstAttribute="top" secondItem="Uh9-wk-xb0" secondAttribute="bottom" constant="8" id="ty4-GP-DCm"/>
+                                    <constraint firstItem="sNm-oU-Hjg" firstAttribute="centerX" secondItem="23w-i5-I01" secondAttribute="centerX" id="vNV-TO-JCK"/>
+                                    <constraint firstItem="Uh9-wk-xb0" firstAttribute="leading" secondItem="23w-i5-I01" secondAttribute="leading" id="vrp-5u-fMc"/>
+                                    <constraint firstItem="MfO-Cp-wHB" firstAttribute="centerX" secondItem="23w-i5-I01" secondAttribute="centerX" id="y83-l1-qik"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372549020000005" green="0.91764705879999997" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="23w-i5-I01" firstAttribute="centerX" secondItem="iuL-rZ-G8W" secondAttribute="centerX" id="4od-Ru-loV"/>
+                            <constraint firstItem="lqF-l1-YYb" firstAttribute="leading" secondItem="iuL-rZ-G8W" secondAttribute="leading" id="5vJ-tE-arK"/>
+                            <constraint firstAttribute="trailing" secondItem="avg-Ji-qSs" secondAttribute="trailing" id="5ys-gT-Yn8"/>
+                            <constraint firstItem="avg-Ji-qSs" firstAttribute="leading" secondItem="iuL-rZ-G8W" secondAttribute="leading" id="D2T-JK-dF9"/>
+                            <constraint firstItem="avg-Ji-qSs" firstAttribute="centerY" secondItem="iuL-rZ-G8W" secondAttribute="centerY" id="GJb-eX-aB0"/>
+                            <constraint firstItem="lqF-l1-YYb" firstAttribute="top" secondItem="yP2-Qe-w6d" secondAttribute="bottom" constant="44" id="RHl-87-CFH"/>
+                            <constraint firstItem="Mq4-Fe-JQU" firstAttribute="top" secondItem="lqF-l1-YYb" secondAttribute="bottom" id="Vuh-L4-F7c"/>
+                            <constraint firstItem="23w-i5-I01" firstAttribute="centerY" secondItem="iuL-rZ-G8W" secondAttribute="centerY" id="ZYZ-yW-3LU"/>
+                            <constraint firstAttribute="trailing" secondItem="lqF-l1-YYb" secondAttribute="trailing" id="jXW-dU-UEA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5DJ-TD-EQX"/>
+                    <connections>
+                        <outlet property="errLoadWebView" destination="avg-Ji-qSs" id="Zr3-F0-bCI"/>
+                        <outlet property="refressBtn" destination="sNm-oU-Hjg" id="fkQ-PX-OHd"/>
+                        <outlet property="viewNoNetWork" destination="23w-i5-I01" id="a8y-Yq-5cZ"/>
+                        <outlet property="webView" destination="lqF-l1-YYb" id="PY7-2D-iKT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ne-tQ-FPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error_icon" width="109" height="64"/>
+    </resources>
+</document>

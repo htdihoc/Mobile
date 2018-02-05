@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KTTS_PersonalInforVC_iPad">
+            <connections>
+                <outlet property="containerView" destination="3Xg-rz-gl7" id="U0N-CP-zvG"/>
+                <outlet property="contentBBBG" destination="mGD-Nw-0hY" id="UKP-Wx-HZ6"/>
+                <outlet property="listProperty" destination="Rue-GM-lep" id="H3W-4b-Gy5"/>
+                <outlet property="propertyDetail" destination="XOB-QK-jmg" id="CYV-9A-W74"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-rz-gl7" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rue-GM-lep" customClass="KTTS_ListPropertyView_iPad">
+                            <rect key="frame" x="16" y="16" width="154" height="571"/>
+                            <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGD-Nw-0hY" userLabel="I" customClass="KTTS_ContentBBBG_iPad">
+                            <rect key="frame" x="186" y="16" width="169" height="567"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-QK-jmg" customClass="KTTS_DetailProperty_iPad">
+                            <rect key="frame" x="186" y="16" width="173" height="571"/>
+                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XOB-QK-jmg" firstAttribute="top" secondItem="Rue-GM-lep" secondAttribute="top" id="8DQ-Sb-gdv"/>
+                        <constraint firstAttribute="bottom" secondItem="Rue-GM-lep" secondAttribute="bottom" constant="16" id="CFS-Vd-oEm"/>
+                        <constraint firstItem="mGD-Nw-0hY" firstAttribute="top" secondItem="3Xg-rz-gl7" secondAttribute="top" constant="16" id="Me2-CC-7ls"/>
+                        <constraint firstAttribute="trailing" secondItem="mGD-Nw-0hY" secondAttribute="trailing" constant="20" id="Nib-3k-41u"/>
+                        <constraint firstAttribute="trailing" secondItem="XOB-QK-jmg" secondAttribute="trailing" constant="16" id="Rsn-Qg-tvR"/>
+                        <constraint firstItem="mGD-Nw-0hY" firstAttribute="leading" secondItem="Rue-GM-lep" secondAttribute="trailing" constant="16" id="aSs-1z-ovg"/>
+                        <constraint firstItem="Rue-GM-lep" firstAttribute="leading" secondItem="3Xg-rz-gl7" secondAttribute="leading" constant="16" id="cgx-fU-CQR"/>
+                        <constraint firstItem="Rue-GM-lep" firstAttribute="width" secondItem="3Xg-rz-gl7" secondAttribute="width" multiplier="0.49" constant="-30" id="chq-h1-Q33"/>
+                        <constraint firstItem="XOB-QK-jmg" firstAttribute="leading" secondItem="Rue-GM-lep" secondAttribute="trailing" constant="16" id="evq-Ek-ctG"/>
+                        <constraint firstItem="Rue-GM-lep" firstAttribute="top" secondItem="3Xg-rz-gl7" secondAttribute="top" constant="16" id="f3K-yr-tCL"/>
+                        <constraint firstAttribute="bottom" secondItem="XOB-QK-jmg" secondAttribute="bottom" constant="16" id="gbw-7a-XTn"/>
+                        <constraint firstItem="mGD-Nw-0hY" firstAttribute="top" secondItem="XOB-QK-jmg" secondAttribute="top" id="iqJ-2l-TRF"/>
+                        <constraint firstAttribute="bottom" secondItem="mGD-Nw-0hY" secondAttribute="bottom" constant="20" id="qtu-qk-VcI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Xg-rz-gl7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="64V-bJ-MEp"/>
+                <constraint firstAttribute="trailing" secondItem="3Xg-rz-gl7" secondAttribute="trailing" id="Qhp-dq-Em6"/>
+                <constraint firstAttribute="bottom" secondItem="3Xg-rz-gl7" secondAttribute="bottom" id="VTj-jt-iPA"/>
+                <constraint firstItem="3Xg-rz-gl7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nEc-nj-BoA"/>
+            </constraints>
+            <point key="canvasLocation" x="-265.5" y="8.5"/>
+        </view>
+    </objects>
+</document>

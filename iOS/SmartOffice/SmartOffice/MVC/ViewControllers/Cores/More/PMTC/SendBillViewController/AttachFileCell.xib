@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="attachFileCell" rowHeight="100" id="9Dy-Fb-kHD" customClass="AttachFileCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Dy-Fb-kHD" id="qec-eJ-Rqn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File đính kèm ảnh chụp hóa đơn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ex-1k-9Zw">
+                        <rect key="frame" x="16" y="12" width="243" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ssU-Tg-gTU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9O-Ff-vGw">
+                        <rect key="frame" x="109.5" y="50" width="36" height="29.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="z9O-Ff-vGw" secondAttribute="height" multiplier="96:79" id="MLy-jw-bWC"/>
+                            <constraint firstAttribute="width" constant="36" id="O6g-gA-627"/>
+                        </constraints>
+                        <state key="normal" image="icon_PMTC_camera"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-cu-8v9">
+                        <rect key="frame" x="229.5" y="49.5" width="36" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="3SF-5y-xg3"/>
+                            <constraint firstAttribute="width" secondItem="iGQ-cu-8v9" secondAttribute="height" multiplier="96:76" id="OSF-ko-o4T"/>
+                        </constraints>
+                        <state key="normal" image="icon_PMTC_image"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1Z-QQ-PRT">
+                        <rect key="frame" x="260" y="13" width="8.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iGQ-cu-8v9" firstAttribute="centerY" secondItem="z9O-Ff-vGw" secondAttribute="centerY" id="40L-7n-cMn"/>
+                    <constraint firstItem="9ex-1k-9Zw" firstAttribute="leading" secondItem="qec-eJ-Rqn" secondAttribute="leading" constant="16" id="5NT-ts-w2L"/>
+                    <constraint firstItem="h1Z-QQ-PRT" firstAttribute="centerY" secondItem="9ex-1k-9Zw" secondAttribute="centerY" id="BLp-3W-4KA"/>
+                    <constraint firstItem="9ex-1k-9Zw" firstAttribute="top" secondItem="qec-eJ-Rqn" secondAttribute="top" constant="12" id="EWa-FH-03S"/>
+                    <constraint firstItem="h1Z-QQ-PRT" firstAttribute="leading" secondItem="9ex-1k-9Zw" secondAttribute="trailing" constant="1" id="O2y-Bc-hwJ"/>
+                    <constraint firstItem="z9O-Ff-vGw" firstAttribute="top" secondItem="9ex-1k-9Zw" secondAttribute="bottom" constant="16" id="fam-Fh-lS5"/>
+                    <constraint firstItem="z9O-Ff-vGw" firstAttribute="centerX" secondItem="qec-eJ-Rqn" secondAttribute="centerX" constant="-60" id="hDm-MK-5xz"/>
+                    <constraint firstItem="iGQ-cu-8v9" firstAttribute="centerX" secondItem="qec-eJ-Rqn" secondAttribute="centerX" constant="60" id="i5l-sr-vON"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attacgFileTittle" destination="9ex-1k-9Zw" id="Qik-K4-CdB"/>
+                <outlet property="camera_button" destination="z9O-Ff-vGw" id="z1J-Z7-bZy"/>
+                <outlet property="cst_camera" destination="hDm-MK-5xz" id="LWP-M5-Dmo"/>
+                <outlet property="cst_library" destination="i5l-sr-vON" id="wRW-eu-AQg"/>
+                <outlet property="image_button" destination="iGQ-cu-8v9" id="GpH-HK-Edf"/>
+            </connections>
+            <point key="canvasLocation" x="-53.5" y="88"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_PMTC_camera" width="256" height="211"/>
+        <image name="icon_PMTC_image" width="256" height="203"/>
+    </resources>
+</document>

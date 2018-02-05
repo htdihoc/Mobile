@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date View Controller i Pad-->
+        <scene sceneID="WIY-DR-gkc">
+            <objects>
+                <viewController id="Pbj-Sy-XnN" customClass="PMTC_UPDateViewController_iPad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L1X-g1-gMg"/>
+                        <viewControllerLayoutGuide type="bottom" id="99C-Kb-Mzr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OuS-1H-nEU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-PV-DoR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chi tiết chứng từ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKe-1c-cIM">
+                                        <rect key="frame" x="16" y="15.5" width="133" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uKe-1c-cIM" firstAttribute="centerY" secondItem="EIM-PV-DoR" secondAttribute="centerY" id="LQc-B3-AHb"/>
+                                    <constraint firstItem="uKe-1c-cIM" firstAttribute="leading" secondItem="EIM-PV-DoR" secondAttribute="leading" constant="16" id="hqV-b4-E64"/>
+                                    <constraint firstAttribute="height" constant="50" id="jc6-SN-Pgy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIs-XT-DDi">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX9-PX-2YR">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="x1H-V2-fSd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <state key="normal" title="Huỷ">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonAction:" destination="Pbj-Sy-XnN" eventType="touchUpInside" id="hca-dm-Ogg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-or-YSK">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="HpG-9P-87a"/>
+                                        </constraints>
+                                        <state key="normal" title="Cập nhật">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateButtonAction:" destination="Pbj-Sy-XnN" eventType="touchUpInside" id="XN6-tU-NjB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="sX9-PX-2YR" firstAttribute="width" secondItem="tIs-XT-DDi" secondAttribute="width" multiplier="0.5" id="Bi4-NK-Hez"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ci-or-YSK" secondAttribute="trailing" id="Je1-9n-hxK"/>
+                                    <constraint firstItem="1ci-or-YSK" firstAttribute="top" secondItem="tIs-XT-DDi" secondAttribute="top" id="Kg0-Xf-Xpi"/>
+                                    <constraint firstItem="1ci-or-YSK" firstAttribute="width" secondItem="sX9-PX-2YR" secondAttribute="width" id="OXU-Tv-VhQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="1ci-or-YSK" secondAttribute="bottom" id="Sa4-9m-Nwa"/>
+                                    <constraint firstAttribute="bottom" secondItem="sX9-PX-2YR" secondAttribute="bottom" id="Sfk-P8-EmY"/>
+                                    <constraint firstItem="sX9-PX-2YR" firstAttribute="top" secondItem="tIs-XT-DDi" secondAttribute="top" id="rg2-uH-LaO"/>
+                                    <constraint firstItem="sX9-PX-2YR" firstAttribute="leading" secondItem="tIs-XT-DDi" secondAttribute="leading" id="teH-Zg-9if"/>
+                                    <constraint firstAttribute="height" constant="60" id="xyC-TA-1Ac"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tSq-hl-qRI">
+                                <rect key="frame" x="0.0" y="50" width="375" height="557"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tIs-XT-DDi" secondAttribute="trailing" id="0lh-rY-ufI"/>
+                            <constraint firstItem="tSq-hl-qRI" firstAttribute="leading" secondItem="OuS-1H-nEU" secondAttribute="leading" id="0oe-Yn-Yfj"/>
+                            <constraint firstItem="EIM-PV-DoR" firstAttribute="leading" secondItem="OuS-1H-nEU" secondAttribute="leading" id="8n1-q9-sF2"/>
+                            <constraint firstItem="99C-Kb-Mzr" firstAttribute="top" secondItem="tIs-XT-DDi" secondAttribute="bottom" id="9In-hZ-meQ"/>
+                            <constraint firstItem="EIM-PV-DoR" firstAttribute="top" secondItem="L1X-g1-gMg" secondAttribute="bottom" id="H4u-OL-j02"/>
+                            <constraint firstItem="tIs-XT-DDi" firstAttribute="leading" secondItem="OuS-1H-nEU" secondAttribute="leading" id="PV3-sB-4zI"/>
+                            <constraint firstAttribute="trailing" secondItem="tSq-hl-qRI" secondAttribute="trailing" id="Zb3-ZL-gQ8"/>
+                            <constraint firstItem="tSq-hl-qRI" firstAttribute="top" secondItem="EIM-PV-DoR" secondAttribute="bottom" id="iZb-MK-2n7"/>
+                            <constraint firstAttribute="trailing" secondItem="EIM-PV-DoR" secondAttribute="trailing" id="zAt-Kc-ug0"/>
+                            <constraint firstItem="tIs-XT-DDi" firstAttribute="top" secondItem="tSq-hl-qRI" secondAttribute="bottom" id="zn0-bq-cpg"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="sX9-PX-2YR" id="tL7-Y4-gru"/>
+                        <outlet property="tittleLabel" destination="uKe-1c-cIM" id="MA0-PE-ykh"/>
+                        <outlet property="updateButton" destination="1ci-or-YSK" id="TpC-hi-bo5"/>
+                        <outlet property="updateInvoiceTableview" destination="tSq-hl-qRI" id="QS3-Ie-61t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEW-pS-cSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138.40000000000001" y="-5.8470764617691158"/>
+        </scene>
+    </scenes>
+</document>

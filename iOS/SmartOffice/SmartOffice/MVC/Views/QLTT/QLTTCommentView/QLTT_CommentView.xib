@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QLTT_CommentView">
+            <connections>
+                <outlet property="btn_ClearText" destination="BlZ-FQ-8eg" id="LCs-Wk-C3c"/>
+                <outlet property="btn_SendMess" destination="YXr-xp-a2z" id="8Zm-oE-Wy2"/>
+                <outlet property="cst_BottomView" destination="8dk-v3-oz2" id="2jc-tv-pX8"/>
+                <outlet property="cst_spaceBottomTableView" destination="7Fo-TD-aLz" id="VJ7-hH-ZiP"/>
+                <outlet property="searchView" destination="gHZ-JI-nkw" id="YLK-OG-qK6"/>
+                <outlet property="tbl_Comments" destination="eI5-bI-2Aw" id="Oem-Vm-KLU"/>
+                <outlet property="tv_Comment" destination="GaK-IO-J3L" id="Kpg-fI-dvp"/>
+                <outlet property="tv_CstHeight" destination="2v2-zP-d8H" id="811-SC-cFu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHZ-JI-nkw" userLabel="SearchView">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXr-xp-a2z">
+                            <rect key="frame" x="322" y="8" width="45" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AmO-sS-1EB"/>
+                                <constraint firstAttribute="width" constant="45" id="GXc-lS-IOa"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" title="123" image="sendMessage">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendMessage:" destination="-1" eventType="touchUpInside" id="VFI-7o-hQ9"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GaK-IO-J3L" customClass="UIPlaceHolderTextView">
+                            <rect key="frame" x="8" y="8" width="306" height="39"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlZ-FQ-8eg">
+                            <rect key="frame" x="278" y="10" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="8mA-UQ-W3n"/>
+                                <constraint firstAttribute="width" constant="36" id="NpO-xD-4hp"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" image="clearButton"/>
+                            <connections>
+                                <action selector="clearText:" destination="-1" eventType="touchUpInside" id="blk-WK-I0m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="2v2-zP-d8H"/>
+                        <constraint firstItem="YXr-xp-a2z" firstAttribute="leading" secondItem="BlZ-FQ-8eg" secondAttribute="trailing" constant="8" id="L08-aY-eyv"/>
+                        <constraint firstItem="YXr-xp-a2z" firstAttribute="centerY" secondItem="GaK-IO-J3L" secondAttribute="centerY" id="SaC-wU-Smf"/>
+                        <constraint firstItem="GaK-IO-J3L" firstAttribute="top" secondItem="gHZ-JI-nkw" secondAttribute="top" constant="8" id="VDs-Jv-chS"/>
+                        <constraint firstItem="BlZ-FQ-8eg" firstAttribute="centerY" secondItem="GaK-IO-J3L" secondAttribute="centerY" id="aXR-Io-plM"/>
+                        <constraint firstAttribute="trailing" secondItem="YXr-xp-a2z" secondAttribute="trailing" constant="8" id="cBk-sN-bLJ"/>
+                        <constraint firstAttribute="bottom" secondItem="GaK-IO-J3L" secondAttribute="bottom" constant="8" id="crA-4m-yyL"/>
+                        <constraint firstItem="YXr-xp-a2z" firstAttribute="leading" secondItem="GaK-IO-J3L" secondAttribute="trailing" constant="8" id="iF5-oo-PhD"/>
+                        <constraint firstItem="GaK-IO-J3L" firstAttribute="leading" secondItem="gHZ-JI-nkw" secondAttribute="leading" constant="8" id="kBN-LC-QaZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eI5-bI-2Aw" customClass="FullWidthSeperatorTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="596"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eI5-bI-2Aw" secondAttribute="trailing" id="6Ca-ff-NzS"/>
+                <constraint firstItem="eI5-bI-2Aw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6Hj-8V-ZwZ"/>
+                <constraint firstItem="gHZ-JI-nkw" firstAttribute="top" secondItem="eI5-bI-2Aw" secondAttribute="bottom" constant="16" id="7Fo-TD-aLz"/>
+                <constraint firstAttribute="bottom" secondItem="gHZ-JI-nkw" secondAttribute="bottom" id="8dk-v3-oz2"/>
+                <constraint firstItem="gHZ-JI-nkw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ell-bx-wW2"/>
+                <constraint firstItem="eI5-bI-2Aw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K02-dD-no7"/>
+                <constraint firstAttribute="trailing" secondItem="gHZ-JI-nkw" secondAttribute="trailing" id="ks7-hB-bzX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clearButton" width="342" height="342"/>
+        <image name="sendMessage" width="54" height="46"/>
+    </resources>
+</document>

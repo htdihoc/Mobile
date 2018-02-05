@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voucher Detail View Controller-->
+        <scene sceneID="wUV-hc-zZN">
+            <objects>
+                <viewController storyboardIdentifier="VoucherDetailViewController" id="Ltk-JX-yHm" customClass="VoucherDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xBS-7k-13Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQb-xh-Nbn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iVd-8J-tzC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-B2-wK9" userLabel="Sendbilldetail Table View">
+                                <rect key="frame" x="0.0" y="44" width="375" height="583"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ltk-JX-yHm" id="O1r-ea-ASC"/>
+                                    <outlet property="delegate" destination="Ltk-JX-yHm" id="nFC-hn-A7h"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPh-z2-MMl">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpS-U9-cvw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.16420683259999999" green="0.48917067050000002" blue="0.71679288149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Cập nhật">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateInvoiceAction:" destination="Ltk-JX-yHm" eventType="touchUpInside" id="yP9-II-gup"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QpS-U9-cvw" firstAttribute="leading" secondItem="BPh-z2-MMl" secondAttribute="leading" id="3dW-8B-2SK"/>
+                                    <constraint firstAttribute="trailing" secondItem="QpS-U9-cvw" secondAttribute="trailing" id="ZxB-Me-AKr"/>
+                                    <constraint firstItem="QpS-U9-cvw" firstAttribute="top" secondItem="BPh-z2-MMl" secondAttribute="top" id="dy4-Td-24H"/>
+                                    <constraint firstAttribute="bottom" secondItem="QpS-U9-cvw" secondAttribute="bottom" id="ibC-QQ-D94"/>
+                                    <constraint firstAttribute="height" constant="60" id="okO-8U-8UA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VQb-xh-Nbn" firstAttribute="top" secondItem="BPh-z2-MMl" secondAttribute="bottom" id="Dtq-Xv-J45"/>
+                            <constraint firstItem="kGF-B2-wK9" firstAttribute="leading" secondItem="iVd-8J-tzC" secondAttribute="leading" id="QtN-xM-mR3"/>
+                            <constraint firstAttribute="trailing" secondItem="kGF-B2-wK9" secondAttribute="trailing" id="Ub6-3d-MIX"/>
+                            <constraint firstItem="BPh-z2-MMl" firstAttribute="leading" secondItem="iVd-8J-tzC" secondAttribute="leading" id="Vue-lT-E9x"/>
+                            <constraint firstItem="kGF-B2-wK9" firstAttribute="top" secondItem="iVd-8J-tzC" secondAttribute="top" constant="44" id="Z35-8K-GK8"/>
+                            <constraint firstItem="BPh-z2-MMl" firstAttribute="top" secondItem="kGF-B2-wK9" secondAttribute="bottom" constant="-20" id="l00-kU-tMg"/>
+                            <constraint firstAttribute="trailing" secondItem="BPh-z2-MMl" secondAttribute="trailing" id="u82-0o-d4q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sendbilldetailTableView" destination="kGF-B2-wK9" id="cUT-Z8-Qem"/>
+                        <outlet property="updateInvoiceButton" destination="QpS-U9-cvw" id="t2Y-QS-nKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcg-2a-07A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="148.87556221889056"/>
+        </scene>
+    </scenes>
+</document>

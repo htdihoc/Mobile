@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewFormVC_iPad">
+            <connections>
+                <outlet property="containerView1" destination="8wu-TN-sBb" id="UCG-ji-7cd"/>
+                <outlet property="containerView2" destination="4Pr-gh-gNq" id="Pcf-Jn-Ile"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pr-gh-gNq">
+                    <rect key="frame" x="409.5" y="0.0" width="614.5" height="768"/>
+                    <color key="backgroundColor" red="0.9719445109" green="0.56368219850000001" blue="0.0069379513150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wu-TN-sBb">
+                    <rect key="frame" x="0.0" y="0.0" width="409.5" height="768"/>
+                    <color key="backgroundColor" red="0.26641806959999997" green="0.90100926160000006" blue="0.32635584470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91417306659999997" green="0.91745448110000005" blue="0.92587763069999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8wu-TN-sBb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JsL-rN-Ptf"/>
+                <constraint firstItem="8wu-TN-sBb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2/5" id="OLv-DG-skv"/>
+                <constraint firstAttribute="bottom" secondItem="8wu-TN-sBb" secondAttribute="bottom" id="XEp-iY-XLu"/>
+                <constraint firstAttribute="bottom" secondItem="4Pr-gh-gNq" secondAttribute="bottom" id="Yb1-BA-UKi"/>
+                <constraint firstItem="4Pr-gh-gNq" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3/5" id="c5X-3I-cDe"/>
+                <constraint firstAttribute="trailing" secondItem="4Pr-gh-gNq" secondAttribute="trailing" id="iRX-Re-Ur9"/>
+                <constraint firstItem="4Pr-gh-gNq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="l2Z-e4-zcK"/>
+                <constraint firstItem="8wu-TN-sBb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uFP-mO-aTN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

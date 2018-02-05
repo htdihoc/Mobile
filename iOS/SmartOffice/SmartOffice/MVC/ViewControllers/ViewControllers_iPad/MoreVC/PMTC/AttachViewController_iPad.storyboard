@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Attach View Controller i Pad-->
+        <scene sceneID="7nb-bQ-ZZO">
+            <objects>
+                <viewController storyboardIdentifier="AttachViewController_iPad" automaticallyAdjustsScrollViewInsets="NO" id="Hcf-xW-tHn" customClass="AttachViewController_iPad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xvu-ww-Gjs"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wB-KP-WPf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RQY-R0-U0C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eju-hr-hOw">
+                                <rect key="frame" x="0.0" y="686" width="207" height="50"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ArL-yu-39k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="HUỶ">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="Hcf-xW-tHn" eventType="touchUpInside" id="Z1q-Cb-1Ph"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1T-YD-tpe">
+                                <rect key="frame" x="207" y="686" width="207" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kkw-B6-Tfx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="GỬI HOÁ ĐƠN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendbillAction:" destination="Hcf-xW-tHn" eventType="touchUpInside" id="LPf-20-MD0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Eju-hr-hOw" firstAttribute="width" secondItem="RQY-R0-U0C" secondAttribute="width" multiplier="0.5" id="161-zi-lD9"/>
+                            <constraint firstItem="4wB-KP-WPf" firstAttribute="top" secondItem="Z1T-YD-tpe" secondAttribute="bottom" id="1sF-2D-9x6"/>
+                            <constraint firstAttribute="trailing" secondItem="Z1T-YD-tpe" secondAttribute="trailing" id="AAx-yR-JsM"/>
+                            <constraint firstItem="Z1T-YD-tpe" firstAttribute="width" secondItem="RQY-R0-U0C" secondAttribute="width" multiplier="0.5" id="Dak-8q-Zwl"/>
+                            <constraint firstItem="Eju-hr-hOw" firstAttribute="leading" secondItem="RQY-R0-U0C" secondAttribute="leading" id="PuU-ob-ABd"/>
+                            <constraint firstItem="4wB-KP-WPf" firstAttribute="top" secondItem="Eju-hr-hOw" secondAttribute="bottom" id="Tqe-Bb-y65"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSendInvoice" destination="Z1T-YD-tpe" id="avE-sr-7Q9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPj-QP-BOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+</document>

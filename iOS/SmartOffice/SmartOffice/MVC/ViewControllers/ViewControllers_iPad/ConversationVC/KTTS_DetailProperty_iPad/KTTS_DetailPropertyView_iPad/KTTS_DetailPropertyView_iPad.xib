@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KTTS_DetailPropertyView_iPad">
+            <connections>
+                <outlet property="btn_Confirm" destination="CEf-NJ-2HK" id="FvB-pR-ctv"/>
+                <outlet property="lbl_title" destination="8Me-8a-2BM" id="oR9-Qb-M3D"/>
+                <outlet property="tbl_Detail" destination="VTp-OX-kwe" id="M22-mJ-2cN"/>
+                <outlet property="titleView" destination="sez-Pc-aOa" id="5GB-nD-7HN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEf-NJ-2HK">
+                    <rect key="frame" x="201" y="607" width="150" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="action_Confirm:" destination="-1" eventType="touchUpInside" id="NTN-Ue-8IA"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sez-Pc-aOa" userLabel="Title View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-8a-2BM" customClass="SOInsectTextLabel">
+                            <rect key="frame" x="16" y="0.0" width="359" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="8Me-8a-2BM" firstAttribute="leading" secondItem="sez-Pc-aOa" secondAttribute="leading" constant="16" id="VBi-69-37L"/>
+                        <constraint firstItem="8Me-8a-2BM" firstAttribute="top" secondItem="sez-Pc-aOa" secondAttribute="top" id="bJx-ZH-wZy"/>
+                        <constraint firstAttribute="trailing" secondItem="8Me-8a-2BM" secondAttribute="trailing" id="m3j-MK-tia"/>
+                        <constraint firstAttribute="bottom" secondItem="8Me-8a-2BM" secondAttribute="bottom" id="m75-T0-Dps"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGq-gw-YLA" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="40" width="375" height="551"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VTp-OX-kwe" customClass="FullWidthSeperatorTableView">
+                            <rect key="frame" x="0.0" y="8" width="375" height="543"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VTp-OX-kwe" firstAttribute="leading" secondItem="eGq-gw-YLA" secondAttribute="leading" id="Ljt-ME-ucS"/>
+                        <constraint firstAttribute="bottom" secondItem="VTp-OX-kwe" secondAttribute="bottom" id="VYj-dH-Fmm"/>
+                        <constraint firstAttribute="trailing" secondItem="VTp-OX-kwe" secondAttribute="trailing" id="WyY-v0-HBU"/>
+                        <constraint firstItem="VTp-OX-kwe" firstAttribute="top" secondItem="eGq-gw-YLA" secondAttribute="top" constant="8" id="bdj-Ai-y7g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sez-Pc-aOa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7go-OC-enU"/>
+                <constraint firstAttribute="trailing" secondItem="eGq-gw-YLA" secondAttribute="trailing" id="BUu-Zm-sJG"/>
+                <constraint firstItem="CEf-NJ-2HK" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.066" id="EJc-PF-hOe"/>
+                <constraint firstItem="sez-Pc-aOa" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="KAx-YX-OsN"/>
+                <constraint firstAttribute="bottom" secondItem="CEf-NJ-2HK" secondAttribute="bottom" constant="16" id="MC9-dk-Nne"/>
+                <constraint firstItem="CEf-NJ-2HK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="MVQ-YR-sIJ"/>
+                <constraint firstItem="CEf-NJ-2HK" firstAttribute="top" secondItem="eGq-gw-YLA" secondAttribute="bottom" constant="16" id="MXC-6S-CqO"/>
+                <constraint firstItem="eGq-gw-YLA" firstAttribute="top" secondItem="sez-Pc-aOa" secondAttribute="bottom" id="Mpb-xF-3c4"/>
+                <constraint firstAttribute="trailing" secondItem="CEf-NJ-2HK" secondAttribute="trailing" constant="24" id="ZMV-O5-YWu"/>
+                <constraint firstItem="eGq-gw-YLA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aoN-RR-LYk"/>
+                <constraint firstItem="sez-Pc-aOa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w7j-zy-M5F"/>
+                <constraint firstItem="sez-Pc-aOa" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.06" id="ziM-se-S2m"/>
+            </constraints>
+            <point key="canvasLocation" x="381" y="-20"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOffice_ListWork_iPad">
+            <connections>
+                <outlet property="tbl_ListMission" destination="aac-dP-wO6" id="qhY-dB-BdD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-zY-x6d" userLabel="SegmentedView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3E8-Ib-vcN">
+                            <rect key="frame" x="40" y="8" width="295" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="XjW-Rd-0xz"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Thực hiện"/>
+                                <segment title="Giao đi"/>
+                            </segments>
+                            <color key="tintColor" red="0.0078431372550000003" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="size" keyPath="size">
+                                    <size key="value" width="80" height="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3E8-Ib-vcN" secondAttribute="trailing" constant="40" id="Aul-ZK-I0D"/>
+                        <constraint firstAttribute="height" constant="44" id="lks-hG-iA6"/>
+                        <constraint firstItem="3E8-Ib-vcN" firstAttribute="centerY" secondItem="aLm-zY-x6d" secondAttribute="centerY" id="mJj-O4-Di9"/>
+                        <constraint firstItem="3E8-Ib-vcN" firstAttribute="leading" secondItem="aLm-zY-x6d" secondAttribute="leading" constant="40" id="pkc-Oh-jaz"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aac-dP-wO6">
+                    <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-C7-ZuZ" userLabel="SearchView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" placeholder="Tìm kiếm theo tên và đơn vị" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p57-b6-PbC" customClass="SOSearchBar">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="barTintColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-zP-Vjc">
+                            <rect key="frame" x="337" y="10" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="8cg-gS-vHa"/>
+                                <constraint firstAttribute="height" constant="25" id="r5e-Gl-Hmm"/>
+                            </constraints>
+                            <state key="normal" image="filter_icon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="p57-b6-PbC" secondAttribute="bottom" id="7EM-U7-IUz"/>
+                        <constraint firstItem="p57-b6-PbC" firstAttribute="leading" secondItem="XaP-C7-ZuZ" secondAttribute="leading" id="Jtt-v2-Kwj"/>
+                        <constraint firstAttribute="trailing" secondItem="Kkk-zP-Vjc" secondAttribute="trailing" constant="13" id="LGl-MJ-53Z"/>
+                        <constraint firstItem="Kkk-zP-Vjc" firstAttribute="leading" secondItem="p57-b6-PbC" secondAttribute="trailing" constant="6" id="gDk-UT-Aps"/>
+                        <constraint firstItem="p57-b6-PbC" firstAttribute="top" secondItem="XaP-C7-ZuZ" secondAttribute="top" id="rNa-fg-kWq"/>
+                        <constraint firstItem="Kkk-zP-Vjc" firstAttribute="centerY" secondItem="XaP-C7-ZuZ" secondAttribute="centerY" id="vTF-LJ-BoS"/>
+                        <constraint firstAttribute="height" constant="44" id="z5J-7n-8KL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XaP-C7-ZuZ" firstAttribute="top" secondItem="aLm-zY-x6d" secondAttribute="bottom" id="9Yf-2E-SYK"/>
+                <constraint firstAttribute="trailing" secondItem="XaP-C7-ZuZ" secondAttribute="trailing" id="CtG-8I-ALG"/>
+                <constraint firstAttribute="trailing" secondItem="aLm-zY-x6d" secondAttribute="trailing" id="F2o-HY-RP6"/>
+                <constraint firstAttribute="trailing" secondItem="aac-dP-wO6" secondAttribute="trailing" id="HCo-qo-oV2"/>
+                <constraint firstItem="aLm-zY-x6d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HI5-bh-TLu"/>
+                <constraint firstItem="aac-dP-wO6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WSb-qw-uKg"/>
+                <constraint firstItem="XaP-C7-ZuZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c3s-Za-s55"/>
+                <constraint firstItem="aac-dP-wO6" firstAttribute="top" secondItem="XaP-C7-ZuZ" secondAttribute="bottom" id="oqt-lK-DO3"/>
+                <constraint firstItem="aLm-zY-x6d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vSJ-kL-2zh"/>
+                <constraint firstAttribute="bottom" secondItem="aac-dP-wO6" secondAttribute="bottom" id="xbU-Bg-Hcq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="filter_icon" width="32" height="32"/>
+    </resources>
+</document>

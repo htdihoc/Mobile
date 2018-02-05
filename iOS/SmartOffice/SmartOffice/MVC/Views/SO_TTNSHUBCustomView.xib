@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SO_TTNSHUBCustomView">
+            <connections>
+                <outlet property="imgIndicator" destination="b7Y-Ac-IbF" id="edw-oE-jJr"/>
+                <outlet property="imgLogo" destination="aRm-aR-KKQ" id="Yje-DV-1tA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eRA-Fe-OcH">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HUD_SO_loading" translatesAutoresizingMaskIntoConstraints="NO" id="b7Y-Ac-IbF">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HUD_SO_logo" translatesAutoresizingMaskIntoConstraints="NO" id="aRm-aR-KKQ">
+                    <rect key="frame" x="15" y="15" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aRm-aR-KKQ" firstAttribute="top" secondItem="eRA-Fe-OcH" secondAttribute="top" constant="15" id="56P-d9-k8b"/>
+                <constraint firstItem="aRm-aR-KKQ" firstAttribute="leading" secondItem="eRA-Fe-OcH" secondAttribute="leading" constant="15" id="9cW-7I-EBb"/>
+                <constraint firstAttribute="bottom" secondItem="aRm-aR-KKQ" secondAttribute="bottom" constant="15" id="JJO-a1-x5j"/>
+                <constraint firstAttribute="bottom" secondItem="b7Y-Ac-IbF" secondAttribute="bottom" id="Lo7-Pm-g6s"/>
+                <constraint firstAttribute="trailing" secondItem="aRm-aR-KKQ" secondAttribute="trailing" constant="15" id="QL7-Rj-FJ7"/>
+                <constraint firstAttribute="trailing" secondItem="b7Y-Ac-IbF" secondAttribute="trailing" id="bm9-dc-963"/>
+                <constraint firstItem="b7Y-Ac-IbF" firstAttribute="top" secondItem="eRA-Fe-OcH" secondAttribute="top" id="bz8-m9-PMb"/>
+                <constraint firstItem="b7Y-Ac-IbF" firstAttribute="leading" secondItem="eRA-Fe-OcH" secondAttribute="leading" id="xdk-zM-gss"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="18" y="36"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HUD_SO_loading" width="75" height="75"/>
+        <image name="HUD_SO_logo" width="50" height="25"/>
+    </resources>
+</document>

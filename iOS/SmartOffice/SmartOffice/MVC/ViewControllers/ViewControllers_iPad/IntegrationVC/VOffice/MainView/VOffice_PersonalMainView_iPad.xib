@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOffice_PersonalMainView_iPad">
+            <connections>
+                <outlet property="containerDocumentView" destination="jeE-5a-wvq" id="GUV-em-yZp"/>
+                <outlet property="containerMeetingView" destination="Yas-zD-fsb" id="cHo-Jk-tCM"/>
+                <outlet property="containerWorkPlan" destination="En4-ND-sic" id="50M-Pd-lWu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qps-Fg-9sf">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-zD-fsb" customClass="WorkNoDataView">
+                            <rect key="frame" x="142" y="8" width="150" height="659"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="En4-ND-sic" customClass="WorkNoDataView">
+                            <rect key="frame" x="8" y="8" width="126" height="317.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeE-5a-wvq" customClass="WorkNoDataView">
+                            <rect key="frame" x="8" y="335.5" width="126" height="331.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jeE-5a-wvq" secondAttribute="bottom" id="0m4-6N-01M"/>
+                        <constraint firstItem="Yas-zD-fsb" firstAttribute="bottom" secondItem="jeE-5a-wvq" secondAttribute="bottom" id="5Fq-05-EZF"/>
+                        <constraint firstAttribute="trailing" secondItem="Yas-zD-fsb" secondAttribute="trailing" constant="8" id="IVE-ec-Ybl"/>
+                        <constraint firstItem="En4-ND-sic" firstAttribute="leading" secondItem="qps-Fg-9sf" secondAttribute="leading" constant="8" id="LFO-FP-jHm"/>
+                        <constraint firstItem="Yas-zD-fsb" firstAttribute="top" secondItem="qps-Fg-9sf" secondAttribute="top" constant="8" id="LVv-74-AkX"/>
+                        <constraint firstItem="jeE-5a-wvq" firstAttribute="trailing" secondItem="En4-ND-sic" secondAttribute="trailing" id="SAr-ze-GPA"/>
+                        <constraint firstItem="En4-ND-sic" firstAttribute="top" secondItem="qps-Fg-9sf" secondAttribute="top" constant="8" id="XaY-yl-djc"/>
+                        <constraint firstItem="jeE-5a-wvq" firstAttribute="leading" secondItem="En4-ND-sic" secondAttribute="leading" id="cx8-dq-6Us"/>
+                        <constraint firstItem="Yas-zD-fsb" firstAttribute="width" secondItem="qps-Fg-9sf" secondAttribute="width" multiplier="0.5" id="d1U-d2-tcO"/>
+                        <constraint firstItem="jeE-5a-wvq" firstAttribute="top" secondItem="En4-ND-sic" secondAttribute="bottom" constant="10" id="gc8-r8-gxf"/>
+                        <constraint firstItem="En4-ND-sic" firstAttribute="height" secondItem="qps-Fg-9sf" secondAttribute="height" multiplier="0.5" constant="-16" id="l0a-cg-FTp"/>
+                        <constraint firstItem="Yas-zD-fsb" firstAttribute="leading" secondItem="En4-ND-sic" secondAttribute="trailing" constant="8" id="u3I-F7-B7L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qps-Fg-9sf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="11E-3o-b1U"/>
+                <constraint firstItem="qps-Fg-9sf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="31W-qr-ZYZ"/>
+                <constraint firstAttribute="bottom" secondItem="qps-Fg-9sf" secondAttribute="bottom" id="51c-kM-zui"/>
+                <constraint firstAttribute="trailing" secondItem="qps-Fg-9sf" secondAttribute="trailing" id="J19-Vl-NS5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

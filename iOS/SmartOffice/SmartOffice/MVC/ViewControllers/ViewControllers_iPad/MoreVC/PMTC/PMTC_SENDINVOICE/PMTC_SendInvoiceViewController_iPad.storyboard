@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Send Invoice View Controller i Pad-->
+        <scene sceneID="ulF-cU-54G">
+            <objects>
+                <viewController storyboardIdentifier="PMTC_SendInvoiceViewController_iPad" id="dfN-N5-fUG" customClass="PMTC_SendInvoiceViewController_iPad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2bY-ID-lum"/>
+                        <viewControllerLayoutGuide type="bottom" id="3mp-rc-hNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BU1-ax-3T2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-bP-yfO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="910-6K-Lmh">
+                                        <rect key="frame" x="16" y="15.5" width="43.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="910-6K-Lmh" firstAttribute="centerY" secondItem="rVw-bP-yfO" secondAttribute="centerY" id="2SA-xx-pRs"/>
+                                    <constraint firstAttribute="height" constant="50" id="IpM-Ib-bli"/>
+                                    <constraint firstItem="910-6K-Lmh" firstAttribute="leading" secondItem="rVw-bP-yfO" secondAttribute="leading" constant="16" id="OPZ-hD-r85"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5NQ-ne-0Ii">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rVw-bP-yfO" firstAttribute="top" secondItem="BU1-ax-3T2" secondAttribute="top" id="7m6-nb-umR"/>
+                            <constraint firstItem="rVw-bP-yfO" firstAttribute="leading" secondItem="BU1-ax-3T2" secondAttribute="leading" id="kCa-I5-NIg"/>
+                            <constraint firstItem="5NQ-ne-0Ii" firstAttribute="top" secondItem="rVw-bP-yfO" secondAttribute="bottom" id="mAg-Bc-BNp"/>
+                            <constraint firstItem="3mp-rc-hNu" firstAttribute="top" secondItem="5NQ-ne-0Ii" secondAttribute="bottom" id="s8c-OA-3dR"/>
+                            <constraint firstAttribute="trailing" secondItem="5NQ-ne-0Ii" secondAttribute="trailing" id="tbd-1C-KBv"/>
+                            <constraint firstItem="5NQ-ne-0Ii" firstAttribute="leading" secondItem="BU1-ax-3T2" secondAttribute="leading" id="uOj-DY-9PR"/>
+                            <constraint firstAttribute="trailing" secondItem="rVw-bP-yfO" secondAttribute="trailing" id="yY5-Qy-FT0"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="sendInvoiceTableView" destination="5NQ-ne-0Ii" id="ZGn-KW-v5a"/>
+                        <outlet property="titleLabel" destination="910-6K-Lmh" id="zF8-i0-Gz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjE-fl-hBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="-77.811094452773617"/>
+        </scene>
+    </scenes>
+</document>

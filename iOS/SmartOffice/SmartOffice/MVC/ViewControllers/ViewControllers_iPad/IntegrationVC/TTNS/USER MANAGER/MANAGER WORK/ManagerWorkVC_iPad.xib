@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManagerWorkVC_iPad">
+            <connections>
+                <outlet property="containerView1" destination="WeG-xs-HKG" id="xeb-bS-vkn"/>
+                <outlet property="containterView2" destination="ddu-yK-qnX" id="cAH-x6-Xo1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-yK-qnX">
+                    <rect key="frame" x="425.5" y="72" width="590.5" height="688"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-xs-HKG">
+                    <rect key="frame" x="8" y="72" width="409.5" height="688"/>
+                    <color key="backgroundColor" red="0.91199880840000003" green="0.31107968089999999" blue="0.31623542310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94637554879999997" green="0.95640259979999998" blue="0.97343736889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WeG-xs-HKG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2/5" id="2h3-6Y-i1V"/>
+                <constraint firstItem="WeG-xs-HKG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="9GW-Ej-OM0"/>
+                <constraint firstItem="ddu-yK-qnX" firstAttribute="leading" secondItem="WeG-xs-HKG" secondAttribute="trailing" constant="8" id="Jv4-Z2-ODh"/>
+                <constraint firstAttribute="trailing" secondItem="ddu-yK-qnX" secondAttribute="trailing" constant="8" id="MXp-sd-Xp8"/>
+                <constraint firstAttribute="bottom" secondItem="WeG-xs-HKG" secondAttribute="bottom" constant="8" id="Mnj-28-csF"/>
+                <constraint firstAttribute="bottom" secondItem="ddu-yK-qnX" secondAttribute="bottom" constant="8" id="aYo-lk-DRl"/>
+                <constraint firstItem="WeG-xs-HKG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="by0-Ia-Zb9"/>
+                <constraint firstItem="ddu-yK-qnX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="qdw-3P-Nix"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

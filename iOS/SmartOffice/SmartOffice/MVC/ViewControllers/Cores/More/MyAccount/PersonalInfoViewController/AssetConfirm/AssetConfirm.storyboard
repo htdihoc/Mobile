@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Asset Confirm View Controller-->
+        <scene sceneID="egS-1C-aT4">
+            <objects>
+                <viewController storyboardIdentifier="AssetConfirmViewController" automaticallyAdjustsScrollViewInsets="NO" id="5gT-Pw-Hep" customClass="AssetConfirmViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUL-zK-EYn"/>
+                        <viewControllerLayoutGuide type="bottom" id="zac-6o-vmk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tMp-IW-U79">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-Ap-twv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.52156862745098043" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wgG-my-aWv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-2O-Pvn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5gT-Pw-Hep" id="uMs-Ps-JaT"/>
+                                    <outlet property="delegate" destination="5gT-Pw-Hep" id="0PO-4X-c8H"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txT-4f-mL6">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.52156862745098043" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="heP-ME-JDn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Xác nhận tài sản">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="5gT-Pw-Hep" eventType="touchUpInside" id="5O3-K3-gMi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="txT-4f-mL6" secondAttribute="trailing" id="39R-kh-2Ri"/>
+                            <constraint firstItem="UWR-2O-Pvn" firstAttribute="leading" secondItem="tMp-IW-U79" secondAttribute="leading" id="IIQ-qD-UgG"/>
+                            <constraint firstItem="zac-6o-vmk" firstAttribute="top" secondItem="txT-4f-mL6" secondAttribute="bottom" id="Qlj-zd-ZDu"/>
+                            <constraint firstItem="RRR-Ap-twv" firstAttribute="leading" secondItem="tMp-IW-U79" secondAttribute="leading" id="UAd-b5-cPd"/>
+                            <constraint firstItem="UWR-2O-Pvn" firstAttribute="top" secondItem="IUL-zK-EYn" secondAttribute="bottom" constant="44" id="bMc-39-g5a"/>
+                            <constraint firstAttribute="trailing" secondItem="UWR-2O-Pvn" secondAttribute="trailing" id="fgz-IB-ibN"/>
+                            <constraint firstItem="txT-4f-mL6" firstAttribute="leading" secondItem="tMp-IW-U79" secondAttribute="leading" id="gJ9-U5-2NV"/>
+                            <constraint firstItem="txT-4f-mL6" firstAttribute="top" secondItem="UWR-2O-Pvn" secondAttribute="bottom" id="lGg-x8-cxo"/>
+                            <constraint firstItem="RRR-Ap-twv" firstAttribute="top" secondItem="tMp-IW-U79" secondAttribute="top" id="tj5-cE-GJn"/>
+                            <constraint firstAttribute="trailing" secondItem="RRR-Ap-twv" secondAttribute="trailing" id="zWj-ns-KXq"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="assetconfirmTableView" destination="UWR-2O-Pvn" id="Gns-YN-wK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDU-WK-aKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280.80000000000001" y="218.1409295352324"/>
+        </scene>
+    </scenes>
+</document>

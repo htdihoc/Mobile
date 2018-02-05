@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Perform Survey View Controller-->
+        <scene sceneID="OcN-nt-dyk">
+            <objects>
+                <viewController storyboardIdentifier="PerformSurveyViewController" id="WXa-8o-rv1" customClass="PerformSurveyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yP2-Qe-w6d"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mq4-Fe-JQU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iuL-rZ-G8W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEq-St-HY6" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVr-Iz-XYS" userLabel="NavigationBarView">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj7-AM-7L8">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="113" id="4R3-HK-r8t"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="backAction:" destination="WXa-8o-rv1" eventType="touchUpInside" id="WFq-WK-WPO"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_back" translatesAutoresizingMaskIntoConstraints="NO" id="Hes-df-rYA">
+                                                <rect key="frame" x="16" y="13" width="18" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="7EW-lS-8Pr"/>
+                                                    <constraint firstAttribute="width" constant="18" id="D9E-e3-zxi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thực hiện Survey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-6C-upc">
+                                                <rect key="frame" x="50" y="10" width="160" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="HKV-wA-HlU"/>
+                                                    <constraint firstAttribute="height" constant="24" id="PgN-KU-QEc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="cbN-6C-upc" firstAttribute="centerY" secondItem="hVr-Iz-XYS" secondAttribute="centerY" id="1FR-yi-RjX"/>
+                                            <constraint firstItem="cbN-6C-upc" firstAttribute="leading" secondItem="Hes-df-rYA" secondAttribute="trailing" constant="16" id="1qj-Rq-Bu0"/>
+                                            <constraint firstItem="Hes-df-rYA" firstAttribute="leading" secondItem="hVr-Iz-XYS" secondAttribute="leading" constant="16" id="6At-0b-Cd4"/>
+                                            <constraint firstItem="Yj7-AM-7L8" firstAttribute="top" secondItem="hVr-Iz-XYS" secondAttribute="top" id="NeB-62-zYB"/>
+                                            <constraint firstAttribute="height" constant="44" id="dKv-hE-vUG"/>
+                                            <constraint firstItem="Yj7-AM-7L8" firstAttribute="leading" secondItem="hVr-Iz-XYS" secondAttribute="leading" id="fNg-06-YbJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Yj7-AM-7L8" secondAttribute="bottom" id="oz9-9w-J9F"/>
+                                            <constraint firstItem="Hes-df-rYA" firstAttribute="centerY" secondItem="hVr-Iz-XYS" secondAttribute="centerY" id="r2K-Oa-yX8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hVr-Iz-XYS" firstAttribute="leading" secondItem="qEq-St-HY6" secondAttribute="leading" id="9ju-jz-3IP"/>
+                                    <constraint firstAttribute="bottom" secondItem="hVr-Iz-XYS" secondAttribute="bottom" id="DJ4-bM-cN1"/>
+                                    <constraint firstAttribute="trailing" secondItem="hVr-Iz-XYS" secondAttribute="trailing" id="K44-fo-wn1"/>
+                                    <constraint firstAttribute="height" constant="64" id="teP-HC-mHH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qEq-St-HY6" firstAttribute="top" secondItem="iuL-rZ-G8W" secondAttribute="top" id="4Mt-cq-rG0"/>
+                            <constraint firstAttribute="trailing" secondItem="qEq-St-HY6" secondAttribute="trailing" id="ZQI-wb-oKE"/>
+                            <constraint firstItem="qEq-St-HY6" firstAttribute="leading" secondItem="iuL-rZ-G8W" secondAttribute="leading" id="bdG-Sv-R1E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5DJ-TD-EQX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ne-tQ-FPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="-18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_back" width="128" height="128"/>
+    </resources>
+</document>

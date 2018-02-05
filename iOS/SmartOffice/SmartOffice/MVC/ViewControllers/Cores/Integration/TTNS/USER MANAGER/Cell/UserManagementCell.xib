@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="InfoEmployDetailCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UserManagementCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quản lý vào ra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUc-ih-t8A">
+                        <rect key="frame" x="73" y="13" width="239" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_in_out_manager" translatesAutoresizingMaskIntoConstraints="NO" id="9xv-3U-Wpo">
+                        <rect key="frame" x="24" y="9" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Ky9-Kf-AMS"/>
+                            <constraint firstAttribute="height" constant="25" id="bmf-33-LEh"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jUc-ih-t8A" firstAttribute="centerY" secondItem="9xv-3U-Wpo" secondAttribute="centerY" id="Tj0-xk-ZCL"/>
+                    <constraint firstAttribute="trailing" secondItem="jUc-ih-t8A" secondAttribute="trailing" constant="8" id="dXz-FI-8zG"/>
+                    <constraint firstItem="9xv-3U-Wpo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fLv-Oj-4qo"/>
+                    <constraint firstItem="9xv-3U-Wpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="feB-HR-aLT"/>
+                    <constraint firstItem="jUc-ih-t8A" firstAttribute="leading" secondItem="9xv-3U-Wpo" secondAttribute="trailing" constant="24" id="uKu-TX-NbK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImg" destination="9xv-3U-Wpo" id="pAU-LQ-aj1"/>
+                <outlet property="titleLB" destination="jUc-ih-t8A" id="VQR-ME-yMx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_in_out_manager" width="256" height="256"/>
+    </resources>
+</document>

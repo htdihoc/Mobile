@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOffice_DetailView_iPad">
+            <connections>
+                <outlet property="btn_VOffice" destination="SiH-yX-czm" id="SDz-aB-7ca"/>
+                <outlet property="lbl_Title" destination="F66-kH-lYU" id="4VP-U0-CXf"/>
+                <outlet property="tbl_Detail" destination="I2Z-fI-yLr" id="qy3-Mo-hbw"/>
+                <outlet property="topView" destination="3XG-tk-tfa" id="naJ-5z-Tce"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XG-tk-tfa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F66-kH-lYU" customClass="SOInsectTextLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="287" height="46"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiH-yX-czm">
+                            <rect key="frame" x="295" y="0.0" width="80" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="5n8-UP-rzt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="showVOffice:" destination="-1" eventType="touchUpInside" id="eq0-2s-aG6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="2iN-b9-APa"/>
+                        <constraint firstAttribute="trailing" secondItem="SiH-yX-czm" secondAttribute="trailing" id="Qg1-AM-Ga4"/>
+                        <constraint firstAttribute="bottom" secondItem="SiH-yX-czm" secondAttribute="bottom" id="gLE-1a-NXZ"/>
+                        <constraint firstItem="SiH-yX-czm" firstAttribute="top" secondItem="3XG-tk-tfa" secondAttribute="top" id="mtE-f2-bAC"/>
+                        <constraint firstAttribute="bottom" secondItem="F66-kH-lYU" secondAttribute="bottom" id="tUe-he-BZG"/>
+                        <constraint firstItem="SiH-yX-czm" firstAttribute="leading" secondItem="F66-kH-lYU" secondAttribute="trailing" constant="8" id="xBs-6a-JG5"/>
+                        <constraint firstItem="F66-kH-lYU" firstAttribute="top" secondItem="3XG-tk-tfa" secondAttribute="top" id="xpt-UU-PxY"/>
+                        <constraint firstItem="F66-kH-lYU" firstAttribute="leading" secondItem="3XG-tk-tfa" secondAttribute="leading" id="ygK-CW-x6b"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I2Z-fI-yLr" customClass="FullWidthSeperatorTableView">
+                    <rect key="frame" x="0.0" y="46" width="375" height="621"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="I2Z-fI-yLr" secondAttribute="bottom" id="5xu-VG-3Jy"/>
+                <constraint firstItem="3XG-tk-tfa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="J53-0B-GGx"/>
+                <constraint firstItem="I2Z-fI-yLr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cG3-56-XNJ"/>
+                <constraint firstAttribute="trailing" secondItem="I2Z-fI-yLr" secondAttribute="trailing" id="dxe-JI-Ztc"/>
+                <constraint firstItem="3XG-tk-tfa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jAg-3n-YG8"/>
+                <constraint firstItem="I2Z-fI-yLr" firstAttribute="top" secondItem="3XG-tk-tfa" secondAttribute="bottom" id="rTP-lD-62q"/>
+                <constraint firstAttribute="trailing" secondItem="3XG-tk-tfa" secondAttribute="trailing" id="xRb-h4-Cnq"/>
+            </constraints>
+            <point key="canvasLocation" x="100" y="44"/>
+        </view>
+    </objects>
+</document>

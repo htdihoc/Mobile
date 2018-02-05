@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetaiReminderListVC">
+            <connections>
+                <outlet property="btnCreat" destination="u95-Vn-YnU" id="icX-Pe-tiO"/>
+                <outlet property="tableView" destination="JuI-Gg-v70" id="J1X-Ff-5sS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JuI-Gg-v70">
+                    <rect key="frame" x="0.0" y="48" width="375" height="619"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Um-TL-uVb"/>
+                        <outlet property="delegate" destination="-1" id="uri-58-3Gs"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u95-Vn-YnU">
+                    <rect key="frame" x="293" y="585" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JKe-Vo-Lpa"/>
+                        <constraint firstAttribute="width" constant="50" id="hWH-4X-4Nt"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="plus_icon"/>
+                    <connections>
+                        <action selector="creatReminderNewAction:" destination="-1" eventType="touchUpInside" id="2Y8-TU-nU3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JuI-Gg-v70" secondAttribute="trailing" id="IBO-XH-Gg9"/>
+                <constraint firstItem="JuI-Gg-v70" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="KmB-bb-IwL"/>
+                <constraint firstItem="JuI-Gg-v70" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TA2-IE-AQl"/>
+                <constraint firstAttribute="bottom" secondItem="JuI-Gg-v70" secondAttribute="bottom" id="gHL-37-JFX"/>
+                <constraint firstAttribute="bottom" secondItem="u95-Vn-YnU" secondAttribute="bottom" constant="32" id="ioQ-UM-NQc"/>
+                <constraint firstAttribute="trailing" secondItem="u95-Vn-YnU" secondAttribute="trailing" constant="32" id="t6C-md-ZsG"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus_icon" width="128" height="128"/>
+    </resources>
+</document>

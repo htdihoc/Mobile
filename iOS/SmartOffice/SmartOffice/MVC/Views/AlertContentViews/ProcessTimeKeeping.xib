@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Demo1">
+            <connections>
+                <outlet property="cbAtUnit" destination="M8k-fN-2E9" id="fm2-dC-DGC"/>
+                <outlet property="cbFullTime" destination="h9C-7Q-mhD" id="qwW-gW-xzc"/>
+                <outlet property="cbOff" destination="Zl4-x8-SP5" id="6ho-0z-JlW"/>
+                <outlet property="cbPartTime" destination="f9q-Qj-qtN" id="17K-0r-K6g"/>
+                <outlet property="cbUnitInViettel" destination="995-mP-2WC" id="yXy-2C-iUd"/>
+                <outlet property="cbUnitOutViettel" destination="U4a-tb-cE4" id="T0g-wi-KDE"/>
+                <outlet property="lbAtUnit" destination="aQD-Cd-1go" id="wbj-Pa-W3G"/>
+                <outlet property="lbFullTime" destination="vgs-nC-ZC1" id="kKP-UH-I0q"/>
+                <outlet property="lbOff" destination="JiZ-E9-oKK" id="DKv-wo-lnE"/>
+                <outlet property="lbPartTime" destination="bQg-wf-BLY" id="O3z-Oi-d7h"/>
+                <outlet property="lbUnitInViettel" destination="zXU-Uf-D9V" id="d6a-Hx-zGj"/>
+                <outlet property="lbUnitOutViettel" destination="QJQ-qK-PZW" id="4zb-wb-Vgq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="ButtonCheckBox" customModule="Demo">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đi làm cả ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgs-nC-ZC1">
+                    <rect key="frame" x="65" y="43" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Enr-hh-5K6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đi làm nửa ngày" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQg-wf-BLY">
+                    <rect key="frame" x="65" y="83" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1We-hM-239"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nghỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-E9-oKK">
+                    <rect key="frame" x="65" y="123" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="87E-HW-FDA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa điểm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFc-Q1-bTc">
+                    <rect key="frame" x="12" y="161" width="256" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9iF-YY-qS1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUy-ob-S9S">
+                    <rect key="frame" x="74" y="161" width="20" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tại đơn vị" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQD-Cd-1go">
+                    <rect key="frame" x="65" y="204" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6cB-6B-iDL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị trong Viettel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXU-Uf-D9V">
+                    <rect key="frame" x="65" y="244" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pzC-q4-isy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9q-Qj-qtN" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="81" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="1Lv-UV-KGx"/>
+                        <constraint firstAttribute="height" constant="25" id="nb9-UU-qmF"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkPartTime:" destination="-1" eventType="touchUpInside" id="bn1-CO-JIp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl4-x8-SP5" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="121" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="44R-tD-aNf"/>
+                        <constraint firstAttribute="width" constant="25" id="rmT-7D-aaM"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkOff:" destination="-1" eventType="touchUpInside" id="Whv-C2-paO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="995-mP-2WC" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="242" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Cmk-PP-01p"/>
+                        <constraint firstAttribute="width" constant="25" id="FiS-If-Drq"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkUnitInViettel:" destination="-1" eventType="touchUpInside" id="FYQ-Ul-UEx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4a-tb-cE4" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="282" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="9sk-4C-I52"/>
+                        <constraint firstAttribute="height" constant="25" id="Hgi-GC-qvg"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkUnitOutViettel:" destination="-1" eventType="touchUpInside" id="WvH-Di-4Bn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9C-7Q-mhD" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="41" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="FxO-Jb-jKH"/>
+                        <constraint firstAttribute="width" constant="25" id="dSU-bm-dFw"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkFullTime:" destination="-1" eventType="touchUpInside" id="kht-wr-Y8L"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8k-fN-2E9" customClass="ButtonCheckBox">
+                    <rect key="frame" x="30" y="202" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="29C-ht-kR4"/>
+                        <constraint firstAttribute="height" constant="25" id="P5k-0J-Ioj"/>
+                    </constraints>
+                    <state key="normal" image="uncheck_Button"/>
+                    <connections>
+                        <action selector="checkAtUnit:" destination="-1" eventType="touchUpInside" id="nOP-T1-OjL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loại công" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDg-z5-wIJ">
+                    <rect key="frame" x="12" y="0.0" width="256" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1Ta-DT-wrZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuF-n4-ygn">
+                    <rect key="frame" x="82" y="0.0" width="20" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đơn vị ngoài Viettel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJQ-qK-PZW">
+                    <rect key="frame" x="65" y="284" width="195" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="HqK-xK-L2j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="995-mP-2WC" firstAttribute="top" secondItem="M8k-fN-2E9" secondAttribute="bottom" constant="15" id="1Ef-xK-KDG"/>
+                <constraint firstItem="sFc-Q1-bTc" firstAttribute="trailing" secondItem="HDg-z5-wIJ" secondAttribute="trailing" id="1cz-YP-FXP"/>
+                <constraint firstItem="U4a-tb-cE4" firstAttribute="centerX" secondItem="h9C-7Q-mhD" secondAttribute="centerX" id="2zX-dc-WGe"/>
+                <constraint firstItem="Zl4-x8-SP5" firstAttribute="top" secondItem="f9q-Qj-qtN" secondAttribute="bottom" constant="15" id="46a-bP-d4u"/>
+                <constraint firstAttribute="trailing" secondItem="HDg-z5-wIJ" secondAttribute="trailing" constant="12" id="48u-wn-hCE"/>
+                <constraint firstItem="vgs-nC-ZC1" firstAttribute="leading" secondItem="h9C-7Q-mhD" secondAttribute="trailing" constant="10" id="4Ax-Nr-lOc"/>
+                <constraint firstItem="JiZ-E9-oKK" firstAttribute="leading" secondItem="vgs-nC-ZC1" secondAttribute="leading" id="4p3-2N-XXJ"/>
+                <constraint firstItem="M8k-fN-2E9" firstAttribute="centerX" secondItem="h9C-7Q-mhD" secondAttribute="centerX" id="5xE-ZJ-Hdj"/>
+                <constraint firstItem="HDg-z5-wIJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="7SO-SO-TSh"/>
+                <constraint firstItem="bQg-wf-BLY" firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" id="85L-cQ-jA3"/>
+                <constraint firstItem="aQD-Cd-1go" firstAttribute="centerY" secondItem="M8k-fN-2E9" secondAttribute="centerY" id="Aur-tb-LjU"/>
+                <constraint firstItem="sFc-Q1-bTc" firstAttribute="top" secondItem="Zl4-x8-SP5" secondAttribute="bottom" constant="15" id="BK3-pl-ckf"/>
+                <constraint firstItem="QJQ-qK-PZW" firstAttribute="leading" secondItem="vgs-nC-ZC1" secondAttribute="leading" id="Cf4-PV-ffA"/>
+                <constraint firstItem="zXU-Uf-D9V" firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" id="H0a-d8-qy7"/>
+                <constraint firstAttribute="bottom" secondItem="QJQ-qK-PZW" secondAttribute="bottom" constant="22" id="IhO-I2-ujz"/>
+                <constraint firstItem="995-mP-2WC" firstAttribute="centerX" secondItem="h9C-7Q-mhD" secondAttribute="centerX" id="Mud-Ji-4As"/>
+                <constraint firstItem="bQg-wf-BLY" firstAttribute="centerY" secondItem="f9q-Qj-qtN" secondAttribute="centerY" id="OtX-Tc-aAh"/>
+                <constraint firstItem="zXU-Uf-D9V" firstAttribute="leading" secondItem="vgs-nC-ZC1" secondAttribute="leading" id="PBz-Po-jlN"/>
+                <constraint firstItem="QJQ-qK-PZW" firstAttribute="centerY" secondItem="U4a-tb-cE4" secondAttribute="centerY" id="Rmw-ZO-2aP"/>
+                <constraint firstItem="JiZ-E9-oKK" firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" id="TDA-r9-sVb"/>
+                <constraint firstItem="aQD-Cd-1go" firstAttribute="leading" secondItem="vgs-nC-ZC1" secondAttribute="leading" id="TW3-Lw-gib"/>
+                <constraint firstItem="zXU-Uf-D9V" firstAttribute="centerY" secondItem="995-mP-2WC" secondAttribute="centerY" id="TXq-Zg-rFc"/>
+                <constraint firstItem="h9C-7Q-mhD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="aDv-sk-xWJ"/>
+                <constraint firstItem="Zl4-x8-SP5" firstAttribute="centerX" secondItem="h9C-7Q-mhD" secondAttribute="centerX" id="bfi-pC-sa0"/>
+                <constraint firstItem="vgs-nC-ZC1" firstAttribute="centerY" secondItem="h9C-7Q-mhD" secondAttribute="centerY" id="e2J-7A-WWQ"/>
+                <constraint firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" constant="20" id="f6U-vj-HLo"/>
+                <constraint firstItem="f9q-Qj-qtN" firstAttribute="centerX" secondItem="h9C-7Q-mhD" secondAttribute="centerX" id="fgo-8E-lMF"/>
+                <constraint firstItem="U4a-tb-cE4" firstAttribute="top" secondItem="995-mP-2WC" secondAttribute="bottom" constant="15" id="kbd-eg-b8R"/>
+                <constraint firstItem="sFc-Q1-bTc" firstAttribute="leading" secondItem="HDg-z5-wIJ" secondAttribute="leading" id="lAi-sz-XcN"/>
+                <constraint firstItem="aQD-Cd-1go" firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" id="mXv-dH-hjI"/>
+                <constraint firstItem="h9C-7Q-mhD" firstAttribute="top" secondItem="HDg-z5-wIJ" secondAttribute="bottom" constant="20" id="p0G-PO-qPU"/>
+                <constraint firstItem="JiZ-E9-oKK" firstAttribute="centerY" secondItem="Zl4-x8-SP5" secondAttribute="centerY" id="tO8-0K-aoA"/>
+                <constraint firstItem="f9q-Qj-qtN" firstAttribute="top" secondItem="h9C-7Q-mhD" secondAttribute="bottom" constant="15" id="uXX-e5-XYz"/>
+                <constraint firstItem="QJQ-qK-PZW" firstAttribute="trailing" secondItem="vgs-nC-ZC1" secondAttribute="trailing" id="xOO-UQ-m2d"/>
+                <constraint firstItem="bQg-wf-BLY" firstAttribute="leading" secondItem="vgs-nC-ZC1" secondAttribute="leading" id="xP3-Z6-Fsr"/>
+                <constraint firstItem="HDg-z5-wIJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z0d-aD-Hof"/>
+                <constraint firstItem="M8k-fN-2E9" firstAttribute="top" secondItem="sFc-Q1-bTc" secondAttribute="bottom" constant="20" id="zYb-aU-RoL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-29" y="-6.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="uncheck_Button" width="12" height="12"/>
+    </resources>
+</document>

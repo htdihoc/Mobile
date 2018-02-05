@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WorkNoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiện tại Đ/c không có nhiệm vụ nào." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuW-hr-zvO">
+                    <rect key="frame" x="40" y="323.5" width="295" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="0FR-dA-wdd">
+                    <rect key="frame" x="144" y="221.5" width="86" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="86" id="49o-dO-CfA"/>
+                        <constraint firstAttribute="width" secondItem="0FR-dA-wdd" secondAttribute="height" multiplier="1:1" id="zvF-Ji-Mo6"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VuW-hr-zvO" firstAttribute="top" secondItem="0FR-dA-wdd" secondAttribute="bottom" constant="16" id="GcO-q7-RUq"/>
+                <constraint firstItem="0FR-dA-wdd" firstAttribute="centerX" secondItem="VuW-hr-zvO" secondAttribute="centerX" id="LAZ-5c-my2"/>
+                <constraint firstItem="VuW-hr-zvO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="R2I-FB-qpK"/>
+                <constraint firstItem="VuW-hr-zvO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Slg-pt-Oo7"/>
+                <constraint firstItem="VuW-hr-zvO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ksb-pE-XTI"/>
+                <constraint firstAttribute="trailing" secondItem="VuW-hr-zvO" secondAttribute="trailing" constant="40" id="nhA-xc-pMK"/>
+            </constraints>
+            <connections>
+                <outlet property="contenLB" destination="VuW-hr-zvO" id="H9F-Ss-jZC"/>
+                <outlet property="img" destination="0FR-dA-wdd" id="HQB-62-Thf"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_no_data" width="128" height="128"/>
+    </resources>
+</document>

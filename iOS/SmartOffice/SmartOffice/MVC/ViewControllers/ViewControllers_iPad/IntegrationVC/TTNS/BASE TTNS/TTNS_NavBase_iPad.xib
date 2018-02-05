@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTNS_NavBase_iPad">
+            <connections>
+                <outlet property="mainView" destination="dfN-LT-M6a" id="zsY-yH-eT8"/>
+                <outlet property="navRightView" destination="2oc-9a-BOw" id="xRf-57-Zl2"/>
+                <outlet property="navView" destination="yIC-gb-mfh" id="bfv-a0-AlI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dfN-LT-M6a">
+            <rect key="frame" x="0.0" y="0.0" width="503" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-gb-mfh">
+                    <rect key="frame" x="0.0" y="30" width="447" height="30"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oc-9a-BOw" userLabel="RightBarItem">
+                    <rect key="frame" x="455" y="24" width="40" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-Dw-XH9">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="showPopupNotification:" destination="-1" eventType="touchUpInside" id="CSG-Sk-YO4"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inter_bell_icon" translatesAutoresizingMaskIntoConstraints="NO" id="U57-CZ-qPG">
+                            <rect key="frame" x="5" y="7.5" width="24" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="arB-Lo-bO7"/>
+                                <constraint firstAttribute="width" constant="24" id="yql-0K-Ivp"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxH-C0-rHS" userLabel="badgeButton" customClass="SOBadgeButton">
+                            <rect key="frame" x="18" y="2" width="16" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="content" value="10"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wTj-Dw-XH9" secondAttribute="trailing" id="4QL-x4-HfM"/>
+                        <constraint firstItem="U57-CZ-qPG" firstAttribute="centerY" secondItem="2oc-9a-BOw" secondAttribute="centerY" id="NB8-eQ-1Ho"/>
+                        <constraint firstAttribute="height" constant="40" id="RPb-QI-LTy"/>
+                        <constraint firstItem="wTj-Dw-XH9" firstAttribute="top" secondItem="2oc-9a-BOw" secondAttribute="top" id="bzy-T3-0Ob"/>
+                        <constraint firstItem="wTj-Dw-XH9" firstAttribute="leading" secondItem="2oc-9a-BOw" secondAttribute="leading" id="div-sB-n88"/>
+                        <constraint firstAttribute="bottom" secondItem="wTj-Dw-XH9" secondAttribute="bottom" id="gAK-eU-zys"/>
+                        <constraint firstItem="wTj-Dw-XH9" firstAttribute="height" secondItem="2oc-9a-BOw" secondAttribute="height" id="hqC-35-H4Z"/>
+                        <constraint firstItem="U57-CZ-qPG" firstAttribute="centerX" secondItem="2oc-9a-BOw" secondAttribute="centerX" constant="-3" id="lAR-wI-ZDG"/>
+                        <constraint firstItem="wTj-Dw-XH9" firstAttribute="width" secondItem="2oc-9a-BOw" secondAttribute="width" id="vQJ-yj-Wgu"/>
+                        <constraint firstAttribute="width" constant="40" id="zQ8-fh-RxD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yIC-gb-mfh" firstAttribute="leading" secondItem="dfN-LT-M6a" secondAttribute="leading" id="MWO-3p-9uP"/>
+                <constraint firstItem="2oc-9a-BOw" firstAttribute="top" secondItem="dfN-LT-M6a" secondAttribute="top" constant="24" id="R3U-fN-d5T"/>
+                <constraint firstItem="yIC-gb-mfh" firstAttribute="top" secondItem="dfN-LT-M6a" secondAttribute="top" constant="30" id="Tye-iC-3nM"/>
+                <constraint firstAttribute="bottom" secondItem="2oc-9a-BOw" secondAttribute="bottom" id="Uhu-0W-uJd"/>
+                <constraint firstItem="2oc-9a-BOw" firstAttribute="leading" secondItem="yIC-gb-mfh" secondAttribute="trailing" constant="8" id="jmX-Np-HRW"/>
+                <constraint firstAttribute="trailing" secondItem="2oc-9a-BOw" secondAttribute="trailing" constant="8" id="mia-eC-aHT"/>
+                <constraint firstAttribute="bottom" secondItem="yIC-gb-mfh" secondAttribute="bottom" constant="4" id="vNn-lc-Wrf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="40.5" y="-379"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="inter_bell_icon" width="33" height="32"/>
+    </resources>
+</document>

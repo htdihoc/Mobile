@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalInfoCell" rowHeight="100" id="KGk-i7-Jjw" customClass="PersonalInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_avt_default" translatesAutoresizingMaskIntoConstraints="NO" id="IrI-ca-dhg">
+                        <rect key="frame" x="16" y="15" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IrI-ca-dhg" secondAttribute="height" multiplier="1:1" id="EcO-mD-Rr0"/>
+                            <constraint firstAttribute="width" constant="70" id="WzM-sh-mYZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NV Giải pháp sản phẩm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAN-Gx-Jjm">
+                        <rect key="frame" x="102" y="41" width="257" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Ngọc Anh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9V-2r-sc4">
+                        <rect key="frame" x="102" y="16" width="145" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_phone" translatesAutoresizingMaskIntoConstraints="NO" id="VDM-Ay-Fk5">
+                        <rect key="frame" x="102" y="64" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="DlN-hb-XlT"/>
+                            <constraint firstAttribute="width" secondItem="VDM-Ay-Fk5" secondAttribute="height" multiplier="1:1" id="N8o-lO-mtO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0948 912 333" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Faz-M5-ExI">
+                        <rect key="frame" x="124" y="62" width="98" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-0Y-8YL">
+                        <rect key="frame" x="230" y="64" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="HfC-0Y-8YL" secondAttribute="height" multiplier="1:1" id="fA0-rK-Gwg"/>
+                            <constraint firstAttribute="width" constant="14" id="jdE-L0-UQc"/>
+                        </constraints>
+                        <state key="normal" image="icon_pen"/>
+                        <connections>
+                            <action selector="fixPhoneNumberAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mPL-Di-ohI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Faz-M5-ExI" firstAttribute="leading" secondItem="VDM-Ay-Fk5" secondAttribute="trailing" constant="8" id="2Ni-eJ-uMN"/>
+                    <constraint firstItem="e9V-2r-sc4" firstAttribute="leading" secondItem="AAN-Gx-Jjm" secondAttribute="leading" id="8Dy-Fi-SxV"/>
+                    <constraint firstItem="AAN-Gx-Jjm" firstAttribute="leading" secondItem="IrI-ca-dhg" secondAttribute="trailing" constant="16" id="8Te-t3-Cyd"/>
+                    <constraint firstItem="HfC-0Y-8YL" firstAttribute="leading" secondItem="Faz-M5-ExI" secondAttribute="trailing" constant="8" id="D0N-Sv-zKf"/>
+                    <constraint firstItem="VDM-Ay-Fk5" firstAttribute="top" secondItem="AAN-Gx-Jjm" secondAttribute="bottom" constant="5" id="GK1-iB-zFB"/>
+                    <constraint firstItem="VDM-Ay-Fk5" firstAttribute="leading" secondItem="AAN-Gx-Jjm" secondAttribute="leading" id="IK6-vm-Cbb"/>
+                    <constraint firstItem="e9V-2r-sc4" firstAttribute="leading" secondItem="IrI-ca-dhg" secondAttribute="trailing" constant="16" id="Lcy-WM-mvw"/>
+                    <constraint firstItem="AAN-Gx-Jjm" firstAttribute="centerY" secondItem="IrI-ca-dhg" secondAttribute="centerY" id="RCs-kw-g4i"/>
+                    <constraint firstItem="IrI-ca-dhg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Wjc-cZ-REE"/>
+                    <constraint firstItem="IrI-ca-dhg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dU6-3g-lbZ"/>
+                    <constraint firstItem="AAN-Gx-Jjm" firstAttribute="top" secondItem="e9V-2r-sc4" secondAttribute="bottom" constant="3.5" id="jJo-4s-qOw"/>
+                    <constraint firstAttribute="trailing" secondItem="AAN-Gx-Jjm" secondAttribute="trailing" constant="16" id="kCN-od-62r"/>
+                    <constraint firstItem="HfC-0Y-8YL" firstAttribute="centerY" secondItem="Faz-M5-ExI" secondAttribute="centerY" id="qeC-2D-fQI"/>
+                    <constraint firstItem="Faz-M5-ExI" firstAttribute="centerY" secondItem="VDM-Ay-Fk5" secondAttribute="centerY" id="tKA-nM-Tm0"/>
+                    <constraint firstItem="VDM-Ay-Fk5" firstAttribute="leading" secondItem="IrI-ca-dhg" secondAttribute="trailing" constant="16" id="wb6-dl-Fpg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avtImg" destination="IrI-ca-dhg" id="Q0J-Ou-JH5"/>
+                <outlet property="fixPhoneNumberOutlet" destination="HfC-0Y-8YL" id="DTQ-Gn-9w9"/>
+                <outlet property="nameLB" destination="e9V-2r-sc4" id="8kl-fA-4dG"/>
+                <outlet property="phoneLB" destination="Faz-M5-ExI" id="ndr-Sa-her"/>
+                <outlet property="positionLB" destination="AAN-Gx-Jjm" id="Z4F-TN-fMp"/>
+            </connections>
+            <point key="canvasLocation" x="52.5" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_avt_default" width="254" height="256"/>
+        <image name="icon_pen" width="128" height="128"/>
+        <image name="icon_phone" width="20" height="19"/>
+    </resources>
+</document>

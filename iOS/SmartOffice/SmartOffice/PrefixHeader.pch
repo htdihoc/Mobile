@@ -1,0 +1,42 @@
+//
+//  PrefixHeader.pch
+//  SpeedTest
+//
+//  Created by Nguyen Thanh Huy on 7/3/16.
+//  Copyright © 2016 Nguyen Thanh Huy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//Customize framework
+#import "NSDictionary+Ext.h"
+#import "UIFont+Ext.h"
+
+//Config
+#import "AppDelegate.h"
+#import "LocalizeHelper.h"
+#import "LanguageKey.h"
+#import "Config.h"
+#import "Constants.h"
+#import "GlobalObj.h"
+#import "AppMacro.h"
+#import "AppColor.h"
+#import "AppFont.h"
+
+//Sample Data
+#import "SampleData.h"
+
+//othes
+#define AMSlideMenuWithoutStoryboards
+#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+#define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+#define IS_PAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_PHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+// Define hex to UIColor
+#define UIColorFromHex(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
+
+#endif /* PrefixHeader_pch */

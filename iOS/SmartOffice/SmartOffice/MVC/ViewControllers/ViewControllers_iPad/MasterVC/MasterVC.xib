@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterVC">
+            <connections>
+                <outlet property="contactTabbar" destination="8DZ-y2-Ekn" id="TZi-C1-lLK"/>
+                <outlet property="conversationTabbar" destination="Qml-3q-BdA" id="dlX-Zc-if0"/>
+                <outlet property="integrationTabbar" destination="ggK-pi-Xfc" id="ZOl-uJ-Uwp"/>
+                <outlet property="moreTabbar" destination="0ud-Ga-Ega" id="Wsg-Ve-zyW"/>
+                <outlet property="socialTabbar" destination="v58-ie-uq1" id="uKy-As-Q14"/>
+                <outlet property="topView" destination="hqN-OZ-JsC" id="mE7-RQ-x0B"/>
+                <outlet property="view" destination="slc-fm-Zy3" id="dCi-3P-bQ5"/>
+            </connections>
+        </placeholder>
+        <view hidden="YES" contentMode="scaleToFill" id="slc-fm-Zy3">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" userLabel="TabbarView">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqN-OZ-JsC" userLabel="TopView">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="140"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-yJ-rFp" userLabel="ProfileView">
+                                    <rect key="frame" x="0.0" y="64" width="70" height="76"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DBI-Ld-Lwm">
+                                            <rect key="frame" x="20" y="14" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuấn NA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB5-UG-zzS">
+                                            <rect key="frame" x="0.0" y="42" width="70" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="76" id="Y3k-bX-ZYs"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0078431372550000003" green="0.49803921569999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="4Ga-yJ-rFp" secondAttribute="trailing" id="K3L-iy-oV8"/>
+                                <constraint firstItem="4Ga-yJ-rFp" firstAttribute="leading" secondItem="hqN-OZ-JsC" secondAttribute="leading" id="M4Q-wr-s6b"/>
+                                <constraint firstAttribute="bottom" secondItem="4Ga-yJ-rFp" secondAttribute="bottom" id="igT-5F-eDt"/>
+                                <constraint firstAttribute="height" constant="140" id="yxl-3o-jVc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-js-F4b" userLabel="TabbarView">
+                            <rect key="frame" x="0.0" y="140" width="70" height="628"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUN-3G-6K3">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="104.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggK-pi-Xfc" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Integration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfL-cO-xYl">
+                                                    <rect key="frame" x="0.0" y="45" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725490196072" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_integration_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Pzm-7l-lZg">
+                                                    <rect key="frame" x="20" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7U-65-vJR" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="BuI-SO-nhH"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="rkM-1e-Bjq"/>
+                                                <constraint firstAttribute="height" constant="70" id="yYm-0s-gaf"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="ggK-pi-Xfc" firstAttribute="centerY" secondItem="eUN-3G-6K3" secondAttribute="centerY" id="7DC-XP-2Ok"/>
+                                        <constraint firstItem="ggK-pi-Xfc" firstAttribute="centerX" secondItem="eUN-3G-6K3" secondAttribute="centerX" id="AmN-HU-0Bl"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBW-FB-Q9W">
+                                    <rect key="frame" x="0.0" y="104.5" width="70" height="105"/>
+                                    <subviews>
+                                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v58-ie-uq1" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rj0-2H-KoS">
+                                                    <rect key="frame" x="0.0" y="45" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725489999995" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_social_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5It-jQ-U0f">
+                                                    <rect key="frame" x="20" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maz-ZU-vSl" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="xKI-Jt-z01"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="E4k-4V-KEU"/>
+                                                <constraint firstAttribute="height" constant="70" id="P8I-fL-pO7"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="v58-ie-uq1" firstAttribute="centerX" secondItem="VBW-FB-Q9W" secondAttribute="centerX" id="Q62-hS-fNq"/>
+                                        <constraint firstItem="v58-ie-uq1" firstAttribute="centerY" secondItem="VBW-FB-Q9W" secondAttribute="centerY" id="Wsd-SL-ApF"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbz-0c-Qcs">
+                                    <rect key="frame" x="0.0" y="209.5" width="70" height="104.5"/>
+                                    <subviews>
+                                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qml-3q-BdA" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conversation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fae-hF-3zc">
+                                                    <rect key="frame" x="2" y="45" width="66" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725489999995" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_conversation_icon" translatesAutoresizingMaskIntoConstraints="NO" id="UIb-Hz-QSi">
+                                                    <rect key="frame" x="20" y="12.5" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzT-Rz-1ld" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="7w0-tJ-p3X"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="0aw-kq-y0b"/>
+                                                <constraint firstAttribute="height" constant="70" id="Myz-df-nC0"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Qml-3q-BdA" firstAttribute="centerX" secondItem="Sbz-0c-Qcs" secondAttribute="centerX" id="JGK-FU-L4Z"/>
+                                        <constraint firstItem="Qml-3q-BdA" firstAttribute="centerY" secondItem="Sbz-0c-Qcs" secondAttribute="centerY" id="ZQ9-sq-OO6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wsh-hY-LUj">
+                                    <rect key="frame" x="0.0" y="314" width="70" height="104.5"/>
+                                    <subviews>
+                                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-y2-Ekn" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5Z-R5-Z7h">
+                                                    <rect key="frame" x="0.0" y="45" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725489999995" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_contact_icon" translatesAutoresizingMaskIntoConstraints="NO" id="M9d-Tz-3a7">
+                                                    <rect key="frame" x="20" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-dy-hZL" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="NQ0-Vd-No1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="dxt-9d-RYW"/>
+                                                <constraint firstAttribute="height" constant="70" id="vvr-fv-vHz"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="8DZ-y2-Ekn" firstAttribute="centerX" secondItem="wsh-hY-LUj" secondAttribute="centerX" id="1Fz-T0-Ewy"/>
+                                        <constraint firstItem="8DZ-y2-Ekn" firstAttribute="centerY" secondItem="wsh-hY-LUj" secondAttribute="centerY" id="WcG-Ut-VyB"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-I6-XL8">
+                                    <rect key="frame" x="0.0" y="418.5" width="70" height="105"/>
+                                    <subviews>
+                                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ud-Ga-Ega" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-C0-6Yj">
+                                                    <rect key="frame" x="0.0" y="45" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725489999995" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_more_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xJj-iA-8Z4">
+                                                    <rect key="frame" x="20" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4si-y2-ehl" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="Vxu-KP-XEj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="4ml-cw-IlZ"/>
+                                                <constraint firstAttribute="height" constant="70" id="oLP-Gx-adW"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="0ud-Ga-Ega" firstAttribute="centerY" secondItem="ZQ9-I6-XL8" secondAttribute="centerY" id="yus-Cm-Syq"/>
+                                        <constraint firstItem="0ud-Ga-Ega" firstAttribute="centerX" secondItem="ZQ9-I6-XL8" secondAttribute="centerX" id="zKO-1B-aCl"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvq-oy-BIZ">
+                                    <rect key="frame" x="0.0" y="523.5" width="70" height="104.5"/>
+                                    <subviews>
+                                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-v0-Xme" customClass="SOTabbarItemView">
+                                            <rect key="frame" x="0.0" y="17" width="70" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJp-nP-CzY">
+                                                    <rect key="frame" x="0.0" y="45" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.64313725489999995" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabbar_more_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kay-UF-AaX">
+                                                    <rect key="frame" x="20" y="12.5" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1Z-Xh-vzk" userLabel="Action">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="didTapOnTabbarItem:" destination="-1" eventType="touchUpInside" id="kE2-cZ-Mi7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="FY3-Qm-wSl"/>
+                                                <constraint firstAttribute="height" constant="70" id="edY-LD-pUS"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="jJD-v0-Xme" firstAttribute="centerY" secondItem="Hvq-oy-BIZ" secondAttribute="centerY" id="bsP-dk-44o"/>
+                                        <constraint firstItem="jJD-v0-Xme" firstAttribute="centerX" secondItem="Hvq-oy-BIZ" secondAttribute="centerX" id="wfs-yf-X4A"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="VBW-FB-Q9W" secondAttribute="trailing" id="0DB-bj-6eC"/>
+                                <constraint firstItem="wsh-hY-LUj" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="0zv-ct-Gn1"/>
+                                <constraint firstItem="Hvq-oy-BIZ" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="3Zh-UJ-63C"/>
+                                <constraint firstItem="VBW-FB-Q9W" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="3gS-YK-s4g"/>
+                                <constraint firstItem="wsh-hY-LUj" firstAttribute="top" secondItem="Sbz-0c-Qcs" secondAttribute="bottom" id="92Y-DS-WE0"/>
+                                <constraint firstItem="Sbz-0c-Qcs" firstAttribute="top" secondItem="VBW-FB-Q9W" secondAttribute="bottom" id="EFa-Ov-Q3c"/>
+                                <constraint firstItem="ZQ9-I6-XL8" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="EVv-fE-Sjc"/>
+                                <constraint firstItem="ZQ9-I6-XL8" firstAttribute="top" secondItem="wsh-hY-LUj" secondAttribute="bottom" id="FYp-OY-3fw"/>
+                                <constraint firstItem="wsh-hY-LUj" firstAttribute="height" secondItem="Sbz-0c-Qcs" secondAttribute="height" id="Fdd-L8-Rqg"/>
+                                <constraint firstItem="Hvq-oy-BIZ" firstAttribute="top" secondItem="ZQ9-I6-XL8" secondAttribute="bottom" id="HPU-rO-Mbt"/>
+                                <constraint firstItem="Hvq-oy-BIZ" firstAttribute="height" secondItem="ZQ9-I6-XL8" secondAttribute="height" id="IDo-Up-abw"/>
+                                <constraint firstAttribute="trailing" secondItem="eUN-3G-6K3" secondAttribute="trailing" id="L9x-8B-3rH"/>
+                                <constraint firstItem="Sbz-0c-Qcs" firstAttribute="top" secondItem="VBW-FB-Q9W" secondAttribute="bottom" id="Nmh-v9-8rs"/>
+                                <constraint firstItem="eUN-3G-6K3" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="PKR-FR-nnE"/>
+                                <constraint firstAttribute="trailing" secondItem="wsh-hY-LUj" secondAttribute="trailing" id="QMl-XU-EAa"/>
+                                <constraint firstItem="ZQ9-I6-XL8" firstAttribute="top" secondItem="wsh-hY-LUj" secondAttribute="bottom" id="UTw-fR-UKl"/>
+                                <constraint firstItem="ZQ9-I6-XL8" firstAttribute="height" secondItem="wsh-hY-LUj" secondAttribute="height" id="XuX-fQ-PFr"/>
+                                <constraint firstAttribute="trailing" secondItem="ZQ9-I6-XL8" secondAttribute="trailing" id="aCq-nn-gNQ"/>
+                                <constraint firstAttribute="trailing" secondItem="Hvq-oy-BIZ" secondAttribute="trailing" id="aOl-kj-kDV"/>
+                                <constraint firstItem="Sbz-0c-Qcs" firstAttribute="leading" secondItem="eCu-js-F4b" secondAttribute="leading" id="d28-4a-sZQ"/>
+                                <constraint firstItem="eUN-3G-6K3" firstAttribute="top" secondItem="eCu-js-F4b" secondAttribute="top" id="dJ5-rf-n8z"/>
+                                <constraint firstItem="VBW-FB-Q9W" firstAttribute="top" secondItem="eUN-3G-6K3" secondAttribute="bottom" id="jXt-YB-XZE"/>
+                                <constraint firstItem="VBW-FB-Q9W" firstAttribute="top" secondItem="eUN-3G-6K3" secondAttribute="bottom" id="jgF-MN-L2j"/>
+                                <constraint firstItem="wsh-hY-LUj" firstAttribute="top" secondItem="Sbz-0c-Qcs" secondAttribute="bottom" id="l5z-6C-fXo"/>
+                                <constraint firstItem="VBW-FB-Q9W" firstAttribute="height" secondItem="eUN-3G-6K3" secondAttribute="height" id="pem-qy-NEW"/>
+                                <constraint firstAttribute="bottom" secondItem="Hvq-oy-BIZ" secondAttribute="bottom" id="vHU-ZA-mHM"/>
+                                <constraint firstItem="Sbz-0c-Qcs" firstAttribute="height" secondItem="VBW-FB-Q9W" secondAttribute="height" id="xCf-qk-Tw7"/>
+                                <constraint firstAttribute="trailing" secondItem="Sbz-0c-Qcs" secondAttribute="trailing" id="xZN-pP-bc9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hqN-OZ-JsC" secondAttribute="trailing" id="0b4-XM-Aw1"/>
+                        <constraint firstItem="eCu-js-F4b" firstAttribute="top" secondItem="hqN-OZ-JsC" secondAttribute="bottom" id="7A4-ev-rZi"/>
+                        <constraint firstAttribute="width" constant="70" id="Jj9-A4-rQQ"/>
+                        <constraint firstItem="hqN-OZ-JsC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OYB-0o-jmq"/>
+                        <constraint firstItem="hqN-OZ-JsC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U9r-my-A2C"/>
+                        <constraint firstItem="eCu-js-F4b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YVD-Py-ggk"/>
+                        <constraint firstAttribute="trailing" secondItem="eCu-js-F4b" secondAttribute="trailing" id="ftp-da-pVV"/>
+                        <constraint firstAttribute="bottom" secondItem="eCu-js-F4b" secondAttribute="bottom" id="tu7-sz-cE0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="slc-fm-Zy3" secondAttribute="leading" id="4I6-f0-zyr"/>
+                <constraint firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="cCY-yZ-Agd"/>
+                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="slc-fm-Zy3" secondAttribute="top" id="eSf-Zl-aEy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-201" y="39"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="profile_icon" width="128" height="128"/>
+        <image name="tabbar_contact_icon" width="25" height="25"/>
+        <image name="tabbar_conversation_icon" width="27" height="25"/>
+        <image name="tabbar_integration_icon" width="25" height="25"/>
+        <image name="tabbar_more_icon" width="25" height="25"/>
+        <image name="tabbar_social_icon" width="25" height="25"/>
+    </resources>
+</document>

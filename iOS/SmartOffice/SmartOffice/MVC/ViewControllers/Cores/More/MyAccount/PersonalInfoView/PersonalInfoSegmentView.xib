@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalInfoSegmentView">
+            <connections>
+                <outlet property="segAssetView" destination="nmZ-x3-1CB" id="Bf6-qa-Duc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="242-ln-hhW" id="DXb-lE-Gim"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-x3-1CB">
+                    <rect key="frame" x="40" y="66" width="295" height="29"/>
+                    <segments>
+                        <segment title="Thông tin Tài sản"/>
+                        <segment title="B.B.B.G Tài sản"/>
+                    </segments>
+                    <color key="tintColor" red="0.0" green="0.68627450980000004" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="size">
+                            <size key="value" width="80" height="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="242-ln-hhW">
+                    <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="242-ln-hhW" firstAttribute="top" secondItem="nmZ-x3-1CB" secondAttribute="bottom" constant="8" symbolic="YES" id="KOk-6L-z5M"/>
+                <constraint firstAttribute="bottom" secondItem="242-ln-hhW" secondAttribute="bottom" id="MI5-Pu-IhK"/>
+                <constraint firstItem="nmZ-x3-1CB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="PP5-Ah-KaF"/>
+                <constraint firstItem="nmZ-x3-1CB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="66" id="Po6-4I-1Lq"/>
+                <constraint firstItem="242-ln-hhW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zov-g7-sUl"/>
+                <constraint firstAttribute="trailing" secondItem="242-ln-hhW" secondAttribute="trailing" id="g69-ZJ-m1d"/>
+                <constraint firstItem="nmZ-x3-1CB" firstAttribute="centerX" secondItem="242-ln-hhW" secondAttribute="centerX" id="xA9-Uh-rl3"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="139.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QLTT_CommentVC">
+            <connections>
+                <outlet property="nofiView" destination="GL3-wG-kul" id="V5J-J2-kim"/>
+                <outlet property="qltt_CommentView" destination="hkt-4L-3Le" id="FAv-RJ-zru"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-4L-3Le" customClass="QLTT_CommentView">
+                    <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GL3-wG-kul">
+                            <rect key="frame" x="8" y="229.5" width="359" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="wQm-Qd-Sx0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GL3-wG-kul" firstAttribute="leading" secondItem="hkt-4L-3Le" secondAttribute="leading" constant="8" id="CKw-8c-EXw"/>
+                        <constraint firstItem="GL3-wG-kul" firstAttribute="centerX" secondItem="hkt-4L-3Le" secondAttribute="centerX" id="J1i-pE-FyN"/>
+                        <constraint firstItem="GL3-wG-kul" firstAttribute="centerY" secondItem="hkt-4L-3Le" secondAttribute="centerY" constant="-50" id="LMj-Oi-Soe"/>
+                        <constraint firstAttribute="trailing" secondItem="GL3-wG-kul" secondAttribute="trailing" constant="8" id="Rbz-Ke-QeB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hkt-4L-3Le" secondAttribute="trailing" id="1da-G5-H54"/>
+                <constraint firstItem="hkt-4L-3Le" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Orb-N9-Pl1"/>
+                <constraint firstAttribute="bottom" secondItem="hkt-4L-3Le" secondAttribute="bottom" id="cjO-cu-S2W"/>
+                <constraint firstItem="hkt-4L-3Le" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jSq-xR-1Sk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOffice_MainView_iPad">
+            <connections>
+                <outlet property="containerDocumentView" destination="Zet-W9-0bT" id="rCW-Tj-mnE"/>
+                <outlet property="containerMeetingView" destination="JFR-Nq-0hO" id="trd-d0-fXP"/>
+                <outlet property="containerMissionPlan" destination="Si9-0h-h1R" id="Ccq-iI-iWm"/>
+                <outlet property="containerWorkPlan" destination="zWo-QN-F64" id="FNU-cD-DxZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="994"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49H-7F-8BI">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="1010"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWo-QN-F64">
+                            <rect key="frame" x="8" y="10" width="138" height="485"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFR-Nq-0hO">
+                            <rect key="frame" x="8" y="503" width="138" height="499"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zet-W9-0bT">
+                            <rect key="frame" x="154" y="503" width="138" height="499"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-0h-h1R">
+                            <rect key="frame" x="154" y="10" width="138" height="485"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zWo-QN-F64" firstAttribute="width" secondItem="49H-7F-8BI" secondAttribute="width" multiplier="0.5" constant="-12" id="0kx-NL-rgZ"/>
+                        <constraint firstItem="JFR-Nq-0hO" firstAttribute="width" secondItem="Zet-W9-0bT" secondAttribute="width" id="4al-UR-69Z"/>
+                        <constraint firstItem="JFR-Nq-0hO" firstAttribute="top" secondItem="zWo-QN-F64" secondAttribute="bottom" constant="8" id="4f5-zN-o0R"/>
+                        <constraint firstItem="Si9-0h-h1R" firstAttribute="height" secondItem="zWo-QN-F64" secondAttribute="height" id="E2N-xP-6xx"/>
+                        <constraint firstItem="Zet-W9-0bT" firstAttribute="bottom" secondItem="JFR-Nq-0hO" secondAttribute="bottom" id="EWP-lV-Ur8"/>
+                        <constraint firstItem="zWo-QN-F64" firstAttribute="top" secondItem="49H-7F-8BI" secondAttribute="top" constant="10" id="JgF-Gp-CCG"/>
+                        <constraint firstAttribute="bottom" secondItem="JFR-Nq-0hO" secondAttribute="bottom" constant="8" id="Lr7-qb-g5v"/>
+                        <constraint firstItem="Zet-W9-0bT" firstAttribute="width" secondItem="zWo-QN-F64" secondAttribute="width" id="Mfe-Sl-2ll"/>
+                        <constraint firstItem="JFR-Nq-0hO" firstAttribute="leading" secondItem="49H-7F-8BI" secondAttribute="leading" constant="8" id="QD1-sL-lfU"/>
+                        <constraint firstAttribute="trailing" secondItem="Si9-0h-h1R" secondAttribute="trailing" constant="8" id="SDJ-gx-exy"/>
+                        <constraint firstItem="Zet-W9-0bT" firstAttribute="top" secondItem="JFR-Nq-0hO" secondAttribute="top" id="Thb-wJ-QDp"/>
+                        <constraint firstItem="Si9-0h-h1R" firstAttribute="top" secondItem="zWo-QN-F64" secondAttribute="top" id="Tuy-tF-KyG"/>
+                        <constraint firstAttribute="trailing" secondItem="Zet-W9-0bT" secondAttribute="trailing" constant="8" id="aTd-FJ-Nkk"/>
+                        <constraint firstItem="zWo-QN-F64" firstAttribute="width" secondItem="Si9-0h-h1R" secondAttribute="width" id="pC6-p8-Cwh"/>
+                        <constraint firstItem="Si9-0h-h1R" firstAttribute="leading" secondItem="zWo-QN-F64" secondAttribute="trailing" constant="8" id="tQF-RY-rtd"/>
+                        <constraint firstItem="JFR-Nq-0hO" firstAttribute="width" secondItem="zWo-QN-F64" secondAttribute="width" id="uJU-iT-nti"/>
+                        <constraint firstItem="zWo-QN-F64" firstAttribute="height" secondItem="49H-7F-8BI" secondAttribute="height" multiplier="0.5" constant="-20" id="vlX-1F-F1Y"/>
+                        <constraint firstItem="zWo-QN-F64" firstAttribute="leading" secondItem="49H-7F-8BI" secondAttribute="leading" constant="8" id="xgT-Ji-Nhi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="49H-7F-8BI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Toj-Kw-kaq"/>
+                <constraint firstAttribute="bottom" secondItem="49H-7F-8BI" secondAttribute="bottom" constant="-16" id="ahE-UQ-HJf"/>
+                <constraint firstAttribute="trailing" secondItem="49H-7F-8BI" secondAttribute="trailing" id="fkk-Gc-2s6"/>
+                <constraint firstItem="49H-7F-8BI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="inK-Ip-Xha"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23" y="-29"/>
+        </view>
+    </objects>
+</document>

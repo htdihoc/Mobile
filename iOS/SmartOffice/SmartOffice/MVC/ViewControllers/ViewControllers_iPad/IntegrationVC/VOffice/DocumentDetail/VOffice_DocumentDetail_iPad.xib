@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VOffice_DocumentDetail_iPad">
+            <connections>
+                <outlet property="searchBar" destination="gQ1-Ta-8vE" id="eLM-0k-M6P"/>
+                <outlet property="tb_ListDocument" destination="6U1-dE-Qza" id="jBc-8m-WUd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQ1-Ta-8vE" userLabel="SearchView" customClass="SOSearchBarView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0DG-L5-NqO"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="auE-G2-F00"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6U1-dE-Qza" customClass="FullWidthSeperatorTableView">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gQ1-Ta-8vE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DFZ-I2-baw"/>
+                <constraint firstItem="gQ1-Ta-8vE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MI8-Qv-4La"/>
+                <constraint firstAttribute="trailing" secondItem="gQ1-Ta-8vE" secondAttribute="trailing" id="UU8-HX-bkY"/>
+                <constraint firstAttribute="trailing" secondItem="6U1-dE-Qza" secondAttribute="trailing" id="YYt-v4-rPl"/>
+                <constraint firstAttribute="bottom" secondItem="6U1-dE-Qza" secondAttribute="bottom" id="mZK-ZG-bNV"/>
+                <constraint firstItem="6U1-dE-Qza" firstAttribute="top" secondItem="gQ1-Ta-8vE" secondAttribute="bottom" id="oc9-9a-Pxr"/>
+                <constraint firstItem="6U1-dE-Qza" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wjU-3d-w6K"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
+        </view>
+    </objects>
+</document>

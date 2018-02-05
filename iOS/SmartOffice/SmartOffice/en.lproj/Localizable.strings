@@ -1,0 +1,806 @@
+/*
+ Localizable.strings
+ SmartOffice
+ 
+ Created by Nguyen Thanh Huy on 3/28/17.
+ Copyright © 2017 Nguyen Thanh Huy. All rights reserved.
+ */
+//Use this for Calender
+
+"Warning" = "Warning";
+
+"Access to the calendar was not authorized" = "Access to the calendar was not authorized";
+
+"This is a repeating event." = "This is a repeating event.";
+
+"What do you want to modify?" = "What do you want to modify?";
+
+"Cancel" = "Cancel";
+
+"This event only" = "This event only";
+
+"All future events" = "All future events";
+
+"New Event" = "New Event";
+
+"%lu more..." = "%lu more...";
+
+
+"KLOGIN_ALERT_TITLE"                =   "Notice";
+"KLOGIN_ALERT_BTN_OK"               =   "OK";
+"KLOGIN_ALERT_BTN_CANCEL"           =   "Cancel";
+
+"KLOGIN_ALERT_TITLE"                =   "Notice";
+"KLOGIN_ALERT_BTN_OK"               =   "OK";
+"KLOGIN_ALERT_BTN_CANCEL"           =   "Cancel";
+
+"KALERT_TITLE"                        = "SmartOffice";
+"KALERT_ERROR_TITLE"                = "Error!";
+
+/*
+ MORE SCREEN
+ */
+
+"SearchSerial..." = "Tìm kiếm theo mã serial, tên hàng hóa...";
+"SearchSerial.." = "Tìm kiếm theo mã serial, tên tài sản, mã trạm...";
+"SearchSerial." = "Tìm kiếm theo mã serial, tên tài sản...";
+"SearchCodeBBBG.." = "Mã BBBG";
+"SearchCodeBBBG" = "Mã BBBG";
+"KMORE_SCR_MY_ACCOUNT"              =   "My Account";
+"KMORE_SCR_SETTING"                 =   "Setting";
+"KMORE_SCR_REMINDER"                =   "Reminder";
+"KMORE_SCR_STORAGE"                 =   "Storage";
+"KMORE_SCR_QLY_TRI_THUC"            =   "Quản lý tri thức";
+"KMORE_SCR_SURVEY"                  =   "Survey";
+"KMORE_SCR_PMTC"                    =   "Phần mềm tài chính";
+"KMORE_SCR_KTTS"                    =   "KTTS";
+"KMORE_SCR_PMTC"                    =   "Phần mềm tài chính";
+
+/*
+ GENERAL INFO SCREEN
+ */
+
+"KGENERALINFO_SCR_PERSIONAL_INFO"   =   "Thông tin cá nhân";
+"KGENERALINFO_SCR_PERSIONAL_ASSEST" =   "Thông tin tài sản cá nhân";
+"KGENERALINFO_SCR_TRAINING_PROCESS" =   "Quá trình đào tạo & Nghiên cứu";
+"KGENERALINFO_SCR_SALARY"           =   "Diễn biến lương & Chức danh";
+"KGENERALINFO_SCR_INSTRUMENT"       =   "Diễn biến lương bảo hiểm";
+"KGENERALINFO_SCR_BONUS"            =   "Diễn biến lương phụ cấp";
+"KGENERALINFO_SCR_SOCIAL_INST"      =   "Quá trình tham gia bảo hiểm xã hội";
+"KGENERALINFO_SCR_PER_TYPE"         =   "Quá trình loại cán bộ";
+"KGENERALINFO_SCR_AWARD"            =   "Khen thưởng & Kỷ luật";
+"KGENERALINFO_SCR_TAX"              =   "Thuế và giảm trừ gia cảnh";
+"KGENERALINFO_SCR_FILES"            =   "Hồ sơ kèm theo";
+"KGENERALINFO_SCR_RELATIONSHIP"     =   "Quan hệ gia đình";
+/*
+ TTNS
+ */
+"Login" = "VLogin";
+
+/*
+ InfoHumanVC
+ */
+"KINFO_HUMAN_VC_WORK_INFO"              =   "THÔNG TIN CÔNG";
+"KINFO_HUMAN_VC_COUNT_WORK_DAY"         =   "Tổng công thực tế";
+"KINFO_HUMAN_VC_INCOME_INFO"            =   "THÔNG TIN THU NHẬP";
+
+"K_INFO_HUMAN_VC_MANAGER_IN_OUT"        =   "Quản lý ra ngoài";
+"K_INFO_HUMAN_VC_MANAGER_ABSENT"        =   "Quản lý nghỉ phép";
+"K_INFO_HUMAN_VC_MANAGER_HOLYDAY"       =   "Quản lý trực lễ";
+
+/*
+ LIST_REGISTER_FORM
+ */
+"KLIST_REGISTER_FORM_BACK_TITLE"        =   "DS đơn đăng ký";
+"KLIST_REGISTER_FORM_RIGHT_TITLE"       =   "Tạo mới";
+"KLIST_REGISTER_FORM_TYPE_1"            =   "Đơn xin nghỉ phép";
+"KLIST_REGISTER_FORM_TYPE_2"            =   "Đơn xin nghỉ việc riêng";
+"KLIST_REGISTER_FORM_TYPE_3"            =   "Đơn xin nghỉ ốm";
+"KLIST_REGISTER_FORM_TYPE_4"            =   "Đơn xin nghỉ con ốm";
+
+"KLIST_REGISTER_FORM_STATUS_TYPE_0"     =   "Bị từ chối";
+"KLIST_REGISTER_FORM_STATUS_TYPE_1"     =   "Đang chờ phê duyệt";
+"KLIST_REGISTER_FORM_STATUS_TYPE_2"     =   "Đã phê duyệt";
+"KLIST_REGISTER_FORM_STATUS_TYPE_3"     =   "Chưa trình ký";
+
+/*
+ REG TAKE LEAVE VC // Tạo đơn nghỉ phép
+ */
+"TTNS_TAO_MOI_DON"                      =   "Tạo mới đơn";
+"TTNS_NGHI_PHEP"                        =   "Nghỉ phép";
+"TTNS_HET_NGHI_PHEP"                    =   "Đ/c đã hết ngày phép";
+"TTNS_NGHI_VIEC_RIENG"                  =   "Nghỉ việc riêng";
+"TTNS_NGHI_OM"                          =   "Nghỉ ốm";
+"TTNS_NGHI_CON_OM"                      =   "Nghỉ con ốm";
+"TTNS_NGHI_VO_SINH_CON"                 =   "Nghỉ vợ sinh con";
+"TTNS_NO_DATA"                          =   "Hiện tại! Bạn không có đơn xin nghỉ nào!";
+"Không có dữ liệu"                      =   "Không có dữ liệu";
+"Không tìm thấy kết quả"                =   "Không tìm thấy kết quả";
+"Bạn chắc chắn muốn xoá đơn xin nghỉ này?" = "Bạn chắc chắn muốn xoá đơn xin nghỉ này?";
+"Bạn chắc chắn muốn xoá đăng ký này?"   = "Bạn chắc chắn muốn xoá đăng ký này?";
+"Bạn muốn huỷ thao tác ?"                 = "Bạn muốn huỷ thao tác ?";
+
+"Huỷ bỏ"                                = "Huỷ bỏ";
+"Đồng ý"                                = "Đồng ý";
+
+
+/*
+ NOTIFICATION
+ */
+
+"KNOTIFICATION_REPORT"                  =   "Thông báo";
+"KNOTIFICATION_DELETE"                  =   "Xóa";
+"KNOTIFICATION_CLOSE"                   =   "Đóng";
+"KNOTIFICATION_REMINDER"                =   "Reminder";
+"KNOTIFICATION_SELECTALL"               =   "Chọn tất cả";
+
+/*
+ Xin nghi phep
+ */
+"TTNS_LY_DO"                            =   "Lý do";
+"TTNS_XIN_NGHI_PHEP"                    =   "Xin nghỉ phép";
+"TTNS_SO_NGAY_PHEP_CON_LAI"             =   "Số ngày phép còn lại:";
+"TTNS_NGAY"                             =   "ngày";
+"TTNS_LY_DO_NGHI"                       =   "Lý do nghỉ";
+"TTNS_THOI_GIAN_NGHI"                   =   "Thời gian nghỉ";
+"TTNS_TONG"                             =   "Tổng:";
+"TTNS_NGAY_QUA_PHEP"                    =   "ngày (quá phép ";
+"TTNS_NGAY_1"                           =   "ngày)";
+"TTNS_NOI_NGHI"                         =   "Nơi nghỉ";
+"TTNS_SDT"                              =   "Số điện thoại";
+"TTNS_GHI_CHU"                          =   "Ghi chú";
+"TTNS_NGUOI_DUOC_BAN_GIAO"
+= "Người được bàn giao và đảm nhiệm công việc thay trong thời gian xin nghỉ (nếu có)";
+"TTNS_CHON_NGUOI_BAN_GIAO"              =   "Chọn Người bàn giao";
+"TTNS_NOI_DUNG_BAN_GIAO"                =   "Nội dung bàn giao";
+"TTNS_CHI_HUY_DON_VI"                   =   "Chỉ huy đơn vị";
+"TTNS_CHON_CHI_HUY_DON_VI"              =   "Chọn Chỉ huy đơn vị";
+"TTNS_GHI_LAI"                          =   "Ghi lại";
+"TTNS_TRINH_KY"                         =   "Trình ký";
+
+"QL Nghỉ phép"                          = "Quản Lý Nghỉ phép";
+"Tạo mới đơn nghỉ phép"                 = "Tạo mới đơn nghỉ phép";
+
+///*
+// Xin nghỉ con ốm
+// */
+//
+"TTNS_TRANG_THAI"                       =   "Trạng thái";
+"TTNS_CHUA_PHE_DUYET"                   =   "Chưa phê duyệt";
+"TTNS_DA_PHE_DUYET"                     =   "Đã phê duyệt";
+"TTNS_BI_TU_CHOI"                       =   "Bị từ chối";
+"TTNS_XAC_NHAN_BBBG"                    =   "Xác nhận BBBG";
+"TTNS_XAC_NHAN_BBBG_CONTENT"                    =   "Đ/c chắc chắn muốn hủy trình ký đơn này không?";
+"TTNS_HUY_TRINH_KY"                     =   "Hủy trình ký";
+
+/*
+ RefuseVC
+ */
+
+"Bạn chưa nhập"                         = "Bạn chưa nhập";
+"Không vượt quá 256 ký tự"              = "Không vượt quá 256 ký tự";
+
+/*
+ Xin nghỉ việc riêng
+ */
+
+"TTNS_CHE_DO_NGHI"                      =   "Chế độ nghỉ";
+"TTNS_CO_HUONG_LUONG"                   =   "Có hưởng lương";
+"TTNS_KHONG_HUONG_LUONG"                =   "Không hưởng lương";
+
+/*
+ Xin nghỉ con ốm
+ */
+"Nhập lý do nghỉ"                       = "Nhập lý do nghỉ";
+"Nhập nơi nghỉ"                         = "Nhập nơi nghỉ";
+"Nhập số điện thoại"                    = "Nhập số điện thoại";
+"Nhập ghi chú"                          = "Nhập ghi chú";
+"Nhập nội dung bàn giao"                = "Nhập nội dung bàn giao";
+
+/*
+ Tìm kiếm
+ */
+
+"TTNS_TIM_KIEM"                         =   "Tìm kiếm";
+
+// Survey
+"KMORE_SURVEY" = "Khảo sát";
+"KMORE_PMTC" = "Phần mềm tài chính";
+"KMORE_REMINDER" = "Reminder";
+"KMORE_CREATE" = "Tạo mới";
+"KMORE_PERFORM_SURVEY" = "Thực hiện khảo sát";
+"KMORE_SURVEY_CREATE_REMINDER" = "Tạo Reminder";
+"KMORE_REMINDER_NAME" = "Tên Reminder";
+"KMORE_REMINDER_TIME" = "Thời gian nhắc";
+"KMORE_NUMBER_REPEAT" = "Số lần lặp";
+"KMORE_SELECT_LEVEL" = "Chọn mức độ";
+"KMORE_NOTE" = "Ghi chú";
+"KMORE_COMPLETE" = "Ghi lại";
+"KMORE_NO_DATA_SURVEY" = "Hiện tại! Bạn không có yêu cầu thực hiện khảo sát nào!";
+"KMORE_ERROR_SERVER_SURVEY" = "Mất kết nối tới hệ thống!";
+
+// PMTC
+"PMTC_MAKE_DEBT" = "THÔNG TIN CÔNG NỢ";
+"PMTC_CURRENT_UNIT" = "Đơn vị tiền tệ";
+"PMTC_CURRENT_DEBT" = "Công nợ hiện tại";
+"PMTC_TRANSACTION_HISTORY" = "LỊCH SỬ GIAO DỊCH";
+"PMTC_SEND_INVOICE" = "Gửi hoá đơn";
+"PMTC_ATTACH_VOUCHER" = "Đính kèm chứng từ";
+"PMTC_DEBT_INFORMATION" = "THÔNG TIN HÓA ĐƠN";
+"PMTC_SENDINVOICE_BILLNO" = "Số hoá đơn";
+"PMTC_SENDINVOICE_CREAT_BILLNO" = "Nhập số hoá đơn";
+"PMTC_SENDINVOICE_TAXCODE" = "Mã số thuế";
+"PMTC_SENDINVOICE_TAXCODE_CREAT" = "Nhập mã số thuế";
+"PMTC_SENDINVOICE_FILEATTACH_AN_INVOICE_PHOTO" = "Tệp đính kèm ảnh chụp hoá đơn";
+"PMTC_SEARCH_BY_NAME" = "Tìm kiếm theo tên";
+"PMTC_LIST_OF_TYLE_DOCUMENTS" = "DANH MỤC LOẠI CHỨNG TỪ";
+"PMTC_LIST" = "Danh sách";
+"PMTC_UPDATE" = "Cập nhật";
+"PMTC_VOUCHER_DETAIL" = "Chi tiết chứng từ";
+"PMTC_SEARCH_BY_NAME_AND_MORE" = "Tìm theo số/ tên chứng từ/ ngày chứng từ";
+"PMTC_DETAIL_VOUCHER_NO" = "Số chứng từ";
+"PMTC_DETAIL_VOUCHER_DATE" = "Ngày chứng từ";
+"PMTC_DETAIL_CONTENT" = "Nội dung";
+"PMTC_DETAIL_FILE_ATTACH" = "Tệp đính kèm";
+"PMTC_NO_MONEY" = "Số tiền";
+"PMTC_NO_DATA" = "Không có dữ liệu!";
+"PMTC_NOT_DATA_LIST" = "Hiện tại! Không có danh sách chứng từ!";
+"PMTC_NOT_DOCUMENT" = "Không có danh mục chứng từ nào!";
+
+
+// My Account
+"KMYACCOUNT_MYACCOUNT" = "Thông tin của tôi";
+
+
+//UserManagement:
+"TTNS_UserManagement_Đi_làm" = "Đi làm";
+"TTNS_UserManagement_Nghỉ" = "Nghỉ";
+"TTNS_UserManagement_Quản_lý_vào_ra" = "Quản lý ra ngoài";
+"TTNS_UserManagement_Phê_duyệt_công" = "Phê duyệt công";
+"TTNS_UserManagement_Quản_lý_trực_lễ" = "Quản lý trực lễ";
+"Phê duyệt ra vào"                  = "Phê duyệt ra ngoài";
+"Tra cứu thông tin nhân viên"       = "Tra cứu thông tin nhân viên";
+
+
+//AbsentInfo
+"TTNS_AbsentInfo_Thông_tin_nghỉ" = "Thông tin nghỉ";
+"TTNS_AbsentInfo_nghỉ_dài_ngày" = "nghỉ dài ngày";
+"TTNS_AbsentInfo_nghỉ_phép" = "nghỉ phép";
+"TTNS_AbsentInfo_nghỉ_khác" = "nghỉ khác";
+"TTNS_AbsentInfo_nghỉ_không_lương" = "nghỉ không lương";
+"TTNS_AbsentInfo_nghỉ_việc_riêng" = "nghỉ việc riêng";
+"TTNS_AbsentInfo_Cancel" = "Cancel";
+
+//DissconnectView
+"TTNS_DissconnectView_Mất_kết_nối_tới_hệ_thống" = "Mất kết nối tới hệ thống";
+"TTNS_DissconnectView_Thử_lại" = "Thử lại";
+
+//CheckOut
+"TTNS_CheckOut_Phê_duyệt_đăng_ký_ra_ngoài" = "Phê duyệt đăng ký ra ngoài";
+"TTNS_CheckOut_Đóng" = "Đóng";
+"TTNS_CheckOut_Từ_chối" = "Từ chối";
+
+//TTNSBaseSwipeView
+"TTNS_TTNSBaseSwipeView_Từ_chối_phê_duyệt" = "Từ chối phê duyệt";
+
+//DismissTimeKeeping
+"TTNS_DismissTimeKeeping_Lý_do" = "Lý do:";
+
+//ListCheckOut
+"TTNS_ListCheckOut_Nội_dung_ra_ngoài" = "Nội dung ra ngoài";
+
+//TTNS_BaseSwipeView
+"TTNS_SwipeCell_Từ_chối" = "Từ chối";
+"TTNS_SwipeCell_Phê_duyệt" = "Phê duyệt";
+
+//TimeKeepings
+"TTNS_TimeKeepings_Phê_duyệt_công" = "Phê duyệt công";
+
+//TimeKeepingCell
+"TTNS_TimeKeepingCell_Tổng_ngày_công_thực" = "Tổng ngày công thực";
+
+//UMTimeKeepingDetail
+"TTNS_UMTimeKeepingDetail_Chi_tiết_công" = "Chi tiết công";
+"TTNS_UMTimeKeepingDetail_Từ_chối_toàn_bộ" = "Từ chối toàn bộ";
+"TTNS_UMTimeKeepingDetail_Phê_duyệt_toàn_bộ" = "Phê duyệt toàn bộ";
+"TTNS_UMTimeKeepingDetail_Đ/c_chưa_có_quyền_chấm_công_cho_ngày_này" = "Đ/c chưa có quyền chấm công cho ngày này";
+"TTNS_UMTimeKeepingDetail_Thông_báo_lỗi" = "Thông báo lỗi";
+"TTNS_UMTimeKeepingDetail_Cảnh_báo" = "Cảnh báo";
+"UMTimeKeepingDetail_ngày_công_đã_bị_khoá_không_thể_phê_duyệt" = "Ngày công đã bị khoá, không thể phê duyệt";
+//TimeKeepingCalendar
+"TTNS_TimeKeepingCalendar_Thực_hiện_chấm_công" = "Thực hiện chấm công";
+"TTNS_TimeKeepingCalendar_Đóng" = "Đóng";
+"TTNS_TimeKeepingCalendar_Chấm_công" = "Chấm công";
+"TTNS_TimeKeepingCalendar_Huỷ_chấm_công" = "Huỷ chấm công";
+"TTNS_TimeKeepingCalendar_Tổng_số_ngày_công_thực_tế" = "Tổng số ngày công thực tế";
+"TTNS_TimeKeepingCalendar_Nhấn_chọn_ngày_để_cập_nhật_công" = "Nhấn chọn ngày để cập nhật công";
+"TTNS_TimeKeepingCalendar_Công_chưa_phê_duyệt" = "Công chưa phê duyệt";
+"TTNS_TimeKeepingCalendar_Công_đã_phê_duyệt" = "Công đã phê duyệt";
+"TTNS_TimeKeepingCalendar_Công_bị_từ_chối" = "Công bị từ chối";
+"TTNS_TimeKeepingCalendar_Công_bị_khoá" = "Công bị khoá";
+"TTNS_TimeKeepingCalendar_dd/mm/yy" = "dd/mm/yy";
+"TTNS_TimeKeepingCalendar_Ngày_công_được_phê_duyệt_muộn" = "Ngày công được phê duyệt muộn";
+//NormalCheckOut
+"TTNS_NormalCheckOut_Quản_lý_vào_ra" = "Quản lý vào ra";
+"TTNS_NormalCheckOut_Chưa_trình_ký" = "Chưa trình ký";
+"TTNS_NormalCheckOut_Đã_phê_duyệt" = "Đã phê duyệt";
+"TTNS_NormalCheckOut_Bị_từ_chối" = "Bị từ chối";
+"TTNS_NormalCheckOut_Đang_chờ_ký_duyệt" = "Đang chờ ký duyệt";
+
+//NormalCheckOutCell
+"TTNS_NormalCheckOutCell_Nội_dung_ra_ngoài" = "Nội dung ra ngoài";
+"TTNS_NormalCheckOutCell_Lý_do_từ_chối" = "Lý do từ chối";
+
+//TTNS_RegistryGoOut
+"TTNS_TTNS_RegistryGoOut_Đăng_ký_ra_ngoài"  = "Đăng ký ra ngoài";
+"TTNS_TTNS_RegistryGoOut_Đăng_ký_mới"       = "Đăng ký mới";
+"TTNS_TTNS_RegistryGoOut_Gửi_đăng_ký"       = "Gửi đăng ký";
+"TTNS_TTNS_RegistryGoOut_Gửi_lại_đăng_ký"   = "Gửi lại đăng ký";
+"TTNS_TTNS_RegistryGoOut_Huỷ_đăng_ký"       = "Huỷ đăng ký";
+"TTNS_TTNS_RegistryGoOut_Đóng"              = "Đóng";
+"TTNS_TTNS_RegistryGoOut_Xác_nhận"          = "Xác nhận";
+"Bạn phải nhập Lý do từ chối"               = "Bạn phải nhập Lý do từ chối";
+"Nhập lý do từ chối"                        = "Nhập lý do từ chối";
+"Xác nhận từ chối phê duyệt"                = "Xác nhận từ chối phê duyệt";
+
+//RegisterReason
+"TTNS_RegisterReason_Gặp_đối_tác_khách_hàng" = "Gặp đối tác, khách hàng";
+"TTNS_RegisterReason_Khảo_sát_nghiệp_vụ" = "Khảo sát nghiệp vụ";
+"TTNS_RegisterReason_Đi_học" = "Đi học";
+"TTNS_RegisterReason_Đi_họp" = "Đi họp";
+"TTNS_RegisterReason_Đào_tạo" = "Đào tạo";
+"TTNS_RegisterReason_Khác" = "Khác";
+
+//RegisterList
+"TTNS_RegisterList_Danh_sách_ĐK_trực_nghỉ" = "Danh sách ĐK trực nghỉ";
+
+//RegisterWatch
+"TTNS_RegisterWatch_Đăng_ký_trực_nghỉ" = "Đăng ký trực nghỉ";
+"TTNS_RegisterWatch_Gửi_đăng_ký" = "Gửi đăng ký";
+
+//RegisterWatchCell
+"TTNS_RegisterWatchCell_Loại_đăng_ký" = "Loại đăng ký";
+"TTNS_RegisterWatchCell_Nghỉ" = "Nghỉ";
+"TTNS_RegisterWatchCell_Trực" = "Trực";
+"TTNS_RegisterWatchCell_Nội_dung_công_việc" = "Nội dung công việc";
+"TTNS_RegisterWatchCell_Nơi_trực" = "Nơi trực";
+"TTNS_RegisterWatchCell_Đăng_ký_thêm_ngoài_số_ngày_được_nghỉ_theo_quy_định" = "Đăng ký thêm ngoài số ngày được nghỉ theo quy định";
+"TTNS_RegisterWatchCell_Chọn" = " - Chọn - ";
+"TTNS_RegisterWatchCell_Chon_Dia_Diem" = " - Chọn địa điểm - ";
+"TTNS_RegisterWatchCell_Chưa_đăng_ký" = "-Chưa đăng ký-";
+
+//RegisterWatchCell
+"TTNS_RegisterAbsentCell_Loại_đăng_ký" = "Loại đăng ký";
+"TTNS_RegisterAbsentCell_Nơi_nghỉ" = "Nơi nghỉ";
+"TTNS_RegisterAbsentCell_Nghỉ" = "Nghỉ";
+"TTNS_RegisterAbsentCell_Trực" = "Trực";
+
+//CheckList chủ ý tách làm 2 view riêng
+"TTNS_CheckListPlace_Danh_sách_địa_điểm" = "Danh sách địa điểm";
+"TTNS_CheckListWork_Nội_dung_công_việc" = "Nội dung công việc";
+
+//RegisterOtherFreeDay
+"TTNS_RegisterOtherFreeDay_Thông_tin_đăng_ký_thêm" = "Thông tin đăng ký thêm";
+"TTNS_RegisterOtherFreeDay_Nghỉ_trước_từ" = "Nghỉ trước";
+"TTNS_RegisterOtherFreeDay_Nghỉ_sau_từ" = "Nghỉ sau";
+"TTNS_RegisterOtherFreeDay_Nhập_lý_do_chi_tiết" = "Nhập lý do chi tiết";
+"TTNS_RegisterOtherFreeDay_Nơi_nghỉ" = "Nơi nghỉ";
+
+//NormalRegisterDetail
+"TTNS_NormalRegisterDetail_Trạng_thái" = "Trạng thái";
+"TTNS_NormalRegisterDetail_Lý_do" = "Lý do";
+"TTNS_NormalRegisterDetail_Người_từ_chối" = "Người từ chối";
+"TTNS_NormalRegisterDetail_Nơi_đến" = "Nơi đến";
+"TTNS_NormalRegisterDetail_Lý_do_đăng_ký" = "Lý do đăng ký";
+"TTNS_NormalRegisterDetail_Lý_do_chi_tiết" = "Lý do chi tiết";
+"TTNS_NormalRegisterDetail_Thời_gian_đăng_ký_ra_ngoài" = "Thời gian đăng ký ra ngoài";
+"TTNS_NormalRegisterDetail_Huỷ_trình_ký" = "Huỷ trình ký";
+"TTNS_NormalRegisterDetail_Gửi_đăng_ký" = "Gửi đăng ký";
+"TTNS_NormalRegisterDetail_Delete"      = "Xoá";
+"TTNS_NormalRegisterDetail_Chi_tiết_đăng_ký" = "Chi tiết đăng ký";
+//InfoHumanVC
+"TTNS_InfoHumanVC_Thực_hiện_chấm_công" = "Thực hiện chấm công";
+"TTNS_InfoHumanVC_Đóng" = "Đóng";
+"TTNS_InfoHumanVC_Chấm_công" = "Chấm công";
+"TTNS_InfoHumanVC_Thông_tin_lương_tháng" = "Thông tin lương tháng";
+
+//ProcessTimeKeeping
+"TTNS_ProcessTimeKeeping_Loại_công" = "Loại công";
+"TTNS_ProcessTimeKeeping_Địa_điểm" = "Địa điểm";
+"TTNS_ProcessTimeKeeping_Đi_làm_cả_ngày" = "Đi làm cả ngày";
+"TTNS_ProcessTimeKeeping_Đi_làm_nửa_ngày" = "Đi làm nửa ngày";
+"TTNS_ProcessTimeKeeping_Nghỉ" = "Nghỉ";
+"TTNS_Tại_đơn_vị" = "Tại đơn vị";
+"TTNS_ProcessTimeKeeping_Đơn_vị_trong_Viettel" = "Onsite trong Viettel";
+"TTNS_ProcessTimeKeeping_Đơn_vị_ngoài_Viettel" = "Onsite ngoài Viettel";
+
+//IncomeDetail
+"TTNS_IncomeDetail_Lương_kỳ_1:" = "Lương kỳ 1:";
+"TTNS_IncomeDetail_Lương_SXKD:" = "Lương SXKD:";
+"TTNS_IncomeDetail_Thu_nhập_khác:" = "Thu nhập khác:";
+"TTNS_IncomeDetail_Tổng" = "Tổng";
+"TTNS_IncomeDetail_Đơn_vị_tính" = "Đơn vị tính";
+
+
+//TimeKeepingPopup in User rule
+"TTNS_TimeKeepingPopup_Phê_duyệt_Công_ngày" = "Phê duyệt công ngày";
+"TTNS_TimeKeepingPopup_Phê_duyệt" = "Phê duyệt";
+"TTNS_TimeKeepingPopup_Từ_chối" = "Từ chối";
+
+//12/05/2017
+//TTNS_INFOAndKI
+"Thông tin lương và KI" = "Thông tin lương và KI";
+"QLTT_DetailVC_hãy_là_người_đầu_tiên_thích_tài_liệu_này" = "Hãy là người đầu tiên thích tài liệu này!";
+"QLTT_DetailView_Cùng_chuyên_mục" = "Cùng chuyên mục";
+//TTNS_CheckOutDetail
+"CheckOutDetail_Nơi_đến" = "Nơi đến";
+"CheckOutDetail_Lý_do_đăng_ký" = "Lý do đăng ký";
+"CheckOutDetail_Lý_do_chi_tiết" = "Nhập lý do chi tiết";
+"CheckOutDetail_Thời_gian_ra_ngoài" = "Thời gian từ";
+"CheckOutDetail_Từ_chối" = "Từ chối";
+"CheckOutDetail_Phê_duyệt" = "Phê duyệt";
+"CheckOutDetail_Thông_tin_đăng_ký" = "Thông tin đăng ký";
+
+//TTNS_TimerPicker
+"TimePickerVC_Thời_gian_nghỉ" = "Thời gian nghỉ";
+"TopPickerView_Thời_gian_bắt_đầu" = "Thời gian bắt đầu";
+"TopPickerView_Thời_gian_kết_thúc" = "Thời gian kết thúc";
+"TimePicker_Đóng" = "Đóng";
+"TimePicker_OK" = "OK";
+"AM" = "AM";
+"PM" = "PM";
+"Đã hết khung giờ ra ngoài, vui lòng chọn ngày khác" = "Đã hết khung giờ ra ngoài, vui lòng chọn ngày khác";
+"Hãy chọn giờ bắt đầu và giờ kết thúc theo đúng khung giờ" = "Hãy chọn giờ bắt đầu và giờ kết thúc theo đúng khung giờ";
+"Thời gian" = "Thời gian";
+//QLTT_iPhone
+"QLTT_MasterVC_Tìm_kiếm" = "Tìm kiếm";
+"QLTT_MasterVC_Danh_mục_dạng_cây" = "Danh mục dạng cây";
+"QLTT_MasterVC_Quản_lý_tri_thức" = "Quản lý tri thức";
+"QLTT_MasterVC_Tất_cả" = "Tất cả";
+"QLTT_MasterVC_Mới_nhất" = "Mới nhất";
+"QLTT_MasterVC_Xem_nhiều_nhất" = "Xem nhiều nhất";
+"QLTT_MasterView_Tìm_kiếm" = "Tìm kiếm";
+"QLTT_MasterView_tài_liệu" = "tài liệu";
+"QLTT_MasterView_tác_giả" = "tác giả";
+"QLTT_MasterView_người_tạo" = "người tạo";
+"QLTT_MasterViewCell_Tác_giả" = "Tác giả";
+"QLTT_MasterViewCell_Phiên_bản" = "phiên bản";
+"QLTT_DetailVC_Thông_tin_chung" = "Thông tin chung";
+"QLTT_DetailVC_Thông_tin_chi_tiết" = "Thông tin chi tiết";
+"QLTT_DetailVC_Ý_kiến_đọc" = "Ý kiến độc giả";
+"QLTT_DetailVC_Bạn" = "Đ/c";
+"QLTT_DetailVC_và" = "và";
+"QLTT_InfoDetail_Thông_tin_tài_liệu_đính_kèm" = "Thông tin tài liệu đính kèm";
+"QLTT_InfoDetail_Xem_thêm" = "Xem thêm";
+"QLTT_PreviewVC" = "Tài liệu tải về";
+"QLTT_DetailVC_Xem_thêm" = "Xem thêm";
+"QLTT_DetailVC_Xem_thêm_các_bình_luận" = "Xem thêm các bình luận trước";
+"QLTT_DetailVC_Lựa_chọn_tài_liệu" = "Lựa chọn loại tài liệu từ cây danh mục";
+"QLTT_CommentView_Ẩn_đi" = "Rút gọn";
+"QLTT_CommentView_Nhập_bình_luận_của_bạn" = "Nhập bình luận của bạn";
+"QLTT_CommentVC_hãy_là_người_đầu_tiên_đóng_góp_ý_kiến_về_tài_liệu_này!" = "Chưa có bình luận nào!";
+"QLTT_TreeViewMode_Danh_mục" = "Danh mục";
+"QLTT_DetailView_Thời_gian_tạo" = "Thời gian tạo";
+"QLTT_DetailView_Tác_giả" = "Tác giả";
+"QLTT_DetailView_Ngôn_ngữ" = "Ngôn ngữ";
+"QLTT_DetailView_Người_phê_duyệt/NXB" = "Người phê duyệt/NXB";
+"QLTT_DetailView_SốTrang/DungLượng" = "Số trang/Dung lượng";
+"QLTT_DetailView_Người_tạo" = "Người tạo";
+"QLTT_DetailVC_Chi_tiết_tài_liệu" = "Chi tiết tài liệu";
+"QLTT_DetailVC_thích_tài_liệu_này" = "đã thích tài liệu này";
+"QLTT_DetailVC_người_khác" = "người khác";
+"QLTT_DetailVC_người" = "người";
+"Mb" = "Mb";
+//TTNS_iPad
+"Nhiệm vụ BGĐ giao" = "Nhiệm vụ BGĐ giao";
+"Nhiệm vụ phối hợp" = "Nhiệm vụ phối hợp";
+"Nhiệm vụ đăng ký" = "Nhiệm vụ đăng ký";
+"VOffice_Mission_Tìm_kiếm_theo_tên_nhiệm_vụ" = "Tìm kiếm theo tên nhiệm vụ ";
+"VOffice_Work_Tìm_kiếm_theo_tên_công_việc_tên_người" = "Tìm kiếm theo tên công việc";
+"VOffice_ListMissionMain_iPad_Tìm_kiếm_theo_tên_và_đơn_vị" = "Tên đơn vị";
+"VOffice_ListWorkMain_iPad_Danh_sách_công_việc" = "Danh sách công việc";
+"VOffice_ListMissionMain_iPad_Danh_sách_nhiệm_vụ" = "Danh sách nhiệm vụ";
+"VOffice_ListMeetingMain_iPad_Danh_sách_lịch_họp" = "Danh sách lịch họp";
+"VOffice_ListDocumentMain_iPad_Danh_sách_văn_bản" = "Danh sách văn bản";
+"VOffice_DocumentTypicalDetailCell_iPad_Trích_yếu_nội_dung" = "Trích yếu nội dung";
+"VOffice_DocumentTypicalDetailCell_iPad_Đơn_vị_trình_ký" = "Đơn vị trình ký";
+"VOffice_DocumentTypicalDetailCell_iPad_Người_trình_ký" = "Người trình ký";
+"VOffice_DocumentTypicalDetailCell_iPad_Thời_gian_trình_ký" = "Thời gian trình ký";
+"VOffice_DocumentTypicalDetailCell_iPad_Độ_mật" = "Độ mật";
+"VOffice_DocumentTypicalDetailCell_iPad_Độ_khẩn" = "Độ khẩn";
+"VOffice_DocumentTypicalDetail_iPad_Danh_sách_ký_duyệt" = "Danh sách ký duyệt";
+"VOffice_DocumentTypicalDetail_iPad_Chi_tiết_văn_bản" = "Chi tiết văn bản";
+"VOffice_ListDocumentMain_iPad_Văn_bản_chờ_ký_duyệt" = "Văn bản chờ ký duyệt";
+"VOffice_ListDocumentMain_iPad_văn_bản_ký_nháy" = "Văn bản chờ ký nháy";
+"VOffice_ListDocumentMain_iPad_Văn_bản_hoả_tốc" = "Văn bản hoả tốc";
+"VOffice_ListDocument_Tìm_kiếm_theo_tên_văn_bản_tên_người_trình_ký" = "Tìm kiếm theo tên văn bản";
+"Tầng 15 Crowne - Trần Hữu Dực" = "Tầng 15 Crowne - Trần Hữu Dực";
+
+//VOffice_DocumentCell
+"VOffice_DocumentCell_iPad_Chờ_ký_duyệt" = "Chờ ký duyệt";
+"VOffice_DocumentCell_iPad_Ký_nháy" = "Chờ ký nháy";
+"VOffice_DocumentCell_iPad_Hoả_tốc" = "Hoả tốc";
+
+"VOffice_PersonJoinCell_iPad_Chủ_trì" = "Chủ trì";
+"VOffice_PersonJoinCell_iPad_Chuẩn_bị" = "Chuẩn bị";
+"VOffice_PersonJoinCell_iPad_Tham_gia"= "Tham gia";
+//Tabbar
+"KTABBAR_ITEM_INTEGRATION_TITLE"    = "Integration";
+"KTABBAR_ITEM_SOCIAL_TITLE"            = "Social";
+"KTABBAR_ITEM_CONVERSATION_TITLE"    = "Conversation";
+"KTABBAR_ITEM_CONTACT_TITLE"        = "Contact";
+"KTABBAR_ITEM_MORE_TITLE"            = "More";
+"KTABBAR_ITEM_LOGOUT_TITLE"            = "Logout";
+
+
+
+/***
+ IPAD
+ ***/
+
+// WORKINFOVC ( THONGTINCONG)
+"Thông tin công"                    = "Thông tin công";
+"Công phê duyệt"                    = "Công phê duyệt";
+"Công chưa phê duyệt"               = "Công chưa phê duyệt";
+"Nghỉ không lương"                  = "Nghỉ không lương";
+"Công chưa chấm"                    = "Công chưa chấm";
+
+// INCOMEINFOVC ( THÔNG TIN THU NHẬP )
+"Thông tin thu nhập"                = "Thông tin thu nhập";
+"Lương kì 01"                       = "Lương kì 01";
+"Lương SXKD"                        = "Lương SXKD";
+"Lương khác"                        = "Lương khác";
+"Đơn vị tính"                       = "Đơn vị tính : Việt Nam Đồng";
+
+// KI
+"Thông tin KI"                      = "Thông tin KI";
+"Tháng"                             = "Tháng";
+"Điểm"                              = "Điểm";
+"Điểm Ki"                           = "Điểm Ki";
+
+
+//VOffice - VOFF
+"KVOFF_TAB_PERSONAL_TITLE"        = "Cá nhân";
+"KVOFF_TAB_MISSION_TITLE"        = "Nhiệm vụ";
+
+"KVOFF_PERFORM_TITLE"            = "Thực hiện";
+"KVOFF_SHIPPED_TITLE"            = "Giao đi";
+
+"KVOFF_SECTION_WORK_TITLE"        = "Công việc";
+"KVOFF_SECTION_METTING_TITLE"    = "Lịch họp";
+"KVOFF_SECTION_DOC_TITLE"        = "Văn bản";
+
+"kVOFF_GOTO_VOFFICE_TITLE_BUTTON" = "Tới Voffice";
+
+"MISSION_STATUS_DELAY_PROGRESS_LABEL"    = "Chậm tiến độ";
+"MISSION_STATUS_UN_INPROGRESS_LABEL"    = "Chưa thực hiện";
+"Đang thực hiện"    = "Đang thực hiện";
+"Đã hoàn thành"        = "Đã hoàn thành";
+"Đã kết thúc"        = "Đã kết thúc";
+"Yêu cầu đóng"        = "Yêu cầu đóng";
+"Đã đóng"            = "Đã đóng";
+"Chưa đóng"            = "Chưa đóng";
+"Yêu cầu gia hạn"    = "Yêu cầu gia hạn";
+"Đã chuyển"            = "Đã chuyển";
+
+///VOffice_iPad
+//VOffice_WorkPlan_iPad
+"VOffice_WorkPlan_iPad_Chưa_thực_hiện" = "Chưa thực hiện";
+"VOffice_WorkPlan_iPad_Chậm_tiến_độ" = "Chậm tiến độ";
+"VOffice_WorkPlan_iPad_Công_việc" = "Công việc";
+"VOffice_WorkPlan_iPad_Giao_đi" = "Giao đi";
+"VOffice_WorkPlan_iPad_Thực_thiện" = "Thực hiện";
+"VOffice_ListWorkMain_iPad_Hiện_tại_đ/c_không_có_nhiệm_vụ_giao_đi" = "Hiện tại đ/c không có nhiệm vụ giao đi";
+"VOffice_ListMissionMain_iPad_Hiện_tại_đ/c_không_có_nhiệm_vụ_thực_hiện" = "Hiện tại đ/c không có nhiệm vụ thực hiện";
+
+//VOffice_ListView_iPad
+"VOffice_ListView_iPad_Thực_hiện" = "Thực hiện";
+"VOffice_ListView_iPad_Giao_đi" = "Giao đi";
+
+//DetailWorkCell
+"DetailWorkCell_Tên_công_việc" = "Tên công việc";
+"DetailWorkCell_Nội_dung_công_việc" = "Nội dung công việc";
+"DetailWorkCell_Loại_công_việc" = "Loại công việc";
+"DetailWorkCell_Ngày_giao" = "Ngày giao";
+"DetailWorkCell_Thời_hạn" = "Thời hạn";
+"DetailWorkCell_Trạng_thái" = "Trạng thái";
+"DetailWorkCell_Tần_suất_báo_cáo" = "Tần suất báo cáo";
+"DetailWorkCell_Mức_độ" = "Mức độ";
+"DetailWorkCell_Phối_hợp" = "Phối hợp";
+"DetailWorkCell_Người_giao" = "Người giao";
+"DetailWorkCell_Giao_tới" = "Giao tới";
+
+//VOffice_ListWorkCell
+"VOffice_ListWorkCell_iPad_Thời_hạn" = "Thời hạn";
+"VOffice_ListWorkCell_iPad_Người_giao" = "Người giao";
+"VOffice_ListWorkCell_iPad_Phối_hợp" = "Phối hợp";
+"VOffice_ListWorkCell_iPad_Trạng_thái" = "Trạng thái";
+"VOffice_ListWorkCell_iPad_Giao_tới" = "Giao tới";
+//VOffice_DetailMission_iPad
+"VOffice_DetailMission_iPad_Chi_tiết_công_việc" = "Chi tiết công việc";
+
+//VOffice_MissionPlan_iPad
+"VOffice_MissionPlan_iPad_Nhiệm_vụ" = "Nhiệm vụ";
+
+//VOffice_DetailMission_iPad
+"VOffice_DetailMission_iPad_Chi_tiết_nhiệm_vụ" = "Chi tiết nhiệm vụ";
+
+//VOffice_Meeting_iPad
+"VOffice_Meeting_iPad_Lịch_họp_gần_nhất" = "Lịch họp gần nhất";
+
+//VOffice_MeetingDetail_iPad
+"VOffice_MeetingDetail_iPad_Chi_tiết_lịch_họp" = "Chi tiết lịch họp";
+"VOffice_MeetingDetail_iPad_Thành_phần_tham_gia" = "Thành phần tham gia";
+"VOffice_MeetingDetail_iPad_Chủ_đề_cuộc_họp" = "Chủ đề cuộc họp";
+"VOffice_MeetingDetail_iPad_Nội_dung" = "Nội dung";
+"VOffice_MeetingDetail_iPad_Phòng_họp" = "Phòng họp";
+"VOffice_MeetingDetail_iPad_Thời_gian" = "Thời gian";
+"VOffice_MeetingDetail_iPad_Người_liên_hệ" = "Người liên hệ";
+
+//VOffice_Document_iPad
+"VOffice_Document_iPad_Văn_bản" = "Văn bản";
+
+//VOffice_New
+"- Tất cả -" = "- Tất cả -";
+"Công việc cá nhân" = "Công việc cá nhân";
+"Công việc phối hợp" = "Công việc phối hợp";
+"Công việc được giao" = "Công việc được giao";
+"VOffice_MainView_iPad_Hiện_tại_Đ/c_không có_nhiệm_vụ_nào" = "Hiện tại Đ/c không có nhiệm vụ nào";
+
+//Status_Work (Status_Work)
+"Status_Work_UnInprogress"    = "Chưa thực hiện";
+"Status_Work_Inprogress"    = "Đang thực hiện";
+"Status_Work_Completed"        = "Đã hoàn thành";
+
+//List Mission (LM)
+"LI_ASSIGNER_LABEL" = "Người giao";
+"LI_DEADLINE_LABEL" = "Thời hạn";
+"LI_STATE_LABEL"    = "Trạng thái";
+
+"LI_SCREEN_TITLE" = "Danh sách nhiệm vụ";
+
+//Detai Mission (DM)
+"DM_NAME_MISSION_LABEL" = "Tên nhiệm vụ";
+"DM_RELEASE_DATE_LABEL"    = "Ngày giao";
+"DM_DEADLINE_DATE"        = "Thời hạn";
+"DM_STATE_LABEL"        = "Trạng thái";
+"DM_FREQUENCY_UPDATE_LABEL"    = "Tần suất báo cáo";
+"DM_IMPORTANT_LEVEL_LABEL"    = "Mức độ";
+"DM_OBJECTIVE_LABEL"        = "Mục tiêu";
+"DM_ASSIGNER_LABEL"            = "Người giao việc";
+
+
+"DM_LEVEL_IMPORTANT_LABEL"    = "Quan trọng";
+"DM_LEVEL_NORMAL_LABEL"        = "Bình thường";
+
+//Detail DOC (DD)
+"Chi tiết văn bản" = "Chi tiết văn bản";
+
+//SignStatusDocument
+"SignStatus_Chưa_xử_lý" = "Chưa xử lý";
+"SignStatus_Văn_thư_từ_chối_duyệt" = "Văn thư từ chối duyệt";
+"SignStatus_Từ_chối_duyệt" = "Từ chối duyệt";
+"SignStatus_Chưa_xử_lý" = "Chưa xử lý";
+"SignStatus_Đã_ký_duyệt" = "Đã ký duyệt";
+"SignStatus_Văn_thư_đã_ký_duyệt" = "Văn thư đã ký duyệt";
+"SignStatus_Đã_ký_nháy" = "Đã ký nháy";
+
+//PlaceHolder
+"PL_SEARCH_DOC_LABEL" = "Tìm kiếm theo tên và đơn vị";
+"PL_SEARCH_DOC_LABEL_More" = "công việc, người phối hợp";
+
+//ListWork (LW)
+"LW_SCREEN_TITLE"    = "Danh sách công việc";
+
+//Message
+"Hiện tại Đ/C không có văn bản nào"        = "Hiện tại đ/c không có văn bản nào";
+"Hiện tại Đ/C không có lịch họp nào"    = "Hiện tại đ/c không có lịch họp nào";
+"Hiện tại Đ/C không có công việc nào"    = "Hiện tại đ/c không có công việc nào";
+
+"Không có nội dung" = "Không có nội dung";
+
+"Không có nội dung"        = "Không có nội dung";
+"Trích yếu nội dung"    = "Trích yếu nội dung";
+"Đơn vị trình ký"        = "Đơn vị trình ký";
+"Đơn vị ban hành"        = "Đơn vị ban hành";
+"Người ký ban hành"        = "Người ký ban hành";
+"Ngày ban hành"            = "Ngày ban hành";
+
+"Người trình ký"        = "Người trình ký";
+"Độ mật"                = "Độ mật";
+"Độ khẩn"                = "Độ khẩn";
+
+"Ẩn danh"                = "Ẩn danh";
+
+//ALERT
+"Mất kết nối tới hệ thống" = "Mất kết nối tới hệ thống";
+"Không có dữ liệu"        = "Không có dữ liệu";
+"Mất kết nối mạng"           = "Mất kết nối mạng";
+"Không kết nối được đến máy chủ, xin vui lòng kiểm tra và thử lại sau!" = "Không kết nối được đến máy chủ, xin vui lòng kiểm tra và thử lại sau!";
+"Bạn muốn xoá đơn nghỉ phép này?"   = "Bạn muốn xoá đơn nghỉ phép này?";
+"Huỷ đăng ký thành công"            = "Huỷ đăng ký thành công";
+
+"Không_có" = "Không có";
+"Huỷ" = "Huỷ";
+"Không có tài liệu đính kèm" = "Không có tài liệu đính kèm nào";
+"Không nhập quá 2000 ký tự" = "Không nhập quá 2000 ký tự";
+"Xoá" = "Xoá";
+
+"Hãy chọn giờ kết thúc lớn hơn giờ bắt đầu" = "Hãy chọn thời gian kết thúc lớn hơn thời gian bắt đầu";
+"Hãy chọn giờ bắt đầu lớn hơn giờ hiện tại" = "Hãy chọn thời gian bắt đầu lớn hơn bằng thời gian hiện tại và kết thúc";
+"ĐV thực hiện" = "ĐV thực hiện";
+
+"Sun" = "Sun";
+"Mon" = "Mon";
+"Tue" = "Tue";
+"Web" = "Web";
+"Thu" = "Thu";
+"Fri" = "Fri";
+"Sat" = "Sat";
+
+"Hôm nay" = "Hôm nay";
+"Ngày mai" = "Ngày mai";
+
+"Không mở được tài liệu" = "Không mở được tài liệu";
+
+//Priority DOC
+"Bình thường"    = "Bình thường";
+"Khẩn"            = "Khẩn";
+"Hoả tốc"        = "Hoả tốc";
+"Thượng khẩn"    = "Thượng khẩn";
+
+
+"Loading..." = "Loading...";
+
+"Phê duyệt thành công" = "Phê duyệt thành công";
+"Từ chối thành công" = "Từ chối thành công";
+"Tệp tin không tồn tại" = "Tệp tin không tồn tại";
+"Bạn phải nhập lí do hủy chấm công" = "Bạn phải nhập lí do hủy chấm công";
+"Ngày công đã được phê duyệt" = "Ngày công đã được phê duyệt";
+"Ngày công đã được phê duyệt" = "Ngày công đã được phê duyệt";
+"Bạn phải nhập lý do từ chối" = "Bạn phải nhập lý do từ chối";
+"Từ chối không thành công" = "Từ chối không thành công";
+"Lý do hủy chấm công" = "Lý do hủy chấm công";
+"Nhập lý do từ chối duyệt công" = "Nhập lý do từ chối duyệt công";
+"Nhập lý do huỷ chấm công" = "Nhập lý do huỷ chấm công";
+
+//TimeKeeping
+"Have time keeping this date" = "Ngày công đã được phê duyệt";
+"Employee not found" = "Không tìm thấy nhân viên";
+"Comment not found" = "Không thấy bình luận";
+"Timekeeping not found" = "Không tìm thấy ngày công";
+"Date time keeping invalidate" = "Thời gian chấm công không đúng";
+"Do not timekeping after now" = "Không thể chấm công sau giờ hiện tại";
+"Establish time keeping not found" = "Không tìm thấy thiết bị chấm công";
+"Type not found" = "Không tìm thấy kiểu";
+"Have something wrong" = "Có lỗi sảy ra";
+"Approve Employee not found" = "Không tìm thấy người phê duyệt";
+"Emp self time keeping not found" = "Không tìm thấy ngày công";
+"Time keeping is locked" = "Ngày công bị khoá";
+"Reason is not found" = "Hãy điền lý do";
+"From time invalidate" = "Thời gian bắt đầu không đúng";
+"End time invalidate" = "Thời gian kết thúc chưa đúng";
+"Register in out not found" = "Không tìm thấy bản đăng ký";
+"From time isnot empty" = "Hãy điền giờ bắt đầu";
+"End time isnot empty" = "Hãy điền giờ kết thúc";
+"Work place not found" = "Không tìm thấy nơi làm việc";
+"Employee have not permisson approved" = "Nhân viên không có quyền phê duyệt";
+"status must be equal 1 or 3" = "Trạng thái phải bằng 1 hoặc 3";
+"status must be between 1 or 3" = "Trạng thái phải từ 1 đến 3";
+"Reason is not empty" = "Hãy điền lý do";
+"Reason must be less than 500 charector" = "Lý do phải nhỏ hơn 500 ký tự";
+"EmpoutReg was accepted" = "Đơn đăng ký đã được chấp thuận";
+"status is between 1 and 4" = "Trạng thái phải từ 1 đến 4";
+"from time must be less than end time" = "Thời gian bắt đầu phải nhỏ hơn hoặc bằng thời gian kết thúc";
+"Status not found" = "Không tìm thấy trạng thái";
+"Have not exist register in out" = "Không tồn tại đơn đăng ký vào ra";
+"Comment must be less than 256 charector" = "Bình luận phải nhỏ hơn 256 ký tự";
+"Manager not found" = "Không tìm thấy người quan lý";
+"Manager do not have permission with employee" = "Người quan lý không có quyên với nhân viên";
+"From time keeping is not empty" = "Thời gian bắt đầu không được rỗng";
+"To time keeping is not empty" = "Thời gian kết thúc không được rỗng";
+"Cannot time keeping leave on leave day" = "Không thể chấm công cho ngày nghỉ";
+"Ki is empty" = "Không có thông tin KI";
+"from date must be less than to date" = "Thời gian bắt đầu phải nhỏ hơn thời gian kết thúc";
+"Cannot time keeping" = "Không thể chấm công";
+

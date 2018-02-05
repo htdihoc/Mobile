@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12118"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailWorkInfoVC_iPad">
+            <connections>
+                <outlet property="containerView1" destination="k3y-jp-Y63" id="dms-gG-elY"/>
+                <outlet property="containerView2" destination="xpL-Fu-2sR" id="uCD-sn-iyK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-jp-Y63">
+                    <rect key="frame" x="8" y="72" width="409.5" height="688"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpL-Fu-2sR">
+                    <rect key="frame" x="425.5" y="72" width="590.5" height="688"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94637554879999997" green="0.95640259979999998" blue="0.97343736889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xpL-Fu-2sR" firstAttribute="leading" secondItem="k3y-jp-Y63" secondAttribute="trailing" constant="8" id="05d-PQ-Lwl"/>
+                <constraint firstItem="k3y-jp-Y63" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="3hs-vM-MzL"/>
+                <constraint firstItem="k3y-jp-Y63" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Am3-ZX-cLp"/>
+                <constraint firstAttribute="trailing" secondItem="xpL-Fu-2sR" secondAttribute="trailing" constant="8" id="VJg-BA-lYc"/>
+                <constraint firstItem="k3y-jp-Y63" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.4" id="daY-6Q-XNw"/>
+                <constraint firstAttribute="bottom" secondItem="k3y-jp-Y63" secondAttribute="bottom" constant="8" id="e19-Tn-5p3"/>
+                <constraint firstItem="xpL-Fu-2sR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="72" id="kWn-fK-Sku"/>
+                <constraint firstAttribute="bottom" secondItem="xpL-Fu-2sR" secondAttribute="bottom" constant="8" id="o2i-Tr-hqG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

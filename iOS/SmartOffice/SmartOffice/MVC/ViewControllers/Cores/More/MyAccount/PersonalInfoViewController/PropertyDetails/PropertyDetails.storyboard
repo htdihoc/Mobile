@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Property Details View Controller-->
+        <scene sceneID="OqE-e5-m5w">
+            <objects>
+                <viewController storyboardIdentifier="PropertyDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="eJu-J4-8Cr" customClass="PropertyDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Xi-8L-Dw4"/>
+                        <viewControllerLayoutGuide type="bottom" id="VJC-mr-tra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12T-B1-kt1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HOC-9T-rcH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eJu-J4-8Cr" id="fMs-FM-U0F"/>
+                                    <outlet property="delegate" destination="eJu-J4-8Cr" id="q9u-xv-nGZ"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYK-mC-2x5">
+                                <rect key="frame" x="187.5" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="0.015686274510000001" green="0.53333333329999999" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HOd-0Y-FLS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Xác nhận tài sản">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="eJu-J4-8Cr" eventType="touchUpInside" id="YOp-vP-xhV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDq-Ub-mBZ">
+                                <rect key="frame" x="0.0" y="617" width="187.5" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.32156862745098036" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D4X-zL-LDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Hủy thông báo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="eJu-J4-8Cr" eventType="touchUpInside" id="umG-Q9-XYb"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsu-SS-eCZ">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.32156862745098036" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZpL-gp-GJd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Hủy thông báo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCancelOrConfirmAction:" destination="eJu-J4-8Cr" eventType="touchUpInside" id="o8T-zd-XAi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HOC-9T-rcH" secondAttribute="trailing" id="5lO-bM-Nsx"/>
+                            <constraint firstAttribute="trailing" secondItem="rYK-mC-2x5" secondAttribute="trailing" id="6C0-UN-fMe"/>
+                            <constraint firstItem="VJC-mr-tra" firstAttribute="top" secondItem="rYK-mC-2x5" secondAttribute="bottom" id="7EZ-H4-9hz"/>
+                            <constraint firstItem="HOC-9T-rcH" firstAttribute="top" secondItem="6Xi-8L-Dw4" secondAttribute="bottom" constant="44" id="CYg-2z-T1p"/>
+                            <constraint firstItem="Lsu-SS-eCZ" firstAttribute="leading" secondItem="12T-B1-kt1" secondAttribute="leading" id="EQe-qb-7fd"/>
+                            <constraint firstItem="YDq-Ub-mBZ" firstAttribute="leading" secondItem="12T-B1-kt1" secondAttribute="leading" id="Fnc-qV-OHL"/>
+                            <constraint firstItem="HOC-9T-rcH" firstAttribute="leading" secondItem="12T-B1-kt1" secondAttribute="leading" id="MPF-Fl-LCg"/>
+                            <constraint firstAttribute="trailing" secondItem="Lsu-SS-eCZ" secondAttribute="trailing" id="bMb-dT-mr9"/>
+                            <constraint firstItem="rYK-mC-2x5" firstAttribute="leading" secondItem="YDq-Ub-mBZ" secondAttribute="trailing" id="gRN-16-WI4"/>
+                            <constraint firstItem="VJC-mr-tra" firstAttribute="top" secondItem="YDq-Ub-mBZ" secondAttribute="bottom" id="mYU-m5-sPa"/>
+                            <constraint firstItem="VJC-mr-tra" firstAttribute="top" secondItem="Lsu-SS-eCZ" secondAttribute="bottom" id="mgg-ed-WSu"/>
+                            <constraint firstItem="rYK-mC-2x5" firstAttribute="width" secondItem="YDq-Ub-mBZ" secondAttribute="width" id="p7M-c8-1ha"/>
+                            <constraint firstItem="Lsu-SS-eCZ" firstAttribute="top" secondItem="HOC-9T-rcH" secondAttribute="bottom" id="zXh-c1-vf7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="YDq-Ub-mBZ" id="Kii-eq-MG1"/>
+                        <outlet property="btnCancelOrConfirm" destination="Lsu-SS-eCZ" id="xEq-E1-fcy"/>
+                        <outlet property="btnConfirm" destination="rYK-mC-2x5" id="dos-mZ-DGK"/>
+                        <outlet property="hightBtnCancel" destination="D4X-zL-LDB" id="M5K-cB-0QE"/>
+                        <outlet property="hightBtnCancelOrConfirm" destination="ZpL-gp-GJd" id="S0W-zL-Nmp"/>
+                        <outlet property="hightBtnConfirm" destination="HOd-0Y-FLS" id="mqU-Yb-cEZ"/>
+                        <outlet property="propertyDetailsTableView" destination="HOC-9T-rcH" id="mP7-6m-VwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qu1-Rc-tD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="47.226386806596707"/>
+        </scene>
+    </scenes>
+</document>

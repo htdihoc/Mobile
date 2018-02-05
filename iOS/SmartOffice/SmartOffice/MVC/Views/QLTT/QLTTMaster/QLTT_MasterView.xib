@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QLTT_MasterView">
+            <connections>
+                <outlet property="btn_Filter" destination="6G3-58-IST" id="eEh-nZ-ZhD"/>
+                <outlet property="containerView" destination="rUV-j6-9zV" id="UdN-BM-vpU"/>
+                <outlet property="cst_FilterWidth" destination="cLv-ta-W4C" id="MPB-5U-anY"/>
+                <outlet property="masterTableView" destination="kdk-8h-K0r" id="PPM-Ab-P4p"/>
+                <outlet property="searchBar" destination="hQm-H2-X9A" id="xYd-vZ-MPJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Nw-Jw-KSf" userLabel="SearchView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-58-IST">
+                            <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="cLv-ta-W4C"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="10" maxX="15" maxY="10"/>
+                            <state key="normal" image="filterDoc"/>
+                            <connections>
+                                <action selector="filer:" destination="-1" eventType="touchUpInside" id="lZb-Do-cPF"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQm-H2-X9A" customClass="SOSearchBarView">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hQm-H2-X9A" firstAttribute="leading" secondItem="1Nw-Jw-KSf" secondAttribute="leading" id="8SB-zn-HSX"/>
+                        <constraint firstAttribute="bottom" secondItem="6G3-58-IST" secondAttribute="bottom" id="D77-4K-hmp"/>
+                        <constraint firstAttribute="height" constant="44" id="GB9-bU-oU1"/>
+                        <constraint firstAttribute="bottom" secondItem="hQm-H2-X9A" secondAttribute="bottom" id="UdF-Nu-cig"/>
+                        <constraint firstAttribute="trailing" secondItem="6G3-58-IST" secondAttribute="trailing" id="amW-b9-i7H"/>
+                        <constraint firstItem="6G3-58-IST" firstAttribute="leading" secondItem="hQm-H2-X9A" secondAttribute="trailing" id="gFM-Ja-kJR"/>
+                        <constraint firstItem="hQm-H2-X9A" firstAttribute="top" secondItem="1Nw-Jw-KSf" secondAttribute="top" id="qXF-Gc-aej"/>
+                        <constraint firstItem="6G3-58-IST" firstAttribute="top" secondItem="1Nw-Jw-KSf" secondAttribute="top" id="xuO-KN-cph"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-j6-9zV">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-8h-K0r" customClass="QLTT_MasterTableView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kdk-8h-K0r" firstAttribute="leading" secondItem="rUV-j6-9zV" secondAttribute="leading" id="CMk-HD-oEY"/>
+                        <constraint firstItem="kdk-8h-K0r" firstAttribute="top" secondItem="rUV-j6-9zV" secondAttribute="top" id="SOG-Dg-so2"/>
+                        <constraint firstAttribute="bottom" secondItem="kdk-8h-K0r" secondAttribute="bottom" id="Y9G-By-Wae"/>
+                        <constraint firstAttribute="trailing" secondItem="kdk-8h-K0r" secondAttribute="trailing" id="hgB-M8-UA8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rUV-j6-9zV" secondAttribute="bottom" id="G7V-B6-Y9v"/>
+                <constraint firstItem="rUV-j6-9zV" firstAttribute="top" secondItem="1Nw-Jw-KSf" secondAttribute="bottom" id="Ogm-Yx-ndl"/>
+                <constraint firstAttribute="trailing" secondItem="rUV-j6-9zV" secondAttribute="trailing" id="Rtt-J1-42c"/>
+                <constraint firstItem="rUV-j6-9zV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V01-4I-nRW"/>
+                <constraint firstItem="1Nw-Jw-KSf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oFe-39-f0J"/>
+                <constraint firstItem="1Nw-Jw-KSf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="opT-fU-ybn"/>
+                <constraint firstAttribute="trailing" secondItem="1Nw-Jw-KSf" secondAttribute="trailing" id="yPA-Zv-TVH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filterDoc" width="63" height="61"/>
+    </resources>
+</document>
