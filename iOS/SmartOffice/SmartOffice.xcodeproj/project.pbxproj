@@ -6918,7 +6918,7 @@
 					CE23065D1E89C68100F87DA7 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 7NJ9UF6EX5;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					CE2306791E89C68200F87DA7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -8630,9 +8630,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Do Chi Cuong (7NJ9UF6EX5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Do Chi Cuong (2YM5SYWXB9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NJ9UF6EX5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8644,10 +8644,10 @@
 				INFOPLIST_FILE = SmartOffice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsol.client.SmartOffice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.client.SmartOffice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "be9ef654-daeb-4bd4-af86-4fcbe742127f";
-				PROVISIONING_PROFILE_SPECIFIER = provisionAdhocSmartOffice;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -8657,9 +8657,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Do Chi Cuong (7NJ9UF6EX5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Do Chi Cuong (2YM5SYWXB9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NJ9UF6EX5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -8671,10 +8671,10 @@
 				INFOPLIST_FILE = SmartOffice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itsol.client.SmartOffice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.client.SmartOffice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "be9ef654-daeb-4bd4-af86-4fcbe742127f";
-				PROVISIONING_PROFILE_SPECIFIER = provisionAdhocSmartOffice;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

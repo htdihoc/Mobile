@@ -237,7 +237,7 @@
 "PMTC_LIST" = "Danh sách";
 "PMTC_UPDATE" = "Cập nhật";
 "PMTC_VOUCHER_DETAIL" = "Chi tiết chứng từ";
-"PMTC_SEARCH_BY_NAME_AND_MORE" = "Tìm theo số/ tên chứng từ/ ngày chứng từ";
+"PMTC_SEARCH_BY_NAME_AND_MORE" = "Số chứng từ, tên chứng từ, ngày chứng từ";
 "PMTC_DETAIL_VOUCHER_NO" = "Số chứng từ";
 "PMTC_DETAIL_VOUCHER_DATE" = "Ngày chứng từ";
 "PMTC_DETAIL_CONTENT" = "Nội dung";

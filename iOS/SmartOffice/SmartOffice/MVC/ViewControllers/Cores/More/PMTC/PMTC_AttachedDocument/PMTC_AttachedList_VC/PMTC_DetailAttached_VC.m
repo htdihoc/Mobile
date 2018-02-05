@@ -25,7 +25,7 @@
     
 }
 @property (strong, nonatomic) NSArray *data_FilterDetailPMTC;
-
+@property (strong, nonatomic) NSString *textSearchInput;
 @end
 
 @implementation PMTC_DetailAttached_VC
@@ -35,7 +35,7 @@
     [self initErrorView];
     [self setupUI];
     documentList = [NSMutableArray new];
-    [self getDataListDocument];
+    [self getDataListDocumentWithLoading:YES];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:tap];
     tap.cancelsTouchesInView = NO;
@@ -71,31 +71,39 @@
 }
 
 - (void)didRefreshOnErrorView:(SOErrorView *)errorView {
-    [self getDataListDocument];
+    [self getDataListDocumentWithLoading:YES];
 }
 
-- (void)getDataListDocument {
-    [[Common shareInstance] showCustomHudInView:self.view];
+- (void)getDataListDocumentWithLoading:(BOOL)hasLoading {
+    if (hasLoading) {
+        [[Common shareInstance] showCustomHudInView:self.view];
+    }
     NSDictionary *parameter = @{
                                 @"arg0": self.documentType,
                                 @"arg2": [NSNumber numberWithInteger:self.pageSize],
                                 @"arg3": [NSNumber numberWithInteger:self.pageNumber]
                                 };
     [PMTCProcessor postPMTC_getDocumentByCategory:parameter handle:^(id result, NSString *error) {
-        [[Common shareInstance] dismissCustomHUD];
+        if (hasLoading) {
+            [[Common shareInstance] dismissCustomHUD];
+        }
         [documentList removeAllObjects];
         NSArray *array = result;
-//        [documentList addObjectsFromArray:array];
         array = [DocumentCategoryModel arrayOfModelsFromDictionaries:array error:nil];
         documentList = [NSMutableArray arrayWithArray:[self sortArray:array]];
-        self.data_FilterDetailPMTC = documentList;
-        if (documentList.count > 0 ) {
-            [self.tableView reloadData];
-            self.tableView.hidden = NO;
-            soErrorView.hidden = YES;
+        if (_textSearchInput == nil) {
+            self.data_FilterDetailPMTC = documentList;
+            if (documentList.count > 0 ) {
+                [self.tableView reloadData];
+                self.tableView.hidden = NO;
+                soErrorView.hidden = YES;
+            } else {
+                [self addNoDataView];
+            }
         } else {
-            [self addNoDataView];
+            [self reloadTableViewWithSearchText:_textSearchInput];
         }
+        [self hiddenPullRefreshView:YES];
     } onError:^(NSString *Error) {
         [self errorServer];
     } onException:^(NSString *Exception) {
@@ -111,7 +119,7 @@
     soErrorView.hidden = NO;
 //    self.tableView.hidden = YES;
     [[Common shareInstance] dismissCustomHUD];
-    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết nối Internet" inView: self.view];
+//    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết nối Internet" inView: self.view];
 }
 
 - (void) addNoDataView {
@@ -137,7 +145,14 @@
 }
 
 - (void)textField:(UITextField *)textField textDidChange:(NSString *)searchText {
+    self.textSearchInput = searchText;
+    [self reloadTableViewWithSearchText:searchText];
+}
+
+-(void) reloadTableViewWithSearchText : (NSString *)searchText {
+    searchText = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if ([searchText length] > 0) {
+        NSLog(@"SEARCH = %@",searchText);
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"documentNo contains[cd] %@ or content contains[cd] %@ or documentDate contains[cd] %@",searchText, searchText, searchText];
         self.data_FilterDetailPMTC = [documentList filteredArrayUsingPredicate:predicate];
         if ([self.data_FilterDetailPMTC count] > 0) {
@@ -215,21 +230,32 @@
     cell.lbl_Date.text = [NSString stringWithFormat:@"%@: %@", titleDate, result];
     
     [self.tableView addPullToRefreshWithActionHandler:^{
-        [self.tableView.pullToRefreshView stopAnimating];
+//        [self.tableView.pullToRefreshView stopAnimating];
         [self reloadDataTableView];
-    }];
+    } position:SVPullToRefreshPositionTop];
     return cell;
 }
 
 - (void) reloadDataTableView {
     if ([Common checkNetworkAvaiable]) {
-        [documentList removeAllObjects];
-        [self getDataListDocument];
-        [self.tableView reloadData];
+//        [documentList removeAllObjects];
+        [self getDataListDocumentWithLoading:NO];
+//        [self.tableView reloadData];
     } else {
-        [self showToastWithMessage:@"Mất kết nối Internet"];
+        [self hiddenPullRefreshView:YES];
+        [self showToastWithMessage:@"Mất kết nối mạng"];
     }
-    
+}
+
+- (void)hiddenPullRefreshView:(BOOL)hidden{
+    if (hidden) {
+        [self.tableView.pullToRefreshView stopAnimating];
+        [self.tableView.pullToRefreshView hiddenPullToRefresh:YES];
+    }else{
+        [self.tableView.pullToRefreshView startAnimating];
+        [self.tableView.pullToRefreshView hiddenPullToRefresh:NO];
+        self.tableView.showsPullToRefresh = YES;
+    }
 }
 
 - (NSArray *)sortArray:(NSArray *)data

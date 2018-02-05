@@ -55,7 +55,7 @@
     // Do any additional setup after loading the view.
     
     [self.navigationController setNavigationBarHidden:YES];
-//    [self.navigationController.interactivePopGestureRecognizer setDelegate:nil];
+    [self.navigationController.interactivePopGestureRecognizer setDelegate:nil];
     [self createUI];
     
     self.array_title = [NSMutableArray arrayWithObjects: kSetting, kReminder, kStorage, kSurvey, kViettelKnowledges, kProject, kPMTC, kLogout, nil];
@@ -67,7 +67,7 @@
 
 - (void) countData {
     NSDictionary *parameter = @{
-                                @"username": @"102026",
+                                @"username": @"169202",
                                 @"password": @"123456a@"
                                 };
     [SurveyProcessor getCountDataSurvey:parameter handle:^(id result, NSString *error) {

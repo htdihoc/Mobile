@@ -33,12 +33,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self initErrorView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.search_view.delegate = self;
     documentType = [NSMutableArray new];
-    [self getNumberDocmentType];
+    [self getNumberDocmentTypeWithLoading:YES];
     [self setupUI];
     [self checkIpad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
@@ -93,41 +93,61 @@
 }
 
 - (void)textField:(UITextField *)textField textDidChange:(NSString *)searchText {
-    if ([searchText length] > 0) {
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@ or value contains[cd] %@" ,searchText, searchText];
-        self.data_FilterPMTC = [documentType filteredArrayUsingPredicate:predicate];
-        if ([self.data_FilterPMTC count] > 0) {
-            [self removeContentLabel];
-            [self.tableView reloadData];
-        } else {
-            [self addContentLabel:LocalizedString(@"Không tìm thấy kết quả")];
-            [self.tableView reloadData];
-        }
-    } else {
+    [self processLoadDataWithSearchText:searchText];
+}
+
+- (void) processLoadDataWithSearchText : (NSString *) searchText {
+    NSString *strSearch = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if (!strSearch || [strSearch length] == 0) {
         [self removeContentLabel];
         self.data_FilterPMTC = documentType;
         [self.tableView reloadData];
+        [self setupPullToRefresh];
+        return;
+    }
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@ or value contains[cd] %@" ,strSearch, strSearch];
+    self.data_FilterPMTC = [documentType filteredArrayUsingPredicate:predicate];
+    if ([self.data_FilterPMTC count] > 0) {
+        [self removeContentLabel];
+        [self.tableView reloadData];
+    } else {
+        [self addContentLabel:LocalizedString(@"Không tìm thấy kết quả")];
+        [self.tableView reloadData];
+    }
+    [self setupPullToRefresh];
+}
+
+- (void) setupPullToRefresh {
+    if ([self.data_FilterPMTC count] > 0) {
+        [self.tableView setShowsPullToRefresh:YES];
+    } else {
+        [self.tableView setShowsPullToRefresh:NO];
     }
 }
 
 - (void)didRefreshOnErrorView:(SOErrorView *)errorView {
-    [self getNumberDocmentType];
+    [self getNumberDocmentTypeWithLoading:YES];
 }
 
 - (void) dismissKeyboard {
     [self.view endEditing:YES];
 }
 
-- (void) getNumberDocmentType {
-    [[Common shareInstance] showCustomHudInView:self.view];
+- (void) getNumberDocmentTypeWithLoading : (BOOL) hasLoading {
+    if (hasLoading) {
+        [[Common shareInstance] showCustomHudInView:self.view];
+    }
     [PMTCProcessor postPMTC_getDocumentCategory:nil handle:^(id result, NSString *error) {
-        [[Common shareInstance] dismissCustomHUD];
+        if (hasLoading) {
+            [[Common shareInstance] dismissCustomHUD];
+        }
         NSArray *array = result;
         [documentType addObjectsFromArray:array];
         documentType = [DocumentTypeListModel arrayOfModelsFromDictionaries:array error:nil];
-        self.data_FilterPMTC = documentType;
+//        self.data_FilterPMTC = documentType;
         if (documentType.count > 0 ) {
-            [self.tableView reloadData];
+            NSLog(@"Search = %@",self.search_view.text);
+            [self processLoadDataWithSearchText:self.search_view.text];
             self.tableView.hidden = NO;
             soErrorView.hidden = YES;
         } else {
@@ -153,10 +173,21 @@
     [[Common shareInstance] dismissCustomHUD];
 }
 - (void) donotInternet {
-    soErrorView.hidden = NO;
-    self.tableView.hidden = YES;
+    if ([self.data_FilterPMTC count] > 0) {
+        soErrorView.hidden = YES;
+        self.tableView.hidden = NO;
+        [self.tableView reloadData];
+    } else {
+        soErrorView.hidden = NO;
+        self.tableView.hidden = YES;
+    }
+    if ([Common checkNetworkAvaiable]) {
+        [self showToastWithMessage:@"Không kết nối được đến máy chủ, vui lòng kiểm tra và thử lại sau"];
+    } else {
+        [self showToastWithMessage:@"Mất kết nối mạng"];
+    }
     [[Common shareInstance] dismissCustomHUD];
-    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết nối Internet" inView: self.view];
+//    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết nối Internet" inView: self.view];
 }
 
 - (void) addNoDataView {
@@ -209,9 +240,9 @@
 }
 
 - (void)reloadDataTableView {
-    [documentType removeAllObjects];
-    [self getNumberDocmentType];
-    [self.tableView reloadData];
+//    [documentType removeAllObjects];
+    [self getNumberDocmentTypeWithLoading:NO];
+//    [self.tableView reloadData];
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];

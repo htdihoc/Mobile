@@ -81,11 +81,17 @@
 
 - (void) getDataDebtInformationHistory {
     [[Common shareInstance] showCustomHudInView:self.view];
-    
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *past = [calendar dateByAddingUnit:NSCalendarUnitMonth value:-3 toDate:now options:0];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd/MM/yyyy"];
+    NSString *nowStr = [formatter stringFromDate:now];
+    NSString *pastStr = [formatter stringFromDate:past];
     NSDictionary *parameter = @{
                                 @"arg0": @"111999",
-                                @"arg1": @"01/01/2015",
-                                @"arg2": @"31/12/2017",
+                                @"arg1": pastStr,
+                                @"arg2": nowStr,
                                 @"arg3": @10,
                                 @"arg4": @0
                                 };
@@ -122,8 +128,9 @@
         if (self.employee != nil) {
             self.currentUinitLabel.text = [NSString stringWithFormat:@"%@%@ %@", @"*" ,LocalizedString(@"PMTC_CURRENT_UNIT"), self.employee.currencyCode];
             NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-            [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
-            self.currentCodeLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:self.employee.debtAmount]];
+            [numberFormatter setNumberStyle: kCFNumberFormatterDecimalStyle];
+            NSString *debt = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:self.employee.debtAmount]];
+            self.currentCodeLabel.text = debt;
             soErrorView.hidden = YES;
         } else {
             [self addNoDataView];
@@ -140,7 +147,7 @@
     soErrorView.hidden = NO;
     self.pmtcTableView.hidden = YES;
     [[Common shareInstance] dismissCustomHUD];
-    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết tới hệ thống vui lòng thử lại" inView: self.view];
+//    [[Common shareInstance] showErrorHUDWithMessage:@"Không kết nối được tới máy chủ, vui lòng kiểm tra và thử lại sau" inView: self.view];
 }
 - (void) donotConnect {
     soErrorView.hidden = NO;
@@ -166,7 +173,6 @@
     self.pmtcTableView.hidden = YES;
     self.HeaderView.hidden = YES;
     [[Common shareInstance] dismissCustomHUD];
-    [[Common shareInstance] showErrorHUDWithMessage:@"Mất kết nối mạng" inView: self.view];
 }
 
 - (NSString *)convertDate:(NSString *)inDate {
@@ -234,7 +240,7 @@
                 }
                 dealHistoryCell.moneyTitleLabel.text = [NSString stringWithFormat:@"%@:", LocalizedString(@"PMTC_NO_MONEY")];
                         NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-                [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+                [numberFormatter setNumberStyle: kCFNumberFormatterDecimalStyle];
                         NSString *debtNumberString = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:model.amount]];
                 dealHistoryCell.moneyNumberLabel.text = debtNumberString;
                 } else {
@@ -330,7 +336,7 @@
     if ([Common checkNetworkAvaiable]) {
         [employeeDebtHistoryList removeAllObjects];
         [self getDataDebtInformationHistory];
-        [self.pmtcTableView reloadData];
+//        [self.pmtcTableView reloadData];
     } else {
         [self showToastWithMessage:@"Mất kết nối Internet"];
     }

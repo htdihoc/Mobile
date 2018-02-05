@@ -217,7 +217,7 @@
 "KMORE_NOTE" = "Ghi chú";
 "KMORE_COMPLETE" = "Ghi lại";
 "KMORE_NO_DATA_SURVEY" = "Hiện tại! Bạn không có yêu cầu thực hiện khảo sát nào!";
-"KMORE_ERROR_SERVER_SURVEY" = "Mất kết nối tới hệ thống!";
+"KMORE_ERROR_SERVER_SURVEY" = "Mất kết nối tới hệ thống! Hãy thử Refresh lại!";
 
 // PMTC
 "PMTC_MAKE_DEBT" = "THÔNG TIN CÔNG NỢ";

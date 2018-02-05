@@ -39,6 +39,7 @@
     isCheck = NO;
     self.backTitle = LocalizedString(@"PMTC_VOUCHER_DETAIL");
     [self.updateInvoiceButton setTitle:LocalizedString(@"PMTC_UPDATE") forState:UIControlStateNormal];
+    [self updateInvoiceButtonWithChanged:NO];
     self.heightCollection = 200;
     self.array_image_Item = [NSMutableArray new];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
@@ -106,7 +107,7 @@
         if (imagePath == nil) {
             self.fileName = [NSString stringWithFormat:@"%@%@", [self randomStringWithLength:8], @".png"];
         }
-
+        [self updateInvoiceButtonWithChanged:YES];
         [self.imageCollectionView reloadData];
     } else{
         NSLog(@"Selected photo is NULL");
@@ -307,7 +308,11 @@
         [self showToastWithMessage:@"Mất kết nối tới hệ thống"];
         [self hideCustomHUB];
     } onException:^(NSString *Exception) {
-        [self showToastWithMessage:@"Mất kết nối Internet"];
+        if ([Common checkNetworkAvaiable]) {
+            [self showToastWithMessage:@"Không kết nối được tới máy chủ, vui lòng kiểm tra và thử lại sau"];
+        } else {
+            [self showToastWithMessage:@"Mất kết nối mạng"];
+        }
         [self hideCustomHUB];
     }];
 }
@@ -350,7 +355,20 @@
 }
 
 - (void)didTapBackButton {
-    [self popToMoreRoot];
+    if ([self.array_image_Item count] > 0) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Thông báo", nil) message:NSLocalizedString(@"Đ/c chắc chắn muốn hủy thao tác?",nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"Không", nil) style:UIAlertActionStyleCancel handler:nil];
+        __weak VoucherDetailViewController *weakSelf = self;
+        UIAlertAction *actionOK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Có", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            [weakSelf popToMoreRoot];
+        }];
+        [alert addAction:actionCancel];
+        [alert addAction:actionOK];
+        [self presentViewController:alert animated:true completion:nil];
+    } else {
+        [self popToMoreRoot];
+    }
 }
 
 - (IBAction)updateInvoiceAction:(id)sender {
@@ -361,5 +379,15 @@
        return [self checkHaveImage];
     }
     
+}
+
+- (void) updateInvoiceButtonWithChanged:(BOOL) hasChanged {
+    if (hasChanged) {
+        _updateInvoiceButton.alpha = 1.0;
+        _updateInvoiceButton.enabled = YES;
+    } else {
+        _updateInvoiceButton.alpha = 0.5;
+        _updateInvoiceButton.enabled = NO;
+    }
 }
 @end

@@ -119,7 +119,7 @@
     UIImage *photoTaken = (UIImage *)[info valueForKey:UIImagePickerControllerOriginalImage];
     if (photoTaken) {
         imageCollectionCell.image_attach.image = photoTaken;
-        UIImageWriteToSavedPhotosAlbum(photoTaken, nil, nil, nil);
+//        UIImageWriteToSavedPhotosAlbum(photoTaken, nil, nil, nil);
         [self.array_image_Item addObject:photoTaken];
         NSURL *imagePath = [info objectForKey:@"UIImagePickerControllerReferenceURL"];
         self.fileName = [imagePath lastPathComponent];
@@ -141,8 +141,18 @@
     }
 }
 
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (range.length + range.location > textField.text.length) {
+        return NO;
+    }
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return newLength < 51;
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    if (((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]]).input_code.text.length > 0 & ((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]]).input_code.text.length > 0) {
+    NSString *billNo = ((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]]).input_code.text;
+    NSString *taxCode = ((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]]).input_code.text;
+    if (billNo.length > 0 && [billNo stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length > 0 && taxCode.length > 0 && [taxCode stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length > 0) {
         return [self enableButtonSendInvoice];
     } else{
         return [self disableButtonSendInvoice];
@@ -287,7 +297,7 @@
             break;
         case 3:
         {
-            return 110;
+            return 90;
         }
             break;
         case 4:
@@ -353,7 +363,12 @@
         [self showToastWithMessage:@"Mất kết nối tới hệ thống"];
         [self hideCustomHUB];
     } onException:^(NSString *Exception) {
-        [self showToastWithMessage:@"Mất kết nối Internet"];
+        if ([Common checkNetworkAvaiable]) {
+            [self showToastWithMessage:@"Không kết nối được đến máy chủ, vui lòng kiểm tra và thử lại sau"];
+        } else {
+            [self showToastWithMessage:@"Mất kết nối mạng"];
+        }
+        
         [self hideCustomHUB];
     }];
 }
@@ -401,7 +416,24 @@
 }
 
 - (void)didTapBackButton {
-    [self popToMoreRoot];
+    NSString *billNo = ((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]]).input_code.text;
+    billNo = [billNo stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *taxCode = ((CodeSendBillCell *)[self.sendbillTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]]).input_code.text;
+    taxCode = [taxCode stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if ([billNo length] > 0|| [taxCode length] >0 || [self.array_image_Item count] > 0) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Thông báo", nil) message:NSLocalizedString(@"Đ/c chắc chắn muốn hủy thao tác?",nil) preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"Không", nil) style:UIAlertActionStyleCancel handler:nil];
+        __weak SendBillViewController *weakSelf = self;
+        UIAlertAction *actionOK = [UIAlertAction actionWithTitle:NSLocalizedString(@"Có", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            [weakSelf popToMoreRoot];
+        }];
+        [alert addAction:actionCancel];
+        [alert addAction:actionOK];
+        [self presentViewController:alert animated:true completion:nil];
+    } else {
+        [self popToMoreRoot];
+    }
 }
 
 - (IBAction)sendInvoiceAction:(id)sender {

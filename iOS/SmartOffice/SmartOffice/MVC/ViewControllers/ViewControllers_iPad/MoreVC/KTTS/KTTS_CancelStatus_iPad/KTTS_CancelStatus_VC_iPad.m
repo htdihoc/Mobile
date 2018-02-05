@@ -68,25 +68,23 @@
             self.constraint_bao_hong.constant = 0;
             self.view_bao_hong.hidden = YES;
         }
-        
-        //Your entry string
-        NSString *myString = [NSString stringWithFormat:@"%@ %@ %@", @"Bạn chắc chắn muốn hủy thông báo ", message, @" với tài sản này?"];
-        //Create mutable string from original one
-        NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:myString];
-        //Fing range of the string you want to change colour
-        //If you need to change colour in more that one place just repeat it
-        NSRange range = [myString rangeOfString:message];
-        [attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:36.0f/255.0f green:152.0f/255.0f blue:218.0f/255.0f alpha:1.0f] range:range];
-        //Add it to the label - notice its not text property but it's attributeText
-        self.descriptionLabel.attributedText = attString;
-        
-        [self.view layoutIfNeeded];
     });
     //    36/152/218
     
-//    message = @"Đã báo mất";
+    message = @"Đã báo mất";
     
-
+    //Your entry string
+    NSString *myString = [NSString stringWithFormat:@"%@ %@ %@", @"Bạn chắc chắn muốn hủy thông báo ", message, @" với tài sản này?"];
+    //Create mutable string from original one
+    NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:myString];
+    //Fing range of the string you want to change colour
+    //If you need to change colour in more that one place just repeat it
+    NSRange range = [myString rangeOfString:message];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:36.0f/255.0f green:152.0f/255.0f blue:218.0f/255.0f alpha:1.0f] range:range];
+    //Add it to the label - notice its not text property but it's attributeText
+    self.descriptionLabel.attributedText = attString;
+    
+    [self.view layoutIfNeeded];
     
 }
 
@@ -139,8 +137,8 @@
 - (IBAction)actionAgree:(id)sender {
     [self.delegate actionShowConfirmTTTSlert];
     
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Xác nhận" message:[NSString stringWithFormat:@"Bạn chắc chắn muốn hủy thông báo \"%@\" với tài sản này?", message] delegate:self cancelButtonTitle:@"Đóng" otherButtonTitles:@"Xác nhận", nil];
-//    [alert show];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Xác nhận" message:[NSString stringWithFormat:@"Bạn chắc chắn muốn hủy thông báo \"%@\" với tài sản này?", message] delegate:self cancelButtonTitle:@"Đóng" otherButtonTitles:@"Xác nhận", nil];
+    [alert show];
     
 }
 

@@ -283,6 +283,14 @@
     }
 }
 
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (textField.text.length < 51) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 #pragma mark - Validate TextFile!
 
 - (BOOL)isValidate {
